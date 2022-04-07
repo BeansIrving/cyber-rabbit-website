@@ -141,32 +141,53 @@ export const FeaturesFlexContainer = styled.div`
 export const ColumnContent = styled.div`
     width: auto;
     z-index: 1;
+    
+
+    @media screen and (max-width:1024px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const CardImg = styled.img`
     height: 30vw;
     width: auto;
     z-index: 4;
+    position: relative;
+    left: 2vh;
     @media screen and (max-width:1024px){
         height: 60vw;
+        left: 0vh;
     }
 
     @media screen and (max-width:768px){
         height: 60vw;
+        left: 0vh;
+    }
+
+    @media screen and (max-width:468px){
+        height: 100vw;
+        left: 0vh;
     }
 `
 export const ColumnContent2 = styled.div`
-    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    height: auto;
     z-index: 0;
     
     @media screen and (max-width:1024px){
-        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        width: 60%;
+        
     }
 
     @media screen and (max-width:768px){
         display: flex;
         justify-content: center;
+        
     }
 
     @media screen and (max-width:468px){
@@ -178,28 +199,27 @@ export const ColumnContent2 = styled.div`
 export const CardText = styled.div`
     background-color: rgba(255, 0, 0, 0.2);
     padding: 5vh;
-    padding-top: 6vh;
-    width: 60%;
-    position: relative;
-    top: 8vh;
-    left: -2vh;
+    padding-top: 3vh;
+    width: auto;
+    margin-top: 6vh;
     z-index: 0;
 
     @media screen and (max-width:1024px){
-        position: relative;
-        top: 0vh;
-        left: 0vh;
-        width: 50%;
-        display: flex;
+        
+        padding: 5vh;
+        padding-top: 3vh;
+        width: auto;
+        margin-top: 0vh;
+        height: auto;
+
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     @media screen and (max-width:768px){
-        position: relative;
-        top: 0vh;
-        left: 0vh;
-        width: 50%;
-        display: flex;
+        
+        width: 100%;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -207,7 +227,7 @@ export const CardText = styled.div`
         position: relative;
         top: 0vh;
         left: 0vh;
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
