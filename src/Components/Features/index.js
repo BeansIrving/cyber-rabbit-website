@@ -32,8 +32,11 @@ const Features = () => {
 const card = { GenesisCollection, card2, card3, card4, card5, card6, card7, card8, card9 }
 
 let [selected, setSelected] = useState(card.GenesisCollection);
+let [selectedText, setSelectedText] = useState("");
 
-
+const onShowText = () => {
+    setSelectedText("Genesis Collection");
+}
 
   return (
     <FeaturesContainer>
