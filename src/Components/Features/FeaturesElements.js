@@ -167,7 +167,7 @@ export const CardImg = styled.img`
 
     @media screen and (max-width:468px){
         height: 100vw;
-        left: 0vh;
+        left: 0vh;  
     }
 `
 export const ColumnContent2 = styled.div`
