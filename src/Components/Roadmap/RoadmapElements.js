@@ -33,7 +33,7 @@ export const RoadmapContainer = styled.div`
 
     
     @media screen and (max-width:1024px){
-
+        
     }
 
     @media screen and (max-width:768px){
@@ -122,7 +122,7 @@ export const RoadmapContent = styled.div`
     position: absolute;
     padding: 0vw;
     display: flex;
-    padding-top: 5vh;
+    padding-top:5vh;
 `
 
 export const RoadmapRow = styled.div`
