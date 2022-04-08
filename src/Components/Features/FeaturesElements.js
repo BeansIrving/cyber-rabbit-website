@@ -2,6 +2,7 @@ import styled from "styled-components";
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'
+import bg from '../../Image/bg/feature-bg.png'
 
 export const FeaturesContainer = styled.div`
     background: #000;
@@ -9,7 +10,7 @@ export const FeaturesContainer = styled.div`
     justify-content: flex-start;
     padding: 15vh 15vh;
     height: 161vh;
-    width: auto;
+ 
     position: relative;
     z-index: 1;
 
@@ -27,28 +28,24 @@ export const FeaturesContainer = styled.div`
     }
 
     @media screen and (max-width:1366px) {
-        height: 150vh;
-    }
-
-    @media screen and (max-width:1050px) {
         height: 130vh;
     }
     
     @media screen and (max-width:1024px){
         padding: 10vh 0vh;
-        height: 140vw;
+        height: 120vh;
     }
 
     @media screen and (max-width:768px){
         padding: 10vh 0vh;
         align-items: center;
-        height: 135vh;
+        height: 110vh;
     }
 
     @media screen and (max-width:468px){
         padding: 0 0vh;
         align-items: center;
-        height: 140vh;
+        height: 110vh;
     }
 `
 
@@ -58,10 +55,15 @@ export const FeaturesBg = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100vw;
-    height: auto;
-
+    width: 100%;
+    height: 100%;
+    
     overflow: hidden;
+
+    background-image: url(${bg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 export const FeaturesContent = styled.div`
@@ -138,6 +140,14 @@ export const FeaturesFlexContainer = styled.div`
     padding-top: 10vh;
     padding-left: 10vh;
     
+    @media screen and (max-width:1366px){
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0vh;
+        padding-left: 0vh;
+    }
+ 
+
     @media screen and (max-width:1024px){
         flex-wrap: wrap;
         justify-content: center;
@@ -152,26 +162,19 @@ export const FeaturesFlexContainer = styled.div`
         padding-left: 0vh;
     }
 `
-export const ColumnContent = styled.div`
-    width: auto;
-    z-index: 1;
-    
 
-    @media screen and (max-width:1024px){
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-`
 
 export const CardImg = styled.img`
     height: 30vw;
     width: auto;
     z-index: 4;
     position: relative;
-    left: 2vh;
+    left: 0.7vh;
     @media screen and (max-width:1024px){
         height: 60vw;
-        left: 0vh;
+        left: 0vh;  
+        display: none;
+        
     }
 
     @media screen and (max-width:768px){
@@ -184,31 +187,55 @@ export const CardImg = styled.img`
         left: 0vh;  
     }
 `
-export const ColumnContent2 = styled.div`
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 40%;
-    height: auto;
-    z-index: 0;
-    
+
+export const ColumnContent = styled.div`
+    width: auto;
+    z-index: 1;
+    order: 1;
+
+  
+
     @media screen and (max-width:1024px){
         flex-wrap: wrap;
         justify-content: center;
-        width: 60%;
-        
+        order: 2;
+       
+    }
+`
+
+export const ColumnContent2 = styled.div`
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    z-index: 0;
+    order: 2;
+    z-index: 5;
+    padding:5vh 0vh;
+  
+
+    @media screen and (max-width:1024px){
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 70%;
+        order: 1;
+        left: 0;
     }
 
     @media screen and (max-width:768px){
         display: flex;
         justify-content: center;
+        width: 75%;
         
     }
 
     @media screen and (max-width:468px){
         display: flex;
         justify-content: center;
+        width: 90%;
     }
 `
+
 
 export const CardText = styled.div`
     background-color: rgba(255, 0, 0, 0.2);
@@ -251,11 +278,16 @@ export const CardDescription = styled.p`
     font-size: 2vh;
     font-family: featuresFont;
     color: white;
-    width:100%;
+    width:20vw;
+   
+
+    @media screen and (max-width:1024px){
+        width:auto;
+    }
 `
 export const ImgCard = styled.img`
     width: auto;
-    height: 5vh;
+    height: 10vh;
 `
 
 export const SwiperContainer = styled.div`

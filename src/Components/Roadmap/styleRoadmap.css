@@ -1,0 +1,155 @@
+@font-face {
+  font-family: featuresFont;
+  src: url(../../Font/features.ttf);
+}
+
+.mySwiperRoadmap {
+  cursor: -webkit-grab; cursor: grab;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .mySwiperRoadmap-slide {
+    text-align: left;
+    font-size: 25px;
+    color: white;
+    
+  
+    /* Center slide text vertically */
+   
+    flex-wrap: wrap;
+   
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+   
+
+  }
+  
+  .mySwiperRoadmap-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .mySwiperRoadmap-slide:nth-child(1n) {
+    width:35%;
+  }
+  
+  .mySwiperRoadmap-slide:nth-child(2n) {
+    width:35%;
+  }
+  
+  .mySwiperRoadmap-slide:nth-child(3n) {
+    width:35%;
+  }
+  
+
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0vh 0vh;
+    padding-left: 20vh;
+  }
+
+  .li{
+    font-size: 2vh;
+    line-height: 3vh;
+    font-family: featuresFont;
+    width: 100%;
+  }
+
+  @media screen and (max-width:1024px){
+    .container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0vh 0vh;
+      padding-left: 7vh;
+    }
+  
+    .li{
+      font-size: 1.5vh;
+      line-height: 3vh;
+      font-family: featuresFont;
+     
+      width: 100%;
+    }
+
+    .mySwiperRoadmap-slide:nth-child(1n) {
+      width:35%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(2n) {
+      width:35%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(3n) {
+      width:35%;
+    }
+  }
+
+  
+  @media screen and (max-width:768px){
+    .container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0vh 0vh;
+      padding-left: 7vh;
+    }
+  
+    .li{
+      font-size: 1.5vh;
+      line-height: 3vh;
+      font-family: featuresFont;
+     
+      width: 100%;
+    }
+
+    .mySwiperRoadmap-slide:nth-child(1n) {
+      width:60%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(2n) {
+      width:60%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(3n) {
+      width:60%;
+    }
+  }
+
+
+  
+  @media screen and (max-width:468px){
+    .container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0vh 0vh;
+      padding-left: 7vh;
+    }
+  
+    .li{
+      font-size: 1.5vh;
+      line-height: 3vh;
+      font-family: featuresFont;
+     
+      width: 100%;
+    }
+
+    .mySwiperRoadmap-slide:nth-child(1n) {
+      width:100%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(2n) {
+      width:100%;
+    }
+    
+    .mySwiperRoadmap-slide:nth-child(3n) {
+      width:100%;
+    }
+  }
+  

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FeaturesContainer, FeaturesBg, FeaturesContent,
         FeaturesRow, FeaturesColumn, Design, FeaturesH1,
         FeaturesDescription, FeaturesFlexContainer, ColumnContent,
-        CardImg, CardText, CardDescription, ColumnContent2, 
+        CardImg, CardText, CardDescription, ColumnContent2, ColumnContent3, 
         ImgCard, SwiperContainer, DescriptionContainer } from './FeaturesElements'
 import design from '../../Image/featuresAssets/design.png'
 import Bounce from 'react-reveal/Bounce';
@@ -18,6 +18,7 @@ import card7 from '../../Image/featuresAssets/cards/7.png'
 import card8 from '../../Image/featuresAssets/cards/8.png'
 import card9 from '../../Image/featuresAssets/cards/9.png'
 
+import "./styleFeatures.css";
 
 
 import "swiper/css";
@@ -46,6 +47,9 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
             <FeaturesRow>
                 <FeaturesColumn>
                 <Design src={design}/>
+
+             
+                    
                     <DescriptionContainer>
                         
                         <FeaturesH1>FEATURES</FeaturesH1>
@@ -56,7 +60,8 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                         </FeaturesDescription>
                     </DescriptionContainer>
 
-
+                 
+                
                     <FeaturesFlexContainer>
                         <ColumnContent>
                     
@@ -65,35 +70,49 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                             
                         </ColumnContent>
 
-                        <ColumnContent2>
+                        <ColumnContent>
                             <CardText>
                                 <CardDescription>
                                     {textGenesis}
-                                    </CardDescription>
+                                </CardDescription>
                             </CardText>
+                        </ColumnContent>
+
+                        <ColumnContent2>
+                       
+
+                            <Swiper
+                                slidesPerView={"auto"}
+                                spaceBetween={30}
+                                pagination={{
+                                clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                className="mySwiperFeatures"
+                            >
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.GenesisCollection) || setTextGenesis("Cyber Rabbit will release a Genesis collection of 1000 3D-rendered depictions of rabbits in futuristic attires with its very own utilities")}><ImgCard src={GenesisCollection}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card2) || setTextGenesis("A Portion of funds collected from the public sale will be donated to community chosen charities/foundations that will help to buy food and shelter for these animals.")}><ImgCard src={card2}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card3) || setTextGenesis("The holders of the Genesis collection will be able to breed their 2 Genesis NFT to yield Main Collection Cyber Rabbit using $CARROT tokens.")}><ImgCard src={card3}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card4) || setTextGenesis("Cyber Rabbit will release the main collection with future applications in the Play and Earn Field of the Metaverse.")}><ImgCard src={card4}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card5) || setTextGenesis("NFT staking platform allows the user to stake their Main Collection NFT, earning a utility Token that will mainly be used to purchase 2nd Generation VX NFT.")}><ImgCard src={card5}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card6) || setTextGenesis("The Play and Earn combat game of Cyber Rabbit can be played by having a Main Collection Cyber Rabbit NFT.")}><ImgCard src={card6}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card7) || setTextGenesis("Cyber Rabbit will release a 2nd Generation VX NFT collection that can be acquired using a utility token.")}><ImgCard src={card7}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card8) || setTextGenesis("Finally, Cyber Rabbit will have its metaverse on Sandbox.")}><ImgCard src={card8}/></SwiperSlide>
+                                <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card9) || setTextGenesis("Cyber Rabbit will have voting mechanisms that are to be given to its supporters, where they will hold a massive opinion over the future progressions of the project. ")}><ImgCard src={card9}/></SwiperSlide>
+                    
+                            </Swiper>
                         </ColumnContent2>
 
+
+                    
                             
                     </FeaturesFlexContainer>
                     
-                    <SwiperContainer>
-                            <Swiper
-                                slidesPerView={4}
-                                spaceBetween={20}
-                                className="mySwiper"
-                                >
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.GenesisCollection) || setTextGenesis("Cyber Rabbit will release a Genesis collection of 1000 3D-rendered depictions of rabbits in futuristic attires with its very own utilities")}><ImgCard src={GenesisCollection}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card2) || setTextGenesis("A Portion of funds collected from the public sale will be donated to community chosen charities/foundations that will help to buy food and shelter for these animals.")}><ImgCard src={card2}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card3) || setTextGenesis("The holders of the Genesis collection will be able to breed their 2 Genesis NFT to yield Main Collection Cyber Rabbit using $CARROT tokens.")}><ImgCard src={card3}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card4) || setTextGenesis("Cyber Rabbit will release the main collection with future applications in the Play and Earn Field of the Metaverse.")}><ImgCard src={card4}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card5) || setTextGenesis("NFT staking platform allows the user to stake their Main Collection NFT, earning a utility Token that will mainly be used to purchase 2nd Generation VX NFT.")}><ImgCard src={card5}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card6) || setTextGenesis("The Play and Earn combat game of Cyber Rabbit can be played by having a Main Collection Cyber Rabbit NFT.")}><ImgCard src={card6}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card7) || setTextGenesis("Cyber Rabbit will release a 2nd Generation VX NFT collection that can be acquired using a utility token.")}><ImgCard src={card7}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card8) || setTextGenesis("Finally, Cyber Rabbit will have its metaverse on Sandbox.")}><ImgCard src={card8}/></SwiperSlide>
-                                <SwiperSlide className="mySwiper-slide" onClick={() => setSelected(card.card9) || setTextGenesis("Cyber Rabbit will have voting mechanisms that are to be given to its supporters, where they will hold a massive opinion over the future progressions of the project. ")}><ImgCard src={card9}/></SwiperSlide>
-                               
-                            </Swiper>
-                    </SwiperContainer>
+                 
+
+                            
+
+                            
                             
 
                 </FeaturesColumn>

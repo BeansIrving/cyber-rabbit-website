@@ -13,7 +13,7 @@ import roadmapline from '../../Image/roadmapAssets/roadmapline.png'
 import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.png'
 import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.png'
 
-import "./style.css";
+import "./styleRoadmap.css";
 
 const Roadmap = () => {
   return (

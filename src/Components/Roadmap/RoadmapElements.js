@@ -10,7 +10,7 @@ export const RoadmapContainer = styled.div`
     background: #000;
     display: flex;
     padding: 0 0vh;
-    height: 100vh;
+    height: 110vh;
     width: 100%;
     position: relative;
     z-index: 1;
