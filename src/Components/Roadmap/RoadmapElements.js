@@ -186,4 +186,6 @@ export const SwiperContainer = styled.div`
 `
 export const RoadmapLine = styled.img`
     height:10vh;
+
+    margin: 2vh 0vh;
 `

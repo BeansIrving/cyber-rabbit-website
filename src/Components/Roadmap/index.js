@@ -40,7 +40,7 @@ const Roadmap = () => {
                             className="mySwiperRoadmap"
                         >
                             <SwiperSlide className="mySwiperRoadmap-slide">
-                                <RoadmapH1>Achieve</RoadmapH1>
+                                <RoadmapH1>&#10003; Achieve</RoadmapH1>
                                 
                                 <RoadmapLine src={roadmaplineLeft}/>
 

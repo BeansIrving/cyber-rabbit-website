@@ -84,10 +84,7 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                             <Swiper
                                 slidesPerView={"auto"}
                                 spaceBetween={30}
-                                pagination={{
-                                clickable: true,
-                                }}
-                                modules={[Pagination]}
+                               
                                 className="mySwiperFeatures"
                             >
                                 <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.GenesisCollection) || setTextGenesis("Cyber Rabbit will release a Genesis collection of 1000 3D-rendered depictions of rabbits in futuristic attires with its very own utilities")}><ImgCard src={GenesisCollection}/></SwiperSlide>

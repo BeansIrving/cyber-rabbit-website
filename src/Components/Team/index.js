@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { TeamContainer, TeamBg, TeamContent, 
         TeamRow, TeamColumn, TeamH1, TeamH1v2, 
         TeamP, TeamName, TeamTitle, TeamDescription,
@@ -9,6 +9,7 @@ import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import "./styleTeam.css";
 
 import Founder from "../../Image/teamAssets/1.png"
@@ -23,6 +24,7 @@ import GameDeveloper from "../../Image/teamAssets/9.png"
 import CommunityRelations from "../../Image/teamAssets/8and10.png"
 
 const Team = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
   return (
     <TeamContainer>
         <TeamBg>
@@ -47,8 +49,11 @@ const Team = () => {
                     <ColumnContent2>
                     <Swiper
                             slidesPerView={"auto"}
-                            spaceBetween={40}
-                         
+                            spaceBetween={50}
+                            loop={true}
+                           
+                            thumbs={{ swiper: thumbsSwiper }}
+                            modules={[FreeMode, Navigation, Thumbs]}
                             className="mySwiperTeam"
                         >
                             <SwiperSlide className="mySwiperTeam-slide">

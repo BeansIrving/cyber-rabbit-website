@@ -19,6 +19,12 @@ export const TeamContainer = styled.div`
     @media screen and (max-width:1024px){
         padding: 5vh 5vh;
     }
+
+    @media screen and (max-width:468px){
+        padding: 2vh 2vh;
+    }
+
+
 `
 
 export const TeamBg = styled.div`
@@ -53,6 +59,8 @@ export const TeamRow = styled.div`
 export const TeamColumn = styled.div`
     
     flex-wrap: wrap;
+
+   
 `
 
 export const TeamH1 = styled.h1`
@@ -65,9 +73,11 @@ export const TeamH1 = styled.h1`
         font-size: 4vw;
     }
 
-    @media screen and (max-width:468){
+    @media screen and (max-width:468px){
         font-size: 4vw;
+        padding-left: 2vh;
     }
+    
   
 `
 
@@ -80,6 +90,11 @@ export const TeamH1v2 = styled.h1`
     @media screen and (max-width:1024px){
         font-size: 5.5vw;
     }
+
+    @media screen and (max-width:468px){
+        font-size: 5.5vw;
+        padding-left: 2vh;
+    }
 `
 
 export const TeamP = styled.p`
@@ -89,28 +104,27 @@ export const TeamP = styled.p`
     letter-spacing: 0.2vh;
     text-align: center;
     padding:2vh 35vh;
-    width: 85%;
     padding-bottom: 0;
 
     @media screen and (max-width:1024px){
         font-size: 1.8vh;
         padding:3vh 10vh;
         padding-bottom: 0;
-        width: 90%;
+        width: 100%;
     }
 
     @media screen and (max-width:768px){
         font-size: 1.5vh;
         padding:3vh 5vh;
         padding-bottom: 0;
-        width: 90%;
+        width: 100%;
     }
 
     @media screen and (max-width:468px){
         font-size: 1.5vh;
         padding:3vh 2vh;
         padding-bottom: 0;
-        width: 80%;
+        width: 100%;
     }
 `
 
@@ -162,6 +176,6 @@ export const ColumnContent = styled.div`
 `
 
 export const ColumnContent2 = styled.div`
-    width: 100vw;
+    width: auto;
     padding-top: 8vh;
 `
