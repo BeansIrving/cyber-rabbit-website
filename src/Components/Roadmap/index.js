@@ -1,4 +1,7 @@
 import React from 'react'
+import { RoadmapContainer, RoadmapBg, RoadmapContent,
+        RoadmapRow, RoadmapColumn } from './RoadmapElements'
+
 
 const Roadmap = () => {
   return (
@@ -7,13 +10,13 @@ const Roadmap = () => {
 
         </RoadmapBg>
 
-        <RoadmapContant>
+        <RoadmapContent>
             <RoadmapRow>
                 <RoadmapColumn>
-                    
+
                 </RoadmapColumn>
             </RoadmapRow>
-        </RoadmapContant>
+        </RoadmapContent>
     </RoadmapContainer>
   )
 }

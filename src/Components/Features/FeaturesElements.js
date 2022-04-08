@@ -23,18 +23,19 @@ export const FeaturesContainer = styled.div`
     }
     @media screen and (max-width:1024px){
         padding: 10vh 0vh;
-        height: 160vh;
+        height: 140vw;
     }
 
     @media screen and (max-width:768px){
-        padding: 0 0vh;
+        padding: 10vh 0vh;
         align-items: center;
+        height: 150vh;
     }
 
     @media screen and (max-width:468px){
         padding: 0 0vh;
         align-items: center;
-        height: 125vh;
+        height: 140vh;
     }
 `
 
