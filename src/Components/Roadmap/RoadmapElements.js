@@ -9,13 +9,12 @@ import featuresFont from '../../Font/features.ttf'
 export const RoadmapContainer = styled.div`
     background: #000;
     display: flex;
-  
-    padding: 0 15vh;
+    padding: 0 0vh;
     height: 100vh;
     width: 100%;
     position: relative;
     z-index: 1;
-    justify-content: center;
+    
     
     @font-face {
         font-family: featuresFont;
@@ -34,16 +33,15 @@ export const RoadmapContainer = styled.div`
 
     
     @media screen and (max-width:1024px){
-        padding: 0 5vh;
-        padding-bottom: 15vh;
+
     }
 
     @media screen and (max-width:768px){
-        padding: 0 5vh;
+
     }
 
     @media screen and (max-width:468px){
-        padding: 0 2vh;
+       
     }
 `
 
@@ -59,7 +57,8 @@ export const RoadmapBg = styled.div`
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+   
+   
 `
 
 export const RoadmapUpperTitle = styled.div`
@@ -73,21 +72,18 @@ export const RoadmapUpperTitle = styled.div`
     overflow: hidden;
     background-image: url(${upperTitle});
     background-repeat: no-repeat;
-    background-position: 40% 50%;
+    background-position: 40% 80%;
 
     @media screen and (max-width:1024px){
-        background-size: 55vh;
-        background-position: 40% 50%;
+        background-size: 45vh;
+        background-position: 40% 70%;
     }
-    @media screen and (max-width:1024px){
-        background-size: 55vh;
-        background-position: 40% 50%;
-    }
+
 
     
     @media screen and (max-width:768px){
         background-size: 35vh;
-        background-position: 40% 40%;
+        background-position: 40% 70%;
     }
 `
 
@@ -98,26 +94,25 @@ export const RoadmapBottomTitle = styled.div`
     bottom: 0;
     left: 0;
     width: auto;
-    height: 30vh;
+    height: 33vh;
     overflow: hidden;
     background-image: url(${lowerTitle});
     background-repeat: no-repeat;
     background-size: 60vh;
-    background-position: 45% 90%;
+    background-position: 45% 100%;
 
+  
     @media screen and (max-width:1024px){
-        background-size: 55vh;
-        background-position: 45% 80%;
-    }
-    @media screen and (max-width:1024px){
+        height: 40vh;
         background-size: 55vh;
         background-position: 45% 75%;
     }
 
     
     @media screen and (max-width:768px){
+        height: 33vh;
         background-size: 35vh;
-        background-position: 45% 70%;
+        background-position: 45% 80%;
     }
 `
 
@@ -127,6 +122,7 @@ export const RoadmapContent = styled.div`
     position: absolute;
     padding: 0vw;
     display: flex;
+    padding-top: 5vh;
 `
 
 export const RoadmapRow = styled.div`
@@ -135,8 +131,25 @@ export const RoadmapRow = styled.div`
 `
 
 export const RoadmapColumn = styled.div`
+    flex-wrap: wrap;
+    
+    
+`
+
+export const ColumnContent = styled.div`
     display: flex;
     padding: 12vh 0vh;
+    padding-right: 10vh;
+    justify-content: center;
+    
+    @media screen and (max-width:1024px){
+        padding: 12vh 0vh;
+    }
+`
+
+export const ColumnContent2 = styled.div`
+    width: 100vw;
+    padding-top: 8vh;
 `
 
 export const RoadmapTitle = styled.h1`
@@ -144,7 +157,10 @@ export const RoadmapTitle = styled.h1`
     font-size: 4vw;
     text-transform: uppercase;
     color: white;   
-  
+
+    @media screen and (max-width:1366px){
+        font-size: 8vh;
+    }
 
     @media screen and (max-width:1024px){
         font-size: 7vh;
@@ -155,8 +171,19 @@ export const RoadmapTitle = styled.h1`
     }
 `
 
+export const RoadmapH1 = styled.h1`
+    font-family: featuresFont;
+    font-size:  2vh;
+    color: white;  
+    text-align :center ;
+    letter-spacing: .3vh;
+`
+
 
 export const SwiperContainer = styled.div`
     display: flex;
     justify-content: center;
+`
+export const RoadmapLine = styled.img`
+    height:10vh;
 `

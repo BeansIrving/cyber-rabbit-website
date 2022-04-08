@@ -1,14 +1,19 @@
 import React from 'react'
 import { RoadmapContainer, RoadmapBg, RoadmapContent,
         RoadmapRow, RoadmapColumn, RoadmapUpperTitle,
-        RoadmapBottomTitle, RoadmapTitle, SwiperContainer } from './RoadmapElements'
+        RoadmapBottomTitle, RoadmapTitle,ColumnContent, 
+        ColumnContent2, RoadmapH1, RoadmapLine } from './RoadmapElements'
 
 import "swiper/css";
 import "swiper/css/pagination";
 
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import roadmapline from '../../Image/roadmapAssets/roadmapline.png'
+import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.png'
+import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.png'
 
+import "./style.css";
 
 const Roadmap = () => {
   return (
@@ -22,22 +27,85 @@ const Roadmap = () => {
         <RoadmapContent>
             <RoadmapRow>
                 <RoadmapColumn>
-                    <RoadmapTitle>Roadmap</RoadmapTitle>
+                    <ColumnContent>
+                        <RoadmapTitle>Roadmap</RoadmapTitle>
+                    </ColumnContent>
+                    
+                    <ColumnContent2>
+                        
+                        <Swiper
+                            slidesPerView={"auto"}
+                            spaceBetween={3}
+                         
+                            className="mySwiperRoadmap"
+                        >
+                            <SwiperSlide className="mySwiperRoadmap-slide">
+                                <RoadmapH1>Achieve</RoadmapH1>
+                                
+                                <RoadmapLine src={roadmaplineLeft}/>
 
-             
-                            <Swiper
-                                slidesPerView={4}
-                                spaceBetween={20}
-                                className="mySwiper"
-                                >
-                                <SwiperSlide></SwiperSlide>
-                                <SwiperSlide></SwiperSlide>
-                                <SwiperSlide></SwiperSlide>
-                                <SwiperSlide></SwiperSlide>
-                             
-                            </Swiper>
+                                <div className='container'>
+                                    <ul>
+                                        <li className='li'>Cyber Rabbit Conceptualization</li>
+                                        <li className='li'>Release of Cyber Rabbit Public Info</li>
+                                        <li className='li'>Cyber Rabbit Discord and Social Media Public Release</li>
+                                        <li className='li'>Cyber Rabbit Partnerships and Collaboration</li>
+                                        <li className='li'>Massive Events and Contest to give way for the release of Cyber Rabbit: Genesis Collection</li>
+                                    </ul>
+                                </div> 
+                                
+                            </SwiperSlide>
+                            
+                            <SwiperSlide className="mySwiperRoadmap-slide">
+                            <RoadmapH1>In Progress</RoadmapH1>
+                            <RoadmapLine src={roadmapline}/>
+                                <div className='container'>
+                                    <ul>
+                                        <li className='li'>Cyber Rabbit: Genesis Collection Public Launch</li>
+                                        <li className='li'>Website Redesign and Rework</li>
+                                        <li className='li'>Start of Genesis Collection $CARROT yielding </li>
+                                        <li className='li'>Launch of the Exclusive Advisory x Partnership Community on Cyber Rabbit’s own Discord Server</li>
+                                        <li className='li'>Launch of the Breeding Platform for the Genesis Collection</li>
+                                        <li className='li'>Launch of the Exclusive Collaboration Space on the Cyber Rabbit’s Website</li>
+                                    </ul>
+                                </div>   
+                            </SwiperSlide>
+                            
+                            <SwiperSlide className="mySwiperRoadmap-slide">
+                            <RoadmapH1>In Progress</RoadmapH1>
+
+                            <RoadmapLine src={roadmapline}/>
+                                <div className='container'>
+                                    <ul>
+                                        <li className='li'>Main Collection Launch</li>
+                                        <li className='li'>Cyber Rabbit Staking Platform and Mechanic Launch </li>
+                                        <li className='li'>Contests and Events for Cyber Rabbit’s furtherment of Advocacy </li>
+                                        <li className='li'>Future Exclusive Events for Cyber Rabbit Supporters and holders</li>
+                                    </ul>
+                                </div>   
+                            </SwiperSlide>
+                            
+                            <SwiperSlide className="mySwiperRoadmap-slide">
+                            <RoadmapH1>In Progress</RoadmapH1>
+
+                            <RoadmapLine src={roadmaplineRight}/>
+                                <div className='container'>
+                                    <ul>
+                                        <li className='li'>2nd Generation Collection Launch</li>
+                                        <li className='li'>Cyber Rabbit: META Arena Metaverse Game for the Main Collection Launch </li>
+                                        <li className='li'>Land Purchase and Partnership with Sandbox to give way for 2nd Gen Metaverse Implication</li>
+                                        <li className='li'>Sandbox game for the 2nd Generation Launch</li>
+                                        <li className='li'>DAO Governance</li>
+                                    </ul>
+                                </div>   
+                            </SwiperSlide>
+                            
+                        </Swiper>
                    
 
+                    </ColumnContent2>
+
+             
 
                 </RoadmapColumn>
             </RoadmapRow>
