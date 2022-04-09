@@ -1,0 +1,86 @@
+@font-face {
+    font-family: featuresFont;
+    src: url(../../Font/features.ttf);
+}
+
+@font-face {
+    font-family: hyperspace;
+    src: url(../../Font/Hyperspace.otf);
+}
+
+@font-face {
+    font-family: hyperspacebold;
+    src: url(../../Font/HyperspaceBold.otf);
+}
+
+.wrapper{
+    position: relative;
+    display: flex;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.accordion{
+    width: auto;
+    position: relative;
+    top: 0vh;
+    
+}
+
+
+.item{
+    background: transparent;
+    margin-bottom: 0px;
+    padding: 20px 20px;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+    height: auto;
+    width: auto;
+   
+}
+
+.item:hover{
+    background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.2));
+}
+
+.title{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    
+}
+
+
+.content{
+    color: white;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: all 0.5s cubic-bezier(0,1,0,1);
+    
+}
+
+
+
+h2{
+    font-size: 3vh;
+}
+
+p{
+    font-size: 1.5vh;
+}
+
+.content.show{
+ 
+    height: auto;
+    max-height: 999px;
+
+    transition: all 0.5s cubic-bezier(1,0,1,0);
+    font-size: 1.5vh;
+}
