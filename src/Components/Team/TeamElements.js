@@ -7,9 +7,10 @@ export const TeamContainer = styled.div`
     display: flex;
     width: auto;
     padding: 5vh 15vh;
-    height: 112vh;
+    height: 115vh;
     position: relative;
     z-index: 1;
+    align-items: center;
     
     @font-face {
         font-family: featuresFont;
@@ -20,8 +21,14 @@ export const TeamContainer = styled.div`
         padding: 5vh 5vh;
     }
 
+    @media screen and (max-width:768px){
+        padding: 2vh 2vh;
+        height: 130vh;
+    }
+
     @media screen and (max-width:468px){
         padding: 2vh 2vh;
+        height: 120vh;
     }
 
 
