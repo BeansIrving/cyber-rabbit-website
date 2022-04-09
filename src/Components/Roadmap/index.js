@@ -2,7 +2,7 @@ import React from 'react'
 import { RoadmapContainer, RoadmapBg, RoadmapContent,
         RoadmapRow, RoadmapColumn, RoadmapUpperTitle,
         RoadmapBottomTitle, RoadmapTitle,ColumnContent, 
-        ColumnContent2, RoadmapH1, RoadmapLine } from './RoadmapElements'
+        ColumnContent2, RoadmapH1, RoadmapLine, PhaseH1 } from './RoadmapElements'
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -44,6 +44,8 @@ const Roadmap = () => {
                                 
                                 <RoadmapLine src={roadmaplineLeft}/>
 
+                                <PhaseH1>Phase 1</PhaseH1>
+
                                 <div className='container'>
                                     <ul>
                                         <li className='li'>Cyber Rabbit Conceptualization</li>
@@ -58,7 +60,11 @@ const Roadmap = () => {
                             
                             <SwiperSlide className="mySwiperRoadmap-slide">
                             <RoadmapH1>In Progress</RoadmapH1>
+
                             <RoadmapLine src={roadmapline}/>
+                            
+                            <PhaseH1>Phase 2</PhaseH1>
+
                                 <div className='container'>
                                     <ul>
                                         <li className='li'>Cyber Rabbit: Genesis Collection Public Launch</li>
@@ -75,6 +81,9 @@ const Roadmap = () => {
                             <RoadmapH1>In Progress</RoadmapH1>
 
                             <RoadmapLine src={roadmapline}/>
+
+                            <PhaseH1>Phase 3</PhaseH1>
+
                                 <div className='container'>
                                     <ul>
                                         <li className='li'>Main Collection Launch</li>
@@ -89,6 +98,9 @@ const Roadmap = () => {
                             <RoadmapH1>In Progress</RoadmapH1>
 
                             <RoadmapLine src={roadmaplineRight}/>
+
+                            <PhaseH1>Phase 4</PhaseH1>
+
                                 <div className='container'>
                                     <ul>
                                         <li className='li'>2nd Generation Collection Launch</li>

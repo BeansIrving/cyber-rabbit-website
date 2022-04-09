@@ -32,8 +32,12 @@ export const RoadmapContainer = styled.div`
     }
 
     
+    @media screen and (max-width:1366px){
+        height: 125vh;    
+    }
+
     @media screen and (max-width:1024px){
-        
+        height: 120vh;
     }
 
     @media screen and (max-width:768px){
@@ -177,6 +181,16 @@ export const RoadmapH1 = styled.h1`
     color: white;  
     text-align :center ;
     letter-spacing: .3vh;
+`
+
+export const PhaseH1 = styled.h1`
+    font-family: featuresFont;
+    padding: 2vh 0vh;
+    font-size:  2vh;
+    color: white;  
+    text-align :center ;
+    letter-spacing: .3vh;
+    text-transform: uppercase;
 `
 
 
