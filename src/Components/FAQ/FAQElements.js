@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
+import hyperspace from '../../Font/Hyperspace.otf'
+import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import bg from '../../Image/bg/FAQ-bg.png'
 
 export const FAQContainer = styled.div`
@@ -15,6 +17,34 @@ export const FAQContainer = styled.div`
         font-family: featuresFont;
         src: url(${featuresFont});
     }
+
+    @font-face {
+        font-family: hyperspace;
+        src: url(${hyperspace});
+    }
+
+    @font-face {
+        font-family: hyperspacebold;
+        src: url(${hyperspacebold});
+    }
+
+    
+    @media screen and (max-width:1024px){
+        padding: 0vh 5vh;
+        padding-bottom: 15vh;
+    }
+
+    @media screen and (max-width:768px){
+        padding: 5vh 5vh;
+  
+    }
+
+    @media screen and (max-width:468px){
+        padding: 5vh 5vh;
+       
+    }
+
+   
 `
 
 export const FAQBg = styled.div`
@@ -39,8 +69,52 @@ export const FAQContent = styled.div`
 
 export const FAQRow = styled.div`
     display: flex;
+
+    @media screen and (max-width:1024px){
+        flex-wrap: wrap;
+        display: flex;
+    }
+
 `
 
 export const FAQColumn = styled.div`
     display: flex;
+
+    
+`
+
+export const ColumnContent = styled.div`
+    width: auto;
+    display: flex;
+    justify-content: center;
+`
+
+export const DesignP = styled.p`
+    font-family: featuresFont;
+    color: white;
+    padding-top: 1.2vh;
+    padding-right: 0.3vh;
+`
+
+export const ColumnContent2 = styled.div`
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+`
+
+export const Common = styled.h1`
+    font-family: featuresFont;
+    font-size: 5vh;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.7vh;
+`
+
+
+export const FAQColumnContent = styled.div`
+    width: auto;
+    flex-wrap: wrap ;
+    
+    padding-right: 10vh;
+    align-items: center;
 `
