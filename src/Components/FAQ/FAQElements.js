@@ -114,7 +114,6 @@ export const Common = styled.h1`
 export const FAQColumnContent = styled.div`
     width: auto;
     flex-wrap: wrap ;
-    
     padding-right: 10vh;
     align-items: center;
 `
@@ -122,17 +121,29 @@ export const FAQColumnContent = styled.div`
 export const ImgTop = styled.img`
     height: auto;
     position: absolute;
-    width: 100%;
+    width: auto;
+    cursor: pointer;
 `
 
 export const ImgBottom = styled.img`
+    transition: all 0.5s ease-in;   
     height: auto;
     position: relative;
-    width: 100%;
+    width: 40vw;
+    cursor: pointer;
+
+    @media screen and (max-width:1024px){
+        width: 68vw;
+    }
 `
 
 export const ImgBottomHide = styled.img`
+    transition: all 0.5s ease-in;
     height: auto;
     position: relative;
-    width: 100%;
+    width: 40vw;
+    cursor: pointer;
+    @media screen and (max-width:1024px){
+        width: 68vw;
+    }
 `

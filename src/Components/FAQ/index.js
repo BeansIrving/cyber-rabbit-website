@@ -46,27 +46,28 @@ const FAQ = () => {
 
           <FAQColumnContent>
                 <div className='wrapper'>
-                    <div className='accordion'>
+                    <div className='accordion' >
                         
                         {data.map((item, i) => (
-                            <div className='hover'>
-                        <ImgTop src={containerTop} />      
+                            <div className='hover' >
+                        <ImgTop src={containerTop} onClick={() => toggle(i)}/>      
                             <div className='item' onClick={() => toggle(i)}>
                                 <div className='title' >
                                     <h2>{item.question}</h2>
                                 
                                 </div>
-                                <ImgBottomHide src={selected === i  ?  null : containerBottom} />
+                                <ImgBottomHide src={selected === i  ?  null : containerBottom} onClick={() => toggle(i)} />
                                 <div className={selected === i ? 'content show' : 'content'}>
-                                  <p>
+                                  <p >
                                     
                                     {item.answer}
                                     <br></br>
                                     {item.answer2}
                                     <br></br>
                                     {item.answer3}
-                                    <ImgBottom src={containerBottom} />   
+                                    
                                   </p>
+                                  <ImgBottom src={containerBottom} />   
                                   </div>
                             </div>
                             

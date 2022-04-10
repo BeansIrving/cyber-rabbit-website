@@ -67,7 +67,7 @@
 
 
 h2{
-    font-size: 3vh;
+    font-size: 2vh;
     font-family: featuresFont;
     letter-spacing: 0.2vh;
     text-transform: uppercase;
@@ -76,7 +76,7 @@ h2{
 p{
     
     font-size: 1.5vh;
-    font-family: hyperspace;
+    font-family: featuresFont;
     line-height: 3vh;
 }
 
