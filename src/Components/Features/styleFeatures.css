@@ -5,6 +5,7 @@
     position: relative;
     top: 18vh;
     left: -45vh;
+    
   }
   
   .mySwiperFeatures-slide {
@@ -24,6 +25,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    cursor: pointer;
   }
   
   .mySwiperFeatures-slide img {

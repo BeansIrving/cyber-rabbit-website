@@ -1,7 +1,7 @@
 import React from 'react'
 import { RoadmapContainer, RoadmapBg, RoadmapContent,
         RoadmapRow, RoadmapColumn, RoadmapUpperTitle,
-        RoadmapBottomTitle, RoadmapTitle,ColumnContent, 
+        RoadmapBottomTitle, RoadmapTitle,ColumnContent, InProgress,
         ColumnContent2, RoadmapH1, RoadmapLine, PhaseH1 } from './RoadmapElements'
 
 import "swiper/css";
@@ -59,7 +59,7 @@ const Roadmap = () => {
                             </SwiperSlide>
                             
                             <SwiperSlide className="mySwiperRoadmap-slide">
-                            <RoadmapH1>In Progress</RoadmapH1>
+                            <InProgress>In Progress</InProgress>
 
                             <RoadmapLine src={roadmapline}/>
                             
@@ -78,7 +78,7 @@ const Roadmap = () => {
                             </SwiperSlide>
                             
                             <SwiperSlide className="mySwiperRoadmap-slide">
-                            <RoadmapH1>In Progress</RoadmapH1>
+                            <InProgress>In Progress</InProgress>
 
                             <RoadmapLine src={roadmapline}/>
 
@@ -95,7 +95,7 @@ const Roadmap = () => {
                             </SwiperSlide>
                             
                             <SwiperSlide className="mySwiperRoadmap-slide">
-                            <RoadmapH1>In Progress</RoadmapH1>
+                            <InProgress>In Progress</InProgress>
 
                             <RoadmapLine src={roadmaplineRight}/>
 

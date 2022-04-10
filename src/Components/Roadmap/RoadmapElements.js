@@ -182,6 +182,15 @@ export const RoadmapH1 = styled.h1`
     text-align :center ;
     letter-spacing: .3vh;
 `
+export const InProgress = styled.h1`
+    font-family: featuresFont;
+    font-size:  2vh;
+    color: white;  
+    text-align :center ;
+    letter-spacing: .3vh;
+    opacity: 0.5;
+`
+
 
 export const PhaseH1 = styled.h1`
     font-family: featuresFont;
