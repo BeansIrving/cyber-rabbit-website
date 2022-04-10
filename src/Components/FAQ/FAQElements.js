@@ -118,3 +118,21 @@ export const FAQColumnContent = styled.div`
     padding-right: 10vh;
     align-items: center;
 `
+
+export const ImgTop = styled.img`
+    height: auto;
+    position: absolute;
+    width: 100%;
+`
+
+export const ImgBottom = styled.img`
+    height: auto;
+    position: relative;
+    width: 100%;
+`
+
+export const ImgBottomHide = styled.img`
+    height: auto;
+    position: relative;
+    width: 100%;
+`

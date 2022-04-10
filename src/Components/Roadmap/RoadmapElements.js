@@ -191,6 +191,7 @@ export const PhaseH1 = styled.h1`
     text-align :center ;
     letter-spacing: .3vh;
     text-transform: uppercase;
+    text-shadow: 2px 0px 20px #FF0000;
 `
 
 
@@ -200,6 +201,5 @@ export const SwiperContainer = styled.div`
 `
 export const RoadmapLine = styled.img`
     height:10vh;
-
     margin: 2vh 0vh;
 `

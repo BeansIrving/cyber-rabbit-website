@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
 import { FAQContainer, FAQBg, FAQContent,
         FAQRow, FAQColumn, ColumnContent, 
-        ColumnContent2, ColumnContent3, DesignP, 
+        ColumnContent2, ColumnContent3, DesignP, ImgTop, ImgBottom, ImgBottomHide,
         Common,FAQColumnContent} from "./FAQElements"
 import './FAQElements.css'
+
+import containerTop from "../../Image/featuresAssets/top.png"
+import containerBottom from "../../Image/featuresAssets/bottom.png"
 
 const FAQ = () => {
 
@@ -11,6 +14,7 @@ const FAQ = () => {
     const toggle = (i) => {
         if( selected === i){
             return setSelected(null)
+            
         }
 
         setSelected(i)
@@ -43,14 +47,16 @@ const FAQ = () => {
           <FAQColumnContent>
                 <div className='wrapper'>
                     <div className='accordion'>
+                        
                         {data.map((item, i) => (
                             <div className='hover'>
-                                
+                        <ImgTop src={containerTop} />      
                             <div className='item' onClick={() => toggle(i)}>
                                 <div className='title' >
                                     <h2>{item.question}</h2>
                                 
                                 </div>
+                                <ImgBottomHide src={selected === i  ?  null : containerBottom} />
                                 <div className={selected === i ? 'content show' : 'content'}>
                                   <p>
                                     
@@ -59,8 +65,11 @@ const FAQ = () => {
                                     {item.answer2}
                                     <br></br>
                                     {item.answer3}
-                                  </p></div>
+                                    <ImgBottom src={containerBottom} />   
+                                  </p>
+                                  </div>
                             </div>
+                            
                             </div>
                         ))}
                     </div>
