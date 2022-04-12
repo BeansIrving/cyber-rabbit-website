@@ -52,7 +52,11 @@ export const TeamContent = styled.div`
     max-width: 1600px;
     position: absolute;
     display: flex;
+    padding: 10vh;
     
+    @media screen and (max-width:1024px){
+        padding: 0vh;
+    }
   
 
 `

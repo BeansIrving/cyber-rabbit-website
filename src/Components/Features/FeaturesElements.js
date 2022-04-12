@@ -72,7 +72,12 @@ export const FeaturesContent = styled.div`
     position: absolute;
     padding-top: 5vw;
     display: flex;
+    padding: 10vh;
     justify-content: flex-start;
+
+    @media screen and (max-width:1024px){
+        padding: 0vh;
+    }
 `
 
 export const FeaturesRow = styled.div`

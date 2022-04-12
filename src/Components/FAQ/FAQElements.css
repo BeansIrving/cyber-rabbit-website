@@ -31,6 +31,7 @@
 }
 
 
+
 .item{
     background: transparent;
     margin-bottom: 0px;
@@ -86,3 +87,5 @@ p{
     transition: all 0.5s cubic-bezier(1,0,1,0);
     font-size: 1.5vh;
 }
+
+

@@ -40,7 +40,7 @@ export const FAQContainer = styled.div`
     }
 
     @media screen and (max-width:468px){
-        padding: 5vh 5vh;
+        padding: 5vh 2vh;
        
     }
 
@@ -116,6 +116,11 @@ export const FAQColumnContent = styled.div`
     flex-wrap: wrap ;
     padding-right: 10vh;
     align-items: center;
+    padding: 10vh;
+
+    @media screen and (max-width:1024px){
+        padding: 0vh;
+    }
 `
 
 export const ImgTop = styled.img`
@@ -123,6 +128,9 @@ export const ImgTop = styled.img`
     position: absolute;
     width: auto;
     cursor: pointer;
+    @media screen and (max-width:1024px){
+        width: 100vw;
+    }
 `
 
 export const ImgBottom = styled.img`
@@ -131,6 +139,10 @@ export const ImgBottom = styled.img`
     position: relative;
     width: 40vw;
     cursor: pointer;
+
+    @media screen and (max-width:1366px){
+        width: 50vw;
+    }
 
     @media screen and (max-width:1024px){
         width: 68vw;
@@ -143,7 +155,19 @@ export const ImgBottomHide = styled.img`
     position: relative;
     width: 40vw;
     cursor: pointer;
+
+    @media screen and (max-width:1366px){
+        width: 50vw;
+    }
     @media screen and (max-width:1024px){
         width: 68vw;
+    }
+
+    @media screen and (max-width:768px){
+        width: 82vw;
+    }
+
+    @media screen and (max-width:468px){
+        width: 86vw;
     }
 `
