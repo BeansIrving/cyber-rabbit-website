@@ -21,6 +21,8 @@ import card9 from '../../Image/featuresAssets/cards/9.png'
 import "./styleFeatures.css";
 
 
+import { FreeMode, Navigation, Thumbs } from "swiper";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -30,7 +32,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 const Features = () => {
-
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
 const card = { GenesisCollection, card2, card3, card4, card5, card6, card7, card8, card9 }
 
 let [selected, setSelected] = useState(card.GenesisCollection);
@@ -84,6 +86,10 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                             <Swiper
                                 slidesPerView={"auto"}
                                 spaceBetween={30}
+                                loop={true}
+                           
+                                thumbs={{ swiper: thumbsSwiper }}
+                                modules={[FreeMode, Navigation, Thumbs]}
                                
                                 className="mySwiperFeatures"
                             >

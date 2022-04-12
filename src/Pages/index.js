@@ -5,6 +5,7 @@ import Introduction from '../Components/Introduction'
 import Partners from '../Components/Partners'
 import Roadmap from '../Components/Roadmap'
 import Team from '../Components/Team'
+import Token from '../Components/Token'
 
 
 
@@ -13,7 +14,8 @@ const Home = () => {
     <>
     <Introduction />
     <Features />
-     <Roadmap />
+    <Token />
+    <Roadmap />
     <Partners />
     <Team /> 
     <FAQ />
