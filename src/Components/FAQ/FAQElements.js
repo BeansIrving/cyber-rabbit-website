@@ -53,7 +53,7 @@ export const FAQBg = styled.div`
     right: 0;
     left: 0;
     width: 100%;
-    height: 115vh;
+    height: 100%;
     overflow: hidden;
     background-image: url(${bg});
     background-size: cover;
