@@ -12,6 +12,7 @@ export const TokenContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
+    align-items: center;
     
     @font-face {
         font-family: featuresFont;
@@ -75,11 +76,18 @@ export const TokenColumn = styled.div`
     align-items: center;
     justify-content: center;
     width: 70vw;
+
+    @media screen and (max-width:1024px){
+        flex-wrap: wrap;
+    }
     
 `
 
 export const ColumnContent = styled.div`
     width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
 `
 
 export const IntroH1 = styled.p`
@@ -105,4 +113,17 @@ export const CarrotP = styled.p`
     letter-spacing: 0.3vh;
     text-transform: uppercase;
     line-height: 1.2;
+`
+
+export const ImgToken = styled.img`
+    height: 30vw;
+`
+
+export const TokenDesign = styled.img`
+    position: absolute;
+    bottom: 5vh;
+    right: 25vh;
+    width: 40%;
+    height: auto;
+    overflow: hidden;
 `
