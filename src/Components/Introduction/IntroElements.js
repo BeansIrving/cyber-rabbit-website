@@ -75,12 +75,7 @@ export const IntroContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding: 10vh;
-    padding-bottom: 0vh;
-
-    @media screen and (max-width:1024px){
-        padding: 0vh;
-    }
+    
 `
 export const IntroRow = styled.div`
     display: flex;

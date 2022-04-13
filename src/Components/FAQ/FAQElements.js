@@ -30,7 +30,7 @@ export const FAQContainer = styled.div`
 
     
     @media screen and (max-width:1024px){
-        padding: 0vh 5vh;
+        padding: 5vh 5vh;
         padding-bottom: 15vh;
     }
 
@@ -70,6 +70,11 @@ export const FAQContent = styled.div`
 export const FAQRow = styled.div`
     display: flex;
 
+    @media screen and (max-width:1366px){
+        flex-wrap: wrap;
+        display: flex;
+    }
+
     @media screen and (max-width:1024px){
         flex-wrap: wrap;
         display: flex;
@@ -94,6 +99,14 @@ export const DesignP = styled.p`
     color: white;
     padding-top: 1.2vh;
     padding-right: 0.3vh;
+
+    @media screen and (max-width:768px){
+        padding-top: 0vh;
+    }
+
+    @media screen and (max-width:468px){
+        padding-top: 0vh;
+    }
 `
 
 export const ColumnContent2 = styled.div`
@@ -104,19 +117,24 @@ export const ColumnContent2 = styled.div`
 
 export const Common = styled.h1`
     font-family: featuresFont;
-    font-size: 5vh;
+    font-size: 3vw;
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.7vh;
+
+    @media screen and (max-width:468px){
+        font-size: 3vh;
+    }
 `
 
 
 export const FAQColumnContent = styled.div`
-    width: auto;
-    flex-wrap: wrap ;
+    width: 100%;
+    flex-wrap: wrap;
     padding-right: 10vh;
+
     align-items: center;
-    padding: 10vh;
+   
 
     @media screen and (max-width:1024px){
         padding: 0vh;
@@ -146,6 +164,14 @@ export const ImgBottom = styled.img`
 
     @media screen and (max-width:1024px){
         width: 68vw;
+    }
+
+    @media screen and (max-width:768px){
+        width: 82vw;
+    }
+
+    @media screen and (max-width:468px){
+        width: 86vw;
     }
 `
 

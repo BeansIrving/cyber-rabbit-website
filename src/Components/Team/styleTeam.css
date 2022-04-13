@@ -5,7 +5,7 @@
 
 .mySwiperTeam {
     cursor: -webkit-grab; cursor: grab;
-    width: 92vw;
+    width: 80vw;
     height: 75%;
     padding: 0vh 2vh;
     position: relative;
@@ -36,15 +36,15 @@
   }
   
   .mySwiperTeam-slide:nth-child(1n) {
-    width:20%;
+    width:25%;
   }
   
   .mySwiperTeam-slide:nth-child(2n) {
-    width:20%;
+    width:25%;
   }
   
   .mySwiperTeam-slide:nth-child(3n) {
-    width:20%;
+    width:25%;
   }
   
 
@@ -63,13 +63,43 @@
     width: 100%;
   }
 
+  @media screen and (max-width:1366px){
+    .container{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 0vh 0vh;
+      padding-left: 0vh;
+    }
+  
+    .li{
+      font-size: 1.5vh;
+      line-height: 3vh;
+      font-family: featuresFont;
+     
+      width: 100%;
+    }
+
+    .mySwiperTeam-slide:nth-child(1n) {
+      width:35%;
+    }
+    
+    .mySwiperTeam-slide:nth-child(2n) {
+      width:35%;
+    }
+    
+    .mySwiperTeam-slide:nth-child(3n) {
+      width:35%;
+    }
+  }
+
   @media screen and (max-width:1024px){
     .container{
       display: flex;
       justify-content: center;
       width: 100%;
       padding: 0vh 0vh;
-      padding-left: 7vh;
+      padding-left: 0vh;
     }
   
     .li{
@@ -111,7 +141,7 @@
       width: 100%;
     }
 
-    .mySwiperTeam-slide:nth-child(1n) {
+    .mySwiperTeam-slide:nth-child(1n) { 
       width:35%;
     }
     

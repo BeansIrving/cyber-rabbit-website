@@ -49,7 +49,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 0vh 0vh;
+    margin: 0vh 5vh;
     padding-left: 0vh;
   }
 
@@ -61,12 +61,19 @@
   }
 
   @media screen and (max-width:1024px){
+
+    .mySwiperRoadmap {
+      cursor: -webkit-grab; cursor: grab;
+        width: 100vw;
+        height: 100%;
+      }
     .container{
       display: flex;
       justify-content: center;
-      width: 100%;
+      width: 100vw;
       padding: 0vh 0vh;
-      padding-left: 7vh;
+      margin: 0vh 2vh;
+     
      
     }
   
@@ -74,7 +81,7 @@
       font-size: 1.5vh;
       line-height: 3vh;
       font-family: featuresFont;
-     
+      padding-right: 5vh;
       width: 100%;
     }
 
@@ -88,6 +95,11 @@
     
     .mySwiperRoadmap-slide:nth-child(3n) {
       width:35%;
+    }
+
+    .mySwiperRoadmap-slide:nth-child(4n) {
+      width:35%;
+      
     }
   }
 
@@ -105,7 +117,7 @@
       font-size: 1.5vh;
       line-height: 3vh;
       font-family: featuresFont;
-     
+      padding-right: 5vh;
       width: 100%;
     }
 
@@ -137,7 +149,7 @@
       font-size: 1.5vh;
       line-height: 3vh;
       font-family: featuresFont;
-     
+      padding-right: 5vh;
       width: 100%;
     }
 

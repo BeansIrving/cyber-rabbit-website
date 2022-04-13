@@ -52,11 +52,7 @@ export const TeamContent = styled.div`
     max-width: 1600px;
     position: absolute;
     display: flex;
-    padding: 10vh;
     
-    @media screen and (max-width:1024px){
-        padding: 0vh;
-    }
   
 
 `
@@ -114,7 +110,7 @@ export const TeamP = styled.p`
     color: white;
     letter-spacing: 0.2vh;
     text-align: center;
-    padding:2vh 35vh;
+    padding:2vh 25vh;
     padding-bottom: 0;
 
     @media screen and (max-width:1024px){
