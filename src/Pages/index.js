@@ -6,7 +6,7 @@ import Partners from '../Components/Partners'
 import Roadmap from '../Components/Roadmap'
 import Team from '../Components/Team'
 import Token from '../Components/Token'
-
+import Animation from '../Components/Animation'
 
 
 const Home = () => {
@@ -15,10 +15,12 @@ const Home = () => {
     <Introduction />
     <Features />
     <Token />
+    <Animation />
     <Roadmap />
     <Partners />
     <Team /> 
     <FAQ />
+    
     </>
    
   )
