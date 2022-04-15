@@ -157,7 +157,7 @@ const Team = () => {
                             <TeamTitle>Graphics Designer</TeamTitle>
 
                             <TeamDescription>
-                            UID and Vergel’s ability to create appealing pieces of digital art, specifically catered towards advertisement and information sharing, something Cyber Rabbit needs. Thus, they are tasked with working hand-in-hand with team members to create beautiful banners, signs, and our very own logo! 
+                            UID and Delacroix’s ability to create appealing pieces of digital art, specifically catered towards advertisement and information sharing, something Cyber Rabbit needs. Thus, they are tasked with working hand-in-hand with team members to create beautiful banners, signs, and our very own logo! 
                             </TeamDescription>
                                 
                             </SwiperSlide>

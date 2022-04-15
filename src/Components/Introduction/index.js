@@ -1,8 +1,10 @@
 import React from 'react'
 import { IntroContainer, IntroBg,
         IntroContent, IntroRow, IntroColumn, CRH1, CRH01,
-        CoolestP, Description, ContainerText, Container, VideoBg } from './IntroElements'
+        CoolestP, Description, ContainerText, IntroColumn2, VideoBg,
+        BtnDiscord } from './IntroElements'
 import video from '../../Videos/stellacompress.mp4'
+import discord from '../../Image/introductionAssets/joindiscord.png'
 const Introduction = () => {
   return (
     <IntroContainer>
@@ -32,6 +34,10 @@ const Introduction = () => {
             
             
           </IntroColumn>
+
+          <IntroColumn2>
+            <BtnDiscord src={discord}></BtnDiscord>
+          </IntroColumn2>
         </IntroRow>
       </IntroContent>
     </IntroContainer>

@@ -81,6 +81,19 @@ export const IntroRow = styled.div`
     display: flex;
     align-items: center;
     width: auto;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:1920px){
+        width: 72vw;
+    }
+
+    @media screen and (max-width:1366px){
+        width: 72vw;
+    }
+
+    @media screen and (max-width:1024px){
+        width: auto;
+    }
 `
 
 export const IntroColumn = styled.div`
@@ -212,4 +225,17 @@ export const Description = styled.p`
         width: auto;
     }
 
+`
+
+export const IntroColumn2 = styled.a`
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    margin-top: 3vh;
+`
+
+export const BtnDiscord = styled.img`
+
+    width: 30vh;
+    height: auto;
 `
