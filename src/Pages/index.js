@@ -7,11 +7,13 @@ import Roadmap from '../Components/Roadmap'
 import Team from '../Components/Team'
 import Token from '../Components/Token'
 import Animation from '../Components/Animation'
+import Navbar from '../Components/Navbar'
 
 
 const Home = () => {
   return (
     <>
+    <Navbar />
     <Introduction />
     <Features />
     <Token />

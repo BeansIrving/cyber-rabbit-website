@@ -222,7 +222,7 @@ export const UtilH1 = styled.p`
 
     @media screen and (max-width:468px){
         padding: 5vh;
-        padding-top: 6.5vh;
+        padding-top: 8vh;
         padding-left: 3vh;
         font-size: 2vh;
     }
