@@ -43,8 +43,8 @@ export const FooterContent = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media screen {
-        padding-right: 00vh;
+    @media screen and (max-width:1024px){
+        padding-right: 0vh;
     }
 `
 
