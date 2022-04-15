@@ -1,6 +1,14 @@
 import React from 'react'
-import { FooterContainer, FooterBg, FooterContent, FooterRow, FooterColumn } from './FooterElements'
-
+import { FooterContainer, FooterBg, FooterContent, 
+    FooterRow, FooterColumn, FooterFlexContainer,
+    ColumnContent,ColumnContent2, Terms, CyberRabbitWrapper,
+    CyberRabbitLogo,Socials, SocialBorder, SocialImg } from './FooterElements'
+import cyberwhite from '../../Image/navbarAssets/logocyber.png'
+import twitter from '../../Image/footerAssets/twitter.png'
+import discord from '../../Image/footerAssets/discord.png'
+import facebook from '../../Image/footerAssets/facebook.png'
+import instagram from '../../Image/footerAssets/instagram.png'
+import opensea from '../../Image/footerAssets/opensea.png'
 const Footer = () => {
   return (
     <FooterContainer>
@@ -11,7 +19,53 @@ const Footer = () => {
         <FooterContent>
             <FooterRow>
                 <FooterColumn>
+                    <FooterFlexContainer>
+                        <ColumnContent2>
 
+                            <Terms>Terms and Conditions</Terms>
+                            <Terms>Privacy Notice</Terms>
+                            
+                        </ColumnContent2>
+
+                        <ColumnContent>
+                                <CyberRabbitLogo src={cyberwhite}></CyberRabbitLogo>
+                     
+                        </ColumnContent>
+
+
+                        <ColumnContent>
+                        <Socials>
+
+                            <SocialBorder href="https://twitter.com/CyberRabbit01" target="_blank" rel="noopener">
+                            <SocialImg src={opensea}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                            <SocialBorder href="https://twitter.com/CyberRabbit01" target="_blank" rel="noopener">
+                            <SocialImg src={twitter}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                            <SocialBorder href="https://discord.com/invite/cyberrabbitnft" target="_blank" rel="noopener">
+                            <SocialImg src={discord}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                            <SocialBorder href="https://www.facebook.com/CyberRabbitNFT/" target="_blank" rel="noopener">
+                            <SocialImg src={facebook}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                            <SocialBorder href="https://www.instagram.com/cyberrrabbit/" target="_blank" rel="noopener">
+                            <SocialImg src={instagram}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                        </Socials>
+                        </ColumnContent>
+
+
+                    </FooterFlexContainer>
                 </FooterColumn>
             </FooterRow>
         </FooterContent>

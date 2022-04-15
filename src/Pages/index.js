@@ -8,6 +8,7 @@ import Team from '../Components/Team'
 import Token from '../Components/Token'
 import Animation from '../Components/Animation'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
     <Partners />
     <Team /> 
     <FAQ />
+    <Footer />
     
     </>
    
