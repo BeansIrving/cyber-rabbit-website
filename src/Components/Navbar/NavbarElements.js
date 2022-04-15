@@ -4,7 +4,7 @@ import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: white;
+    background: transparent;
     height: 80px;
     width: 100%;
     display: flex;
@@ -181,7 +181,7 @@ export const ImgLogo = styled.img`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 15vh;
+    height: auto;
     width: auto;
 
 `
