@@ -10,6 +10,7 @@ import Animation from '../Components/Animation'
 import Navbar from '../Components/Navbar'
 
 
+
 const Home = () => {
   return (
     <>

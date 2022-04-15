@@ -1,47 +1,40 @@
 import React from 'react'
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo,ImgLogo, MobileIcon, NavMenu, Span, LinkWrap, NavBtn, NavBtnLink, LogoImg} from './NavbarElements';
+import {Nav, NavbarContainer, 
+  NavLogo,ImgLogo, MobileIcon, 
+  NavMenu, NavLinks, NavBtn, 
+  NavBtnLink, Movement, Collab,
+  Whitepaper, Dao, Mint
+  } from './NavbarElements';
 import logo from '../../Image/navbarAssets/logocyber.png';
+import transparent from '../../Image/navbarAssets/transparent.png';
+import transparentMint from '../../Image/navbarAssets/transparentMint.png';
 
 
-const Navbar = ( {toggle,} ) => {
-  
+
+const Navbar = ( {toggle} ) => {
+
   return (
     <>
     <Nav>
         <NavbarContainer>
-            <NavLogo>
+        <NavLogo>
               <ImgLogo src={logo}/>
             </NavLogo>
-            <MobileIcon onClick={toggle} >
+
+            <MobileIcon  >
                 <FaBars />
             </MobileIcon>
             <NavMenu>
                         
             </NavMenu>
             <NavBtn>
-                {/* <NavLinks to="/index"> Launchpad </NavLinks>
-                <NavLinks to="/TokenSale"> TokenSale </NavLinks>
-                <NavLinks to="/NFTStaking"> NFT Staking </NavLinks> */}
-                <LinkWrap>
-                  <NavBtnLink><Span>Movement</Span></NavBtnLink> 
-                </LinkWrap>
-
-                <LinkWrap>
-                  <NavBtnLink><Span>Collab-Carnival</Span></NavBtnLink>
-                </LinkWrap>
-
-                <LinkWrap>
-                  <NavBtnLink><Span>Whitepaper</Span></NavBtnLink>
-                </LinkWrap>
-                
-                <LinkWrap>
-                  <NavBtnLink><Span>Dao</Span></NavBtnLink>
-                </LinkWrap>
-
-                <LinkWrap>
-                  <NavBtnLink><Span>Mint</Span></NavBtnLink>
-                </LinkWrap>
+      
+            <NavBtnLink> <Movement src={transparent}></Movement> </NavBtnLink>
+            <NavBtnLink> <Collab src={transparent}></Collab> </NavBtnLink>
+            <NavBtnLink> <Whitepaper src={transparent}></Whitepaper> </NavBtnLink>
+            <NavBtnLink> <Dao src={transparentMint}></Dao> </NavBtnLink>
+            <NavBtnLink> <Mint src={transparentMint}></Mint> </NavBtnLink>
 
             </NavBtn>
         </NavbarContainer>

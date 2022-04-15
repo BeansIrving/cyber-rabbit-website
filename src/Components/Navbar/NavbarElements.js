@@ -2,11 +2,27 @@ import styled from 'styled-components'
 import league from "../../Font/features.ttf"
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
+import movement from '../../Image/navbarAssets/movement.png';
+import collab from '../../Image/navbarAssets/collab.png';
+import whitepaper from '../../Image/navbarAssets/whitepaper.png';
+import dao from '../../Image/navbarAssets/dao.png';
+import mint from '../../Image/navbarAssets/mint.png';
+
+import movementHover from '../../Image/navbarAssets/movementHover.png';
+import collabHover from '../../Image/navbarAssets/collabHover.png';
+import whitepaperHover from '../../Image/navbarAssets/whitepaperHover.png';
+import daoHover from '../../Image/navbarAssets/daoHover.png';
+import mintHover from '../../Image/navbarAssets/mintHover.png';
+
+import navbarcontainer from '../../Image/navbarAssets/navbarcontainer.png';
 
 export const Nav = styled.nav`
-    background: transparent;
-    height: 80px;
-    width: 100%;
+    background: url(${navbarcontainer});
+    background-position: center;
+    background-size: auto ;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,9 +35,13 @@ export const Nav = styled.nav`
         src: url(${league});
     }
 
+    @media screen and (max-width: 1366px){
+        width: 100vw;
+    }
 
-    @media screen and (max-width: 960px){
-        transition: 0.8s all ease;
+    @media screen and (max-width: 1024px){
+        
+        background: transparent;
     }
 `;
 
@@ -30,10 +50,10 @@ export const NavbarContainer = styled.div`
     justify-content: space-between;
     height: 80px;
     align-items: center;
-    margin-top: 0vh;
+    margin-bottom: 5vh;
     width: 100%;
     padding: 0 0px;
-    max-width: 1500px;
+    max-width: 1650px;
 `;
 
 export const NavLogo = styled.a`
@@ -42,6 +62,7 @@ export const NavLogo = styled.a`
     cursor: pointer;
     font-size: 3vh;
     padding-left: 2vh;
+    margin-top: 3vh;
     display: flex;
     align-items: center;
     font-weight: bold;
@@ -59,7 +80,7 @@ export const LogoImg = styled.img`
 export const MobileIcon = styled.div`
     display: none;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         display: block;
         position:  absolute;
         top: 0;
@@ -91,9 +112,9 @@ export const NavItem = styled.li`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
+    width: auto;
     
-    
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         display: none;
     }
 `
@@ -121,60 +142,90 @@ export const NavLinks = styled(LinkR)`
     }
 `
 
-export const LinkWrap = styled.div`
-    padding: 0vh 1vh;
+
+export const NavBtnLink = styled(LinkS)`
+ 
+    padding: 0.5vh;
 `
 
-export const NavBtnLink = styled.a`
-    font-family: league;
-    position: relative;
-    display: inline-block;
-    padding: 15px 30px;
-    border: 2px solid #111;
-    text-transform: uppercase;
-    color: #111;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 12px;
-   
-    ::before{
-        content: '';
-        
-        position: absolute;
-        left: 6px;
-        top: -2px;
-        height: calc(100% + 4px);
-        width: calc(100% - 12px);
-        background: #fff;
-        transition: 0.5s ease-in-out;
-        transform: scaleX(0);
-    }
+export const Movement = styled.img`
+    cursor: pointer;
+    background-image: url(${movement});
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 8vh;
 
-    &:hover::before{
-        transform: scaleX(1);
+    &:hover{
+        background-image: url(${movementHover});
+        background-position: center;
+        transition: all 0.3s ease-in-out;
     }
-
-    ::after{
-        content: '';
-        position: absolute;
-        top: 6px;
-        left: -2px;
-        width: calc(100% + 4px);
-        height: calc(100% - 12px);
-        background: #fff;
-        transition: 0.5s ease-in-out;
-        transform: scaleY(0);
-    }
-
-    &:hover:after{
-        transform: scaleY(1);
-    }
-
 `
 
-export const Span = styled.span`
-    position: relative;
-    z-index: 3;
+export const Collab = styled.img`
+     cursor: pointer;
+    background-image: url(${collab});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 12vh;
+
+    &:hover{
+        background-image: url(${collabHover});
+        background-position: center;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Whitepaper = styled.img`
+     cursor: pointer;
+    background-image: url(${whitepaper});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 10vh;
+
+    &:hover{
+        background-image: url(${whitepaperHover});
+        background-position: center;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Dao = styled.img`
+     cursor: pointer;
+    background-image: url(${dao});
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 4vh;
+
+    &:hover{
+        background-image: url(${daoHover});
+        background-position: center;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Mint = styled.img`
+    cursor: pointer;
+    background-image: url(${mint});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 4vh;
+
+    &:hover{
+        background-image: url(${mintHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
 `
 
 export const ImgLogo = styled.img`
