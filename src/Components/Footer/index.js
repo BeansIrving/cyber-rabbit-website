@@ -1,4 +1,5 @@
 import React from 'react'
+import { FooterContainer, FooterBg, FooterContent, FooterRow, FooterColumn } from './FooterElements'
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <FooterContent>
             <FooterRow>
                 <FooterColumn>
-                    
+
                 </FooterColumn>
             </FooterRow>
         </FooterContent>
