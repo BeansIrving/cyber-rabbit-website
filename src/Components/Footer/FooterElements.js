@@ -5,7 +5,7 @@ export const FooterContainer = styled.div`
     display: flex;
     justify-content: center;
     padding: 0 0;
-    height: 30vh;
+    height: 20vh;
     width: auto;
     position: relative;
     top:0vh;
@@ -136,12 +136,14 @@ export const CyberRabbitWrapper = styled.div`
 
 export const CyberRabbitLogo = styled.img`
 
-    width: 20vh;
+    width: 29vh;
     height: auto;
     -o-object-fit: cover;
     object-fit: cover;
 
-  
+    @media screen and (max-width:1024px){
+        width: 20vh;
+    }
 
 
 `
@@ -179,4 +181,15 @@ export const SocialImg = styled.img`
 `
 export const TermsContainer = styled.div`
     flex-wrap: wrap;
+`
+
+export const FooterH3 = styled.h1`
+    text-align: center;
+    font-size: 1.5vh;
+    font-family: featuresFont;
+    color: white;
+
+    @media screen and (max-width:468px){
+        font-size: 1vh;
+    }
 `

@@ -2,7 +2,7 @@ import React from 'react'
 import { FooterContainer, FooterBg, FooterContent, 
     FooterRow, FooterColumn, FooterFlexContainer,
     ColumnContent,ColumnContent2, Terms, CyberRabbitWrapper,
-    CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer } from './FooterElements'
+    CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer, FooterH3 } from './FooterElements'
 import cyberwhite from '../../Image/navbarAssets/logocyber.png'
 import twitter from '../../Image/footerAssets/twitter.png'
 import discord from '../../Image/footerAssets/discord.png'
@@ -66,9 +66,11 @@ const Footer = () => {
 
                         </Socials>
                         </ColumnContent>
-
+                        
+                        
 
                     </FooterFlexContainer>
+                    <FooterH3>Cyber Rabbit 	&copy; 2022, All rights reserved</FooterH3>
                 </FooterColumn>
             </FooterRow>
         </FooterContent>
