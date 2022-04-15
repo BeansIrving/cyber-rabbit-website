@@ -2,7 +2,7 @@ import React from 'react'
 import { FooterContainer, FooterBg, FooterContent, 
     FooterRow, FooterColumn, FooterFlexContainer,
     ColumnContent,ColumnContent2, Terms, CyberRabbitWrapper,
-    CyberRabbitLogo,Socials, SocialBorder, SocialImg } from './FooterElements'
+    CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer } from './FooterElements'
 import cyberwhite from '../../Image/navbarAssets/logocyber.png'
 import twitter from '../../Image/footerAssets/twitter.png'
 import discord from '../../Image/footerAssets/discord.png'
@@ -21,9 +21,12 @@ const Footer = () => {
                 <FooterColumn>
                     <FooterFlexContainer>
                         <ColumnContent2>
+                            <TermsContainer>
+                                <Terms>Terms and Conditions</Terms>
+                                <Terms>Privacy Notice</Terms>
+                            </TermsContainer>
 
-                            <Terms>Terms and Conditions</Terms>
-                            <Terms>Privacy Notice</Terms>
+                            
                             
                         </ColumnContent2>
 

@@ -35,12 +35,17 @@ export const FooterBg = styled.div`
 
 export const FooterContent = styled.div`
     z-index: 3;
-    max-width: 1200px;
+    max-width: 1400px;
     position: absolute;
     padding: 0vw;
+    padding-right: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media screen {
+        padding-right: 00vh;
+    }
 `
 
 export const FooterRow = styled.div`
@@ -74,16 +79,14 @@ export const ColumnContent2 = styled.div`
     justify-content: center;
     align-items: center;
     width: auto;
-    width: 25vw;
+    width: 35vw;
 
     @media screen and (max-width:1024px){
         padding: 0vh;
-        width: 100%;
+        width: 30vw;
         display: flex;
         justify-content: center;
-        width: auto;
-        height: auto;
-        position: relative;
+      
     }
 
     @media screen and (max-width:768px){
@@ -101,12 +104,10 @@ export const ColumnContent = styled.div`
 
     @media screen and (max-width:1024px){
         padding: 0vh;
-        width: 100%;
+        width: 30vw;
         display: flex;
         justify-content: center;
-        width: auto;
-        height: auto;
-        position: relative;
+        
     }
 
     @media screen and (max-width:768px){
@@ -118,6 +119,10 @@ export const Terms = styled.p`
     font-family: featuresFont;
     font-size:1.5vh;
     color: white;
+
+    @media screen and (max-width:768px){
+        text-align: center;
+    }
 `
 
 export const CyberRabbitWrapper = styled.div`
@@ -171,4 +176,7 @@ export const SocialImg = styled.img`
     @media screen and (max-width:768px){
         height: 3vh;
     }
+`
+export const TermsContainer = styled.div`
+    flex-wrap: wrap;
 `
