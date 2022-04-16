@@ -2,7 +2,7 @@ import React, {useRef, useEffect, useState} from 'react'
 import { useInView } from 'react-intersection-observer'
 import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         CyberRabbit, CyberPants, CyberGear, CyberSuit, CyberHead,
-        CyberLHand, CyberRHand} from "./CyberLayersElements"
+        CyberLHand, CyberRHand, CyberRabbits} from "./CyberLayersElements"
 
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
@@ -16,13 +16,20 @@ const CyberLayers = () => {
   const { ref, inView } = useInView({
 		rootMargin: '-100px',
 	});
+
+  const [ onPlay, setOnPlay] = useState(false);
+
+  
+
   return (
     <CyberContainer>
         <CyberBg>
 
         </CyberBg>
 
-        <CyberRabbit src={rabbit} ref={ref}/>
+        <CyberRabbit src={rabbit} onClick={inView ? 'animation' : ''}/>
+        
+        <CyberRabbits src={rabbit} onClick={inView ? 'animation' : ''} ref={ref} />
 
         <CyberHead src={head} className={inView ? 'animation' : ''}/>
 

@@ -69,6 +69,16 @@ export const CyberRabbit = styled.img`
     z-index: 1;
 `
 
+export const CyberRabbits = styled.img`
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 50vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+`
+
 export const CyberHead = styled.img`
     position: absolute;
     bottom: 28%;
@@ -127,7 +137,7 @@ export const CyberGear = styled.img`
 
 export const CyberSuit = styled.img`
     position: absolute;
-    top: 8%;
+    top: 1%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 50vh;
@@ -141,14 +151,14 @@ export const CyberSuit = styled.img`
 
     @keyframes suit {
         0% {
-            top: 8%;
+            top: 1%;
             left: 50%;
             transform: translate(-50%, 0);
         }
         100% { 
-            top: 8%;
+            Ytop: 8%;
             left: 30%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 0); 
          }
     }
 `
@@ -216,7 +226,7 @@ export const CyberRHand = styled.img`
 
 export const CyberPants = styled.img`
     position: absolute;
-    top: 17%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, 0);
     width: 50vh;
@@ -230,14 +240,14 @@ export const CyberPants = styled.img`
 
     @keyframes pants {
         0% {
-            top: 17%;
+            top: 15%;
             left: 50%;
             transform: translate(-50%, 0);
         }
         100% { 
             top: 35%;
             left: 70%;
-            transform: translate(-50%, 0);
+            transform: translate(-50%, 0); 
          }
     }
 `
