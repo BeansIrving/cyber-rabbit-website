@@ -10,6 +10,7 @@ export const PartnersContainer = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
+    
     @font-face {
         font-family: featuresFont;
         src: url(${featuresFont});
