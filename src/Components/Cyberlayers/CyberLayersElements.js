@@ -200,7 +200,7 @@ export const CyberRHand = styled.img`
         0% {
             top: 10%;
             left: 59.5%;
-            width: 0vh;
+         
             transform: translate(-50%, 0);
         }
 
