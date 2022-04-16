@@ -135,6 +135,31 @@ export const CyberGear = styled.img`
     }
 `
 
+export const CyberGearText = styled.img`
+    position: absolute;
+    left: 20%;
+    top: 8%;
+    transform: translate(-20%, 0);
+    width: 25vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 0;
+
+    &.animation{
+        animation: gearText linear 4s;
+    }
+
+    @keyframes gearText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
+`
+
+
 export const CyberSuit = styled.img`
     position: absolute;
     top: 1%;
@@ -156,12 +181,38 @@ export const CyberSuit = styled.img`
             transform: translate(-50%, 0);
         }
         100% { 
-            Ytop: 8%;
+            top: 8%;
             left: 30%;
             transform: translate(-50%, 0); 
          }
     }
 `
+
+export const CyberSuitText = styled.img`
+    position: absolute;
+    top: 32%;
+    left: 13%;
+    transform: translate(-13%, 0); 
+    width: 25vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 3;
+
+    &.animation{
+        animation: gearText linear 5s;
+    }
+
+    @keyframes gearText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
+`
+
+
 
 export const CyberLHand = styled.img`
     position: absolute;
@@ -216,11 +267,35 @@ export const CyberRHand = styled.img`
 
         100% { 
             top: 0%;
-            left: 70%;
+            left: 69%;
             transform: translate(-50%, 0); 
         }
         
        
+    }
+`
+
+export const CyberRHandText = styled.img`
+    position: absolute;
+    bottom: 8%;
+    left: 10%;
+    transform: translate(-10%, 0);
+    width: 40vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 3;
+
+    &.animation{
+        animation: handText linear 5s;
+    }
+
+    @keyframes handText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
     }
 `
 
@@ -248,6 +323,30 @@ export const CyberPants = styled.img`
             top: 35%;
             left: 70%;
             transform: translate(-50%, 0); 
+         }
+    }
+`
+
+export const CyberPantsText = styled.img`
+    position: absolute;
+    bottom: 15%;
+    left: 95%;
+    transform: translate(-95%, 0);
+    width: 40vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 3;
+
+    &.animation{
+        animation: pantsText linear 5s;
+    }
+
+    @keyframes pantsText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
          }
     }
 `
