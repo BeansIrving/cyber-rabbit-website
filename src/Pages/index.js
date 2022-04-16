@@ -9,6 +9,7 @@ import Token from '../Components/Token'
 import Animation from '../Components/Animation'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
+import CyberLayers from '../Components/Cyberlayers'
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
     <Navbar />
     <Introduction />
     <Features />
+    <CyberLayers />
     <Token />
     <Animation />
     <Roadmap />
