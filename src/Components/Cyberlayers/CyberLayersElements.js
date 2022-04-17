@@ -486,7 +486,11 @@ export const CyberRabbitFlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 80vw;
+    width: 50vw;
+
+    @media screen and (max-width: 1024px){
+        width: 80vw;
+    }
     
     @media screen and (max-width:768px){
         flex-wrap: wrap;
