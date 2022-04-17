@@ -5,14 +5,13 @@ import hyperspace from '../../Font/Hyperspace.otf'
 import binaria from '../../Font/features.ttf'
 
 export const IntroContainer = styled.div`
-    background: #000;
     display: flex;
     justify-content: flex-start;
     padding: 0 15vh;
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 0f;
     align-items: flex-end;
     padding-bottom: 15vh;
 
@@ -208,7 +207,7 @@ export const Description = styled.p`
     color: white;
     line-height: 2;
     font-weight: 700;
-    width: 50%;
+    width: 60%;
     
     letter-spacing: 0.2vh;
 
