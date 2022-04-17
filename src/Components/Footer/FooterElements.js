@@ -170,6 +170,7 @@ export const SocialImg = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 
     @media screen and (max-width:1024px){
         height: 3vh;

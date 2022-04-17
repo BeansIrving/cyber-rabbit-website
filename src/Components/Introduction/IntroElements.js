@@ -132,7 +132,7 @@ export const ContainerText = styled.div`
     margin-right: 0vh;
     padding: 3vh;
     padding-left: 3vh;
-   
+    
    
 `
 
@@ -189,7 +189,7 @@ export const CoolestP = styled.p`
     color: white;
     text-transform: uppercase;
     
-
+    letter-spacing: 0.1vh;
     padding-top: 0vh;
     padding-bottom: 2vh;
 
@@ -212,6 +212,8 @@ export const Description = styled.p`
     line-height: 2;
     font-weight: 700;
     width: 50%;
+    
+    letter-spacing: 0.2vh;
 
     @media screen and (max-width:768px){
         font-size: 10px;
