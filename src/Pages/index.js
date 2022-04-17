@@ -21,7 +21,6 @@ const Home = () => {
     <Features />
     <CyberLayers />
     <Token />
-    <Animation />
     <Roadmap />
     <Partners />
     <Team /> 

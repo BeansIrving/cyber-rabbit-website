@@ -29,12 +29,13 @@ const Navbar = ( {toggle} ) => {
                         
             </NavMenu>
             <NavBtn>
-      
+{/*       
             <NavBtnLink> <Movement src={transparent}></Movement> </NavBtnLink>
             <NavBtnLink> <Collab src={transparent}></Collab> </NavBtnLink>
-            <NavBtnLink> <Whitepaper src={transparent}></Whitepaper> </NavBtnLink>
+            
             <NavBtnLink> <Dao src={transparentMint}></Dao> </NavBtnLink>
-            <NavBtnLink> <Mint src={transparentMint}></Mint> </NavBtnLink>
+            <NavBtnLink> <Mint src={transparentMint}></Mint> </NavBtnLink> */}
+            <NavBtnLink> <Whitepaper src={transparent}></Whitepaper> </NavBtnLink>
 
             </NavBtn>
         </NavbarContainer>
