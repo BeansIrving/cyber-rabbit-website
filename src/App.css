@@ -23,7 +23,8 @@ body{
 
 
 ::-webkit-scrollbar-thumb{
-  background-color: #b05060;
+  background-color: #771117;
+  border-radius: 5px;
 
 }
 

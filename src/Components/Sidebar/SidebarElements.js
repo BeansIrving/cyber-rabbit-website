@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { FaTimes } from 'react-icons/fa';
 import { Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
-
+import Orbitron from '../../Font/Binaria-Light.otf'
+import bg from '../../Image/bg/bgsidebar.jpg'
 
 export const SideBarContainer = styled.aside`
     position: fixed;
@@ -18,7 +19,10 @@ export const SideBarContainer = styled.aside`
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
     left: ${({ isOpen }) => (isOpen ? '0' : '-100%')};  
     
-    
+    @font-face {
+        font-family: Orbitron;
+        src: url(${Orbitron});
+    }
 
 `
 
@@ -28,9 +32,14 @@ export const SidebarBg = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
-    width: auto;
-    height: 100vh;
+    width: 100vw;
+    height: auto;
     overflow: hidden;
+    background-image: url(${bg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 `
 
 export const ImgBg = styled.img`
@@ -93,8 +102,7 @@ export const SidebarMenu = styled.ul`
     flex-wrap:wrap;
     justify-content: center;
     align-items: center;
-    
-    border-top:1px solid rgba(255, 255, 255, .5);
+
     
    
 `
@@ -114,7 +122,7 @@ export const SidebarLink = styled(LinkR)`
     padding-left: 10vh;
     color: #fff;
     cursor: pointer;
-    border-bottom:1px solid rgba(255, 255, 255, .5);
+
 
     &:hover{
         color: #871e31;
@@ -127,23 +135,25 @@ export const SidebarLink = styled(LinkR)`
 export const SidebarLinks = styled.a`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 2vh;
+    justify-content: center;
+    font-size: 3vh;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
     font-family: Orbitron;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
     position:relative;
+    letter-spacing: 0.5vh;
     padding: 2vh;
-    padding-left: 10vh;
+    text-shadow: 0px 2px 8px #ff0000;
     color: #fff;
     cursor: pointer;
-    border-bottom:1px solid rgba(255, 255, 255, .5);
+    
 
     &:hover{
         color: #871e31;
-        background-color: rgba(255, 255, 255, .1);
         transition: 0.2s ease-in-out; 
     }
 
@@ -153,6 +163,7 @@ export const FlexboxContainer = styled.div`
     justify-content:center;
     z-index:1000; 
     width: 100%;
+    margin-bottom: 10vh;
 `
 
 export const Socials = styled.div`

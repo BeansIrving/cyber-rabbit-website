@@ -158,6 +158,11 @@ export const NavBtnLink = styled(LinkS)`
     padding: 0.5vh;
 `
 
+export const NavBtnLinks = styled.a`
+ 
+    padding: 0.5vh;
+`
+
 export const Movement = styled.img`
     cursor: pointer;
     background-image: url(${movement});

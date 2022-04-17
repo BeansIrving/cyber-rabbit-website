@@ -2,7 +2,7 @@ import styled from "styled-components";
 import bg from '../../Image/bg/0100.png'
 import intro from '../../Image/introductionAssets/Group165.png'
 import hyperspace from '../../Font/Hyperspace.otf'
-import hyperspacebold from '../../Font/HyperspaceBold.otf'
+import binaria from '../../Font/features.ttf'
 
 export const IntroContainer = styled.div`
     background: #000;
@@ -22,8 +22,8 @@ export const IntroContainer = styled.div`
     }
 
     @font-face {
-        font-family: hyperspacebold;
-        src: url(${hyperspacebold});
+        font-family: binaria;
+        src: url(${binaria});
     }
 
     
@@ -138,11 +138,12 @@ export const ContainerText = styled.div`
 
 export const CRH1 = styled.h1`
     font-size: 70px;
-    font-family: hyperspacebold;
-    font-weight: bolder;
+    font-family: binaria;
+    
     color: white;
     letter-spacing: 0.3vh;
     padding-bottom: 0;
+    text-transform: uppercase;
 
     @media screen and (max-width:768px){
         font-size: 9vw;
@@ -155,7 +156,7 @@ export const CRH1 = styled.h1`
 
 export const CRH01 = styled.h1`
     font-size: 10px;
-    font-family: hyperspacebold;
+    font-family: binaria;
     font-weight: bolder;
     color: white;
     letter-spacing: 0.2vh;

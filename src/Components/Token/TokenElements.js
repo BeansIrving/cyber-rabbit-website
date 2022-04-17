@@ -133,6 +133,17 @@ export const CarrotP = styled.p`
 
 export const ImgToken = styled.img`
     height: 30vw;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
 
     @media screen and (max-width:1024px){
         height: 40vw;
@@ -201,15 +212,17 @@ export const AssetBot = styled.img`
     }
 
     @media screen and (max-width:1366px){
-        right: 55vh;
+        right: 60vh;
         padding-top: 10vh;
-        width: 20vw;
+        width: 20vh;
+        display: none;
     }
 
     @media screen and (max-width:1024px){
         right: 0vh;
         padding-top: 10vh;
         width: 40vw;
+        display: inline;
     }
 
     @media screen and (max-width:768px){

@@ -3,7 +3,7 @@ import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, 
   NavLogo,ImgLogo, MobileIcon, 
   NavMenu, NavLinks, NavBtn, 
-  NavBtnLink, Movement, Collab,
+  NavBtnLink, Movement, Collab, NavBtnLinks,
   Whitepaper, Dao, Mint
   } from './NavbarElements';
 import logo from '../../Image/navbarAssets/logocyber.png';
@@ -35,7 +35,7 @@ const Navbar = ( {toggle} ) => {
             
             <NavBtnLink> <Dao src={transparentMint}></Dao> </NavBtnLink>
             <NavBtnLink> <Mint src={transparentMint}></Mint> </NavBtnLink> */}
-            <NavBtnLink> <Whitepaper src={transparent}></Whitepaper> </NavBtnLink>
+            <NavBtnLinks href="https://drive.google.com/file/d/1i5Ie9p-iwWB2NAe4JcwXJ6sL0gUovWE-/view?usp=sharing" target="_blank" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks>
 
             </NavBtn>
         </NavbarContainer>
