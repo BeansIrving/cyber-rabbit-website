@@ -4,6 +4,7 @@ import { Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 import Orbitron from '../../Font/Binaria-Light.otf'
 import bg from '../../Image/bg/bgsidebar.jpg'
+import close from '../../Image/close.png'
 
 export const SideBarContainer = styled.aside`
     position: fixed;
@@ -56,19 +57,21 @@ export const ImgBg = styled.img`
     
 `
 
-export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+export const CloseIcon = styled.img`
+  
+    height: 6vh;
+    
 `
 
 export const Icon = styled.div`
     display: flex;
     position: absolute;
-    top: 4vh;
-    left: 4vh;
+    top: 2vh;
+    left: 3vh;
     background: transparent;
-    background-image: linear-gradient(#44111a , #902034);
-    border: 2px solid #9a2237;
-    border-radius: 5px;
+
+
+   
     padding: 1.5vh;
     font-size: 3vh;
     cursor: pointer;

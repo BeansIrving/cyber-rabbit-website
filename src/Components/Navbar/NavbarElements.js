@@ -14,7 +14,7 @@ import whitepaperHover from '../../Image/navbarAssets/whitepaperHover.png';
 import daoHover from '../../Image/navbarAssets/daoHover.png';
 import mintHover from '../../Image/navbarAssets/mintHover.png';
 
-import navbarcontainer from '../../Image/navbarAssets/navbarcontainer.png';
+import navbarcontainer from '../../Image/navbarAssets/new-nav.png';
 
 export const Nav = styled.nav`
     background: url(${navbarcontainer});
@@ -30,6 +30,7 @@ export const Nav = styled.nav`
     position: absolute;
     top: 0;
     z-index: 998;
+    
     @font-face {
         font-family: league;
         src: url(${league});
@@ -94,11 +95,9 @@ export const MobileIcon = styled.div`
         font-size: 3vh;
         cursor: pointer;
         color: #fff;
-        background-image: linear-gradient(#44111a , #902034);
-        border: 2px solid #9a2237;
+        background: #800000;
         padding: 1.5vh;
         height: auto;
-        border-radius: 5px;
     }
 `
 

@@ -7,6 +7,7 @@ import {
 }   from './SidebarElements';
 
 import logo from '../../Image/CR.png'
+import close from '../../Image/close.png'
 const index = ({isOpen, toggle}) => {
     
   return (
@@ -17,7 +18,7 @@ const index = ({isOpen, toggle}) => {
 
           
           <Icon onClick={toggle}>
-            <CloseIcon />
+            <CloseIcon src ={close}/>
           </Icon>
           <FlexboxContainer>
             <SideLogo>
