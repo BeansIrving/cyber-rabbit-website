@@ -69,9 +69,34 @@ export const CyberRabbit = styled.img`
     z-index: 1;
 `
 
+export const CyberRabbitText = styled.img`
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 50vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+
+    &.animation{
+        animation: rabbitText linear 4s;
+    }
+
+    @keyframes rabbitText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
+`
+
 export const CyberRabbits = styled.img`
     position: absolute;
     left: 50%;
+    top: 17%;
     transform: translate(-50%, 0);
     width: 50vh;
     height: auto;
@@ -110,10 +135,10 @@ export const CyberHead = styled.img`
 
 export const CyberHeadGearText = styled.img`
     position: absolute;
-    top: 8%;
+    top: 5%;
     left: 85%;
     transform: translate(-85%, 0);
-    width: 35vh;
+    width: 40vh;
     height: auto;
     overflow: hidden;
     z-index: 0;
@@ -164,9 +189,9 @@ export const CyberGear = styled.img`
 export const CyberGearText = styled.img`
     position: absolute;
     left: 20%;
-    top: 8%;
+    top: 5%;
     transform: translate(-20%, 0);
-    width: 25vh;
+    width: 30vh;
     height: auto;
     overflow: hidden;
     z-index: 0;
@@ -420,4 +445,12 @@ export const CyberRow = styled.div`
 
 export const CyberColumn = styled.div`
     display: flex;
+`
+
+export const HidePCContainer = styled.div`
+    
+
+    @media screen and (max-width:1024px){
+        display: none;
+    }
 `

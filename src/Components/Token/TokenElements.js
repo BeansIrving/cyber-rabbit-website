@@ -128,7 +128,6 @@ export const CarrotP = styled.p`
     color: white;
     font-size: 1.5vh;
     letter-spacing: 0.3vh;
-    text-transform: uppercase;
     line-height: 1.2;
 `
 
@@ -178,13 +177,31 @@ export const AssetBot = styled.img`
     
     position: absolute;
 
-    right: 50vh;
+    right: 40vh;
     padding-top: 10vh;
     width: 20vw;
     height: auto;
 
+    @media screen and (max-width:1920px){
+        right: 50vh;
+        padding-top: 10vh;
+        width: 20vw;
+    }
+
+    @media screen and (max-width:1800px){
+        right: 50vh;
+        padding-top: 10vh;
+        width: 20vw;
+    }
+
+    @media screen and (max-width:1600px){
+        right: 70vh;
+        padding-top: 10vh;
+        width: 20vw;
+    }
+
     @media screen and (max-width:1366px){
-        right: 75vh;
+        right: 55vh;
         padding-top: 10vh;
         width: 20vw;
     }

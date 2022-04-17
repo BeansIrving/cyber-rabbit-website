@@ -4,7 +4,8 @@ import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         CyberRabbit, CyberPants, CyberGear, CyberSuit, CyberHead,
         CyberLHand, CyberRHand, CyberRabbits, CyberGearText,
         CyberSuitText, CyberRHandText, CyberPantsText, 
-        CyberLHandText, CyberHeadGearText} from "./CyberLayersElements"
+        CyberLHandText, CyberHeadGearText, CyberRabbitText,
+        HidePCContainer} from "./CyberLayersElements"
 
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
@@ -14,6 +15,7 @@ import lhand from '../../Image/cyberlayersAssets/Lefthand.png'
 import rhand from '../../Image/cyberlayersAssets/Righthand.png'
 import pants from '../../Image/cyberlayersAssets/pants.png'
 
+import rabbitText from '../../Image/cyberlayersAssets/rabbitText.png'
 import gearText from '../../Image/cyberlayersAssets/gearText.png'
 import gearheadText from '../../Image/cyberlayersAssets/headgearText.png'
 import suitText from '../../Image/cyberlayersAssets/suitText.png'
@@ -37,9 +39,14 @@ const CyberLayers = () => {
 
         </CyberBg>
 
-        <CyberRabbit src={rabbit} />
+        <HidePCContainer>
+          
+
                 
         <CyberRabbits src={rabbit}  ref={ref} />
+
+        <CyberRabbitText src={rabbitText} className={inView ? 'animation' : ''}/>
+
 
         <CyberHead src={head} className={inView ? 'animation' : ''}/>
 
@@ -65,9 +72,14 @@ const CyberLayers = () => {
 
         <CyberPantsText src={pantsText} className={inView ? 'animation' : ''}/>
 
+        
+        </HidePCContainer>
+
         <CyberContent>
             <CyberRow>
                 <CyberColumn>
+
+                  
 
                 </CyberColumn>
             </CyberRow>

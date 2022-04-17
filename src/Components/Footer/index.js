@@ -70,7 +70,8 @@ const Footer = () => {
                         
 
                     </FooterFlexContainer>
-                    <FooterH3>Cyber Rabbit 	&copy; 2022, All rights reserved</FooterH3>
+                    <br></br>
+                    <FooterH3>Cyber Rabbit 	&copy; 2022, All rights reserved.</FooterH3>
                 </FooterColumn>
             </FooterRow>
         </FooterContent>
