@@ -107,6 +107,32 @@ export const CyberHead = styled.img`
     }
 `
 
+
+export const CyberHeadGearText = styled.img`
+    position: absolute;
+    top: 8%;
+    left: 85%;
+    transform: translate(-85%, 0);
+    width: 35vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 0;
+
+    &.animation{
+        animation: gearText linear 4s;
+    }
+
+    @keyframes gearText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
+`
+
+
 export const CyberGear = styled.img`
     position: absolute;
     left: 50%;
@@ -240,6 +266,30 @@ export const CyberLHand = styled.img`
             left: 30%;
             transform: translate(-50%, 0);
         }
+    }
+`
+
+export const CyberLHandText = styled.img`
+    position: absolute;
+    top: 30%;
+    left: 92%;
+    transform: translate(-92%, 0);
+    width: 40vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 3;
+
+    &.animation{
+        animation: lhandText linear 5s;
+    }
+
+    @keyframes lhandText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
     }
 `
 

@@ -3,7 +3,8 @@ import { useInView } from 'react-intersection-observer'
 import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         CyberRabbit, CyberPants, CyberGear, CyberSuit, CyberHead,
         CyberLHand, CyberRHand, CyberRabbits, CyberGearText,
-        CyberSuitText, CyberRHandText, CyberPantsText,} from "./CyberLayersElements"
+        CyberSuitText, CyberRHandText, CyberPantsText, 
+        CyberLHandText, CyberHeadGearText} from "./CyberLayersElements"
 
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
@@ -14,7 +15,9 @@ import rhand from '../../Image/cyberlayersAssets/Righthand.png'
 import pants from '../../Image/cyberlayersAssets/pants.png'
 
 import gearText from '../../Image/cyberlayersAssets/gearText.png'
+import gearheadText from '../../Image/cyberlayersAssets/headgearText.png'
 import suitText from '../../Image/cyberlayersAssets/suitText.png'
+import lefthandText from '../../Image/cyberlayersAssets/lefthandText.png'
 import righthandText from '../../Image/cyberlayersAssets/righthandText.png'
 import pantsText from '../../Image/cyberlayersAssets/pantsText.png'
 
@@ -40,6 +43,8 @@ const CyberLayers = () => {
 
         <CyberHead src={head} className={inView ? 'animation' : ''}/>
 
+        <CyberHeadGearText src={gearheadText} className={inView ? 'animation' : ''}/>
+
         <CyberGear src={gear} className={inView ? 'animation' : ''}/>
 
         <CyberGearText src={gearText} className={inView ? 'animation' : ''}/>  
@@ -49,6 +54,8 @@ const CyberLayers = () => {
         <CyberSuitText src={suitText} className={inView ? 'animation' : ''}/>
 
         <CyberLHand src={lhand} className={inView ? 'animation' : ''}/>
+
+        <CyberLHandText src={lefthandText} className={inView ? 'animation' : ''}/>
 
         <CyberRHand src={rhand} className={inView ? 'animation' : ''}/>
 

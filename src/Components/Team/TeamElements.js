@@ -32,6 +32,10 @@ export const TeamContainer = styled.div`
     }
 
 
+    @media screen and (max-width:300px){
+        height: 180vh;
+    }
+
 `
 
 export const TeamBg = styled.div`
