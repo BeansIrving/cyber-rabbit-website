@@ -126,7 +126,7 @@ export const CarrotH1 = styled.p`
 export const CarrotP = styled.p`
     font-family: featuresFont;
     color: white;
-    font-size: 1.5vh;
+    font-size: 2vh;
     letter-spacing: 0.3vh;
     line-height: 1.2;
 `

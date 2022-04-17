@@ -157,7 +157,7 @@ export const TeamTitle = styled.p`
 export const TeamDescription = styled.p`
     padding-top: 2vh;
     font-family: featuresFont;
-    font-size: 1.3vh;
+    font-size: 1.8vh;
     letter-spacing: 0.3vh;
     text-transform: uppercase;
     color: #fff;

@@ -120,8 +120,8 @@ export const FeaturesH1 = styled.h1`
 `
 
 export const FeaturesDescription = styled.p`
-    font-size: 1.5vh;
-    color: gray;
+    font-size: 2vh;
+    color: white;
     letter-spacing: 0.2vh;
     font-family: featuresFont;
  
