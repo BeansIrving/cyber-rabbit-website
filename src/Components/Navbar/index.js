@@ -22,7 +22,7 @@ const Navbar = ( {toggle} ) => {
               <ImgLogo src={logo}/>
             </NavLogo>
 
-            <MobileIcon  >
+            <MobileIcon  onClick={toggle}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>

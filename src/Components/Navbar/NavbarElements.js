@@ -29,7 +29,7 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: absolute;
     top: 0;
-    z-index: 999;
+    z-index: 998;
     @font-face {
         font-family: league;
         src: url(${league});
@@ -68,6 +68,10 @@ export const NavLogo = styled.a`
     font-weight: bold;
     text-decoration: none;
     font-family: league;
+
+    @media screen and (max-width:1024px){
+        display: none;
+    }
 `;
 
 export const LogoImg = styled.img`
@@ -81,14 +85,20 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 1024px){
-        display: block;
-        position:  absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        display: flex;
+        position: relative;
+        top: -1vh;
+        left: 4vh;
+        float: left;
+        transform: translate(0%, 60%);
+        font-size: 3vh;
         cursor: pointer;
-        color: #34d178;
+        color: #fff;
+        background-image: linear-gradient(#44111a , #902034);
+        border: 2px solid #9a2237;
+        padding: 1.5vh;
+        height: auto;
+        border-radius: 5px;
     }
 `
 
