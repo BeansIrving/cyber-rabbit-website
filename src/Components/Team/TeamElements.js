@@ -5,7 +5,7 @@ import bg from '../../Image/bg/team-bg.png'
 export const TeamContainer = styled.div`
     background: #3d050c;
     display: flex;
-    width: auto;
+    
     padding: 5vh 15vh;
     height: 115vh;
     position: relative;
@@ -17,13 +17,24 @@ export const TeamContainer = styled.div`
         src: url(${featuresFont});
     }
 
+    
+    @media screen and (max-width:1660px){
+        padding: 5vh 5vh;
+        height: 170vh;
+    }
+
+    @media screen and (max-width:1366px){
+        padding: 5vh 5vh;
+        height: 180vh;
+    }
+
     @media screen and (max-width:1024px){
         padding: 5vh 5vh;
     }
 
     @media screen and (max-width:768px){
         padding: 2vh 2vh;
-        height: 130vh;
+        height: 170vh;
     }
 
     @media screen and (max-width:468px){

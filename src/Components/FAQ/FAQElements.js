@@ -29,6 +29,14 @@ export const FAQContainer = styled.div`
         src: url(${hyperspacebold});
     }
 
+    @media screen and (max-width:1660px){
+        height: 130vh;
+    }
+
+    @media screen and (max-width:1366px){
+        height: 130vh;
+    }
+
     
     @media screen and (max-width:1024px){
         padding: 5vh 5vh;

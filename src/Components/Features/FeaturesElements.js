@@ -10,7 +10,7 @@ export const FeaturesContainer = styled.div`
     justify-content: flex-start;
     padding: 15vh 15vh;
     height: 161vh;
- 
+    align-items: center;
     position: relative;
     z-index: 1;
 
@@ -28,7 +28,7 @@ export const FeaturesContainer = styled.div`
     }
 
     @media screen and (max-width:1366px) {
-        height: 130vh;
+        height: 160vh;
     }
     
     @media screen and (max-width:1024px){

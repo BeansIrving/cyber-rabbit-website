@@ -26,6 +26,11 @@ export const CyberContainer = styled.div`
         src: url(${hyperspacebold});
     }
 
+    @media screen and (max-width:1660px){
+        padding: 0 5vh;
+        height: 105vh;
+    }
+
     @media screen and (max-width:1366px){
         padding: 0 5vh;
         height: 200vh;

@@ -207,9 +207,15 @@ export const Description = styled.p`
     color: white;
     line-height: 2;
     font-weight: 700;
-    width: 60%;
+    width: 50%;
     
     letter-spacing: 0.2vh;
+
+    @media screen and (max-width:1366px){
+        font-size: 10px;
+        letter-spacing: 2px;
+        width: 60%;
+    }
 
     @media screen and (max-width:768px){
         font-size: 10px;
@@ -234,6 +240,9 @@ export const IntroColumn2 = styled.a`
 
 export const BtnDiscord = styled.img`
 
-    width: 30vh;
+    width: 45vh;
     height: auto;
+
+
+
 `

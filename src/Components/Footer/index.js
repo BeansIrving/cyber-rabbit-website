@@ -49,7 +49,7 @@ const Footer = () => {
                             </SocialImg>
                             </SocialBorder>
 
-                            <SocialBorder href="https://discord.gg/ua3RPzjY7h" target="_blank" rel="noopener">
+                            <SocialBorder href="https://discord.gg/qMQBdAR2" target="_blank" rel="noopener">
                             <SocialImg src={discord}>
                             </SocialImg>
                             </SocialBorder>

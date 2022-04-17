@@ -11,6 +11,7 @@ export const TokenContainer = styled.div`
     padding: 5vh 15vh;
     height: 100vh;
     position: relative;
+    align-items: center;
     z-index: 1;
 
     
@@ -33,7 +34,7 @@ export const TokenContainer = styled.div`
     @media screen and (max-width:1024px){
         padding: 0vh 5vh;
         padding-bottom: 15vh;
-        height: 140vh;
+        height: 190vh;
     }
 
     @media screen and (max-width:768px){
