@@ -450,7 +450,7 @@ export const CyberColumn = styled.div`
 export const HidePCContainer = styled.div`
     
 
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:1366px){
         display: none;
     }
 `
