@@ -153,7 +153,7 @@ const Team = () => {
                                 <TeamImg src={GraphicsDesigner}/>
                             </ImgWrapper>
 
-                            <TeamName>UID and Vergel</TeamName>
+                            <TeamName>UID and Delacroix’s</TeamName>
                             <TeamTitle>Graphics Designer</TeamTitle>
 
                             <TeamDescription>

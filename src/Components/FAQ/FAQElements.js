@@ -12,6 +12,7 @@ export const FAQContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
+    align-items: center;
     
     @font-face {
         font-family: featuresFont;
@@ -41,7 +42,7 @@ export const FAQContainer = styled.div`
 
     @media screen and (max-width:468px){
         padding: 5vh 2vh;
-       
+        height: 120vh;
     }
 
    
