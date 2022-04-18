@@ -145,7 +145,7 @@ export const CRH1 = styled.h1`
     padding-bottom: 0;
 
     @media screen and (max-width:768px){
-        font-size: 9vw;
+        font-size: 8vw;
     }
 
     @media screen and (max-width:468px){
