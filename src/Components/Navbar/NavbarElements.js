@@ -14,7 +14,7 @@ import whitepaperHover from '../../Image/navbarAssets/whitepaperHover.png';
 import daoHover from '../../Image/navbarAssets/daoHover.png';
 import mintHover from '../../Image/navbarAssets/mintHover.png';
 
-import navbarcontainer from '../../Image/navbarAssets/navbarcontainer.png';
+import navbarcontainer from '../../Image/navbarAssets/new-nav.png';
 
 export const Nav = styled.nav`
     background: url(${navbarcontainer});
@@ -29,7 +29,8 @@ export const Nav = styled.nav`
     font-size: 1rem;
     position: absolute;
     top: 0;
-    z-index: 999;
+    z-index: 998;
+    
     @font-face {
         font-family: league;
         src: url(${league});
@@ -68,6 +69,10 @@ export const NavLogo = styled.a`
     font-weight: bold;
     text-decoration: none;
     font-family: league;
+
+    @media screen and (max-width:1024px){
+        display: none;
+    }
 `;
 
 export const LogoImg = styled.img`
@@ -81,14 +86,18 @@ export const MobileIcon = styled.div`
     display: none;
 
     @media screen and (max-width: 1024px){
-        display: block;
-        position:  absolute;
-        top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
-        font-size: 1.8rem;
+        display: flex;
+        position: relative;
+        top: -1vh;
+        left: 4vh;
+        float: left;
+        transform: translate(0%, 60%);
+        font-size: 3vh;
         cursor: pointer;
-        color: #34d178;
+        color: #fff;
+        background: #800000;
+        padding: 1.5vh;
+        height: auto;
     }
 `
 
@@ -144,6 +153,11 @@ export const NavLinks = styled(LinkR)`
 
 
 export const NavBtnLink = styled(LinkS)`
+ 
+    padding: 0.5vh;
+`
+
+export const NavBtnLinks = styled.a`
  
     padding: 0.5vh;
 `

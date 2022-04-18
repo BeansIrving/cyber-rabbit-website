@@ -3,13 +3,13 @@ import { IntroContainer, IntroBg,
         IntroContent, IntroRow, IntroColumn, CRH1, CRH01,
         CoolestP, Description, ContainerText, IntroColumn2, VideoBg,
         BtnDiscord } from './IntroElements'
-import video from '../../Videos/stellacompress.mp4'
+import video from '../../Videos/introanim.mp4'
 import discord from '../../Image/introductionAssets/joindiscord.png'
 const Introduction = () => {
   return (
     <IntroContainer>
       <IntroBg>
-      <VideoBg id='vid' autoPlay loop muted src={video} type='video/mp4'>
+      <VideoBg muted autoPlay loop playsInline src={video} type='video/mp4'>
                     
       </VideoBg>
       </IntroBg>
@@ -35,7 +35,7 @@ const Introduction = () => {
             
           </IntroColumn>
 
-          <IntroColumn2>
+          <IntroColumn2 href="https://discord.gg/qMQBdAR2" target="_blank" rel="noopener">
             <BtnDiscord src={discord}></BtnDiscord>
           </IntroColumn2>
         </IntroRow>

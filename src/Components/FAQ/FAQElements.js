@@ -12,6 +12,7 @@ export const FAQContainer = styled.div`
     height: 100vh;
     position: relative;
     z-index: 1;
+    align-items: center;
     
     @font-face {
         font-family: featuresFont;
@@ -28,6 +29,14 @@ export const FAQContainer = styled.div`
         src: url(${hyperspacebold});
     }
 
+    @media screen and (max-width:1660px){
+        height: 130vh;
+    }
+
+    @media screen and (max-width:1366px){
+        height: 130vh;
+    }
+
     
     @media screen and (max-width:1024px){
         padding: 5vh 5vh;
@@ -41,7 +50,7 @@ export const FAQContainer = styled.div`
 
     @media screen and (max-width:468px){
         padding: 5vh 2vh;
-       
+        height: 120vh;
     }
 
    

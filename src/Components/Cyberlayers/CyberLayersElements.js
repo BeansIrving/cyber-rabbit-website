@@ -8,15 +8,14 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 export const CyberContainer = styled.div`
     background: #000;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 0 15vh;
     height: 100vh;
     width: 100%;
     position: relative;
     z-index: 1;
-    align-items: flex-end;
     padding-bottom: 15vh;
-
+    align-items: center;
     @font-face {
         font-family: hyperspace;
         src: url(${hyperspace});
@@ -27,20 +26,31 @@ export const CyberContainer = styled.div`
         src: url(${hyperspacebold});
     }
 
+    @media screen and (max-width:1660px){
+        padding: 0 5vh;
+        height: 105vh;
+    }
+
+    @media screen and (max-width:1366px){
+        padding: 0 5vh;
+        height: 200vh;
+    }
     
     @media screen and (max-width:1024px){
         padding: 0 5vh;
-        padding-bottom: 15vh;
+        height: 220vh;
     }
 
     @media screen and (max-width:768px){
         padding: 0 5vh;
+        height: 400vh;
         align-items: center;
     }
 
     @media screen and (max-width:468px){
         padding: 0 2vh;
         align-items: center;
+        height: 500vh;
     }
 `
 
@@ -51,7 +61,7 @@ export const CyberBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     overflow: hidden;
     background-image: url(${bg});
     background-size: cover;
@@ -69,9 +79,34 @@ export const CyberRabbit = styled.img`
     z-index: 1;
 `
 
+export const CyberRabbitText = styled.img`
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 50vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 1;
+
+    &.animation{
+        animation: rabbitText linear 4s;
+    }
+
+    @keyframes rabbitText {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
+`
+
 export const CyberRabbits = styled.img`
     position: absolute;
     left: 50%;
+    top: 17%;
     transform: translate(-50%, 0);
     width: 50vh;
     height: auto;
@@ -110,13 +145,14 @@ export const CyberHead = styled.img`
 
 export const CyberHeadGearText = styled.img`
     position: absolute;
-    top: 8%;
-    left: 85%;
-    transform: translate(-85%, 0);
-    width: 35vh;
+    top: 5%;
+    left: 90%;
+    transform: translate(-90%, 0);
+    width: 40vh;
     height: auto;
     overflow: hidden;
     z-index: 0;
+    
 
     &.animation{
         animation: gearText linear 4s;
@@ -130,6 +166,8 @@ export const CyberHeadGearText = styled.img`
             opacity: 1;
          }
     }
+
+   
 `
 
 
@@ -163,10 +201,10 @@ export const CyberGear = styled.img`
 
 export const CyberGearText = styled.img`
     position: absolute;
-    left: 20%;
-    top: 8%;
-    transform: translate(-20%, 0);
-    width: 25vh;
+    left: 15%;
+    top: 5%;
+    transform: translate(-15%, 0);
+    width: 30vh;
     height: auto;
     overflow: hidden;
     z-index: 0;
@@ -217,8 +255,8 @@ export const CyberSuit = styled.img`
 export const CyberSuitText = styled.img`
     position: absolute;
     top: 32%;
-    left: 13%;
-    transform: translate(-13%, 0); 
+    left: 8%;
+    transform: translate(-8%, 0); 
     width: 25vh;
     height: auto;
     overflow: hidden;
@@ -272,12 +310,12 @@ export const CyberLHand = styled.img`
 export const CyberLHandText = styled.img`
     position: absolute;
     top: 30%;
-    left: 92%;
-    transform: translate(-92%, 0);
+    left: 98%;
+    transform: translate(-98%, 0);
     width: 40vh;
     height: auto;
     overflow: hidden;
-    z-index: 3;
+    z-index: 4;
 
     &.animation{
         animation: lhandText linear 5s;
@@ -328,8 +366,8 @@ export const CyberRHand = styled.img`
 export const CyberRHandText = styled.img`
     position: absolute;
     bottom: 8%;
-    left: 10%;
-    transform: translate(-10%, 0);
+    left: 3%;
+    transform: translate(-3%, 0);
     width: 40vh;
     height: auto;
     overflow: hidden;
@@ -380,8 +418,8 @@ export const CyberPants = styled.img`
 export const CyberPantsText = styled.img`
     position: absolute;
     bottom: 15%;
-    left: 95%;
-    transform: translate(-95%, 0);
+    left: 98%;
+    transform: translate(-98%, 0);
     width: 40vh;
     height: auto;
     overflow: hidden;
@@ -419,5 +457,72 @@ export const CyberRow = styled.div`
 `
 
 export const CyberColumn = styled.div`
+    display: none;
+
+    @media screen and (max-width:1366px){
+        display: inline;
+    }
+`
+
+export const HidePCContainer = styled.div`
+    
+
+    @media screen and (max-width:1366px){
+        display: none;
+    }
+`
+
+export const RabbitMobile = styled.img`
+    height: auto;  
+    width: 20vh;
+
+    @media screen and (max-width:1024px){
+        display: flex;
+        justify-content: center;
+    }
+`
+
+export const CyberRabbitFlexContainer = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 50vw;
+
+    @media screen and (max-width: 1024px){
+        width: 80vw;
+    }
+    
+    @media screen and (max-width:768px){
+        flex-wrap: wrap;
+    }
+`
+
+export const ColumnContent = styled.div`
+    height: auto;
+    width: auto;
+    padding:2vh 5vh;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width:768px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+`
+
+export const Description = styled.p`
+    color: white;
+    font-size: 2vh;
+    
+    padding: 2.5vh 0vh;
+`
+
+export const RabbitGears = styled.img`
+    height: auto;  
+    width: 20vh;
+
+    @media screen and (max-width:1024px){
+        display: flex;
+        justify-content: center;
+    }
 `

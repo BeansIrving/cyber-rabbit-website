@@ -10,7 +10,7 @@ export const FeaturesContainer = styled.div`
     justify-content: flex-start;
     padding: 15vh 15vh;
     height: 161vh;
- 
+    align-items: center;
     position: relative;
     z-index: 1;
 
@@ -28,7 +28,7 @@ export const FeaturesContainer = styled.div`
     }
 
     @media screen and (max-width:1366px) {
-        height: 130vh;
+        height: 160vh;
     }
     
     @media screen and (max-width:1024px){
@@ -120,8 +120,8 @@ export const FeaturesH1 = styled.h1`
 `
 
 export const FeaturesDescription = styled.p`
-    font-size: 1.5vh;
-    color: gray;
+    font-size: 2vh;
+    color: white;
     letter-spacing: 0.2vh;
     font-family: featuresFont;
  

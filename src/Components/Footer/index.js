@@ -39,7 +39,7 @@ const Footer = () => {
                         <ColumnContent>
                         <Socials>
 
-                            <SocialBorder href="https://twitter.com/CyberRabbit01" target="_blank" rel="noopener">
+                            <SocialBorder href="#" target="_blank" rel="noopener">
                             <SocialImg src={opensea}>
                             </SocialImg>
                             </SocialBorder>
@@ -49,12 +49,12 @@ const Footer = () => {
                             </SocialImg>
                             </SocialBorder>
 
-                            <SocialBorder href="https://discord.com/invite/cyberrabbitnft" target="_blank" rel="noopener">
+                            <SocialBorder href="https://discord.gg/qMQBdAR2" target="_blank" rel="noopener">
                             <SocialImg src={discord}>
                             </SocialImg>
                             </SocialBorder>
 
-                            <SocialBorder href="https://www.facebook.com/CyberRabbitNFT/" target="_blank" rel="noopener">
+                            <SocialBorder href="https://www.facebook.com/CyberRabbitNFT" target="_blank" rel="noopener">
                             <SocialImg src={facebook}>
                             </SocialImg>
                             </SocialBorder>
@@ -70,7 +70,8 @@ const Footer = () => {
                         
 
                     </FooterFlexContainer>
-                    <FooterH3>Cyber Rabbit 	&copy; 2022, All rights reserved</FooterH3>
+                    <br></br>
+                    <FooterH3>Cyber Rabbit 	&copy; 2022, All rights reserved.</FooterH3>
                 </FooterColumn>
             </FooterRow>
         </FooterContent>

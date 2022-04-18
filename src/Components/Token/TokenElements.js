@@ -11,6 +11,7 @@ export const TokenContainer = styled.div`
     padding: 5vh 15vh;
     height: 100vh;
     position: relative;
+    align-items: center;
     z-index: 1;
 
     
@@ -33,7 +34,7 @@ export const TokenContainer = styled.div`
     @media screen and (max-width:1024px){
         padding: 0vh 5vh;
         padding-bottom: 15vh;
-        height: 140vh;
+        height: 190vh;
     }
 
     @media screen and (max-width:768px){
@@ -126,14 +127,24 @@ export const CarrotH1 = styled.p`
 export const CarrotP = styled.p`
     font-family: featuresFont;
     color: white;
-    font-size: 1.5vh;
+    font-size: 2vh;
     letter-spacing: 0.3vh;
-    text-transform: uppercase;
     line-height: 1.2;
 `
 
 export const ImgToken = styled.img`
     height: 30vw;
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
 
     @media screen and (max-width:1024px){
         height: 40vw;
@@ -178,21 +189,41 @@ export const AssetBot = styled.img`
     
     position: absolute;
 
-    right: 50vh;
+    right: 40vh;
     padding-top: 10vh;
     width: 20vw;
     height: auto;
 
-    @media screen and (max-width:1366px){
-        right: 75vh;
+    @media screen and (max-width:1920px){
+        right: 50vh;
         padding-top: 10vh;
         width: 20vw;
+    }
+
+    @media screen and (max-width:1800px){
+        right: 50vh;
+        padding-top: 10vh;
+        width: 20vw;
+    }
+
+    @media screen and (max-width:1600px){
+        right: 70vh;
+        padding-top: 10vh;
+        width: 20vw;
+    }
+
+    @media screen and (max-width:1366px){
+        right: 60vh;
+        padding-top: 10vh;
+        width: 20vh;
+        display: none;
     }
 
     @media screen and (max-width:1024px){
         right: 0vh;
         padding-top: 10vh;
         width: 40vw;
+        display: inline;
     }
 
     @media screen and (max-width:768px){

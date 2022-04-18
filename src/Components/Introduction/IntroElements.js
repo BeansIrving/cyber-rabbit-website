@@ -2,17 +2,16 @@ import styled from "styled-components";
 import bg from '../../Image/bg/0100.png'
 import intro from '../../Image/introductionAssets/Group165.png'
 import hyperspace from '../../Font/Hyperspace.otf'
-import hyperspacebold from '../../Font/HyperspaceBold.otf'
+import binaria from '../../Font/features.ttf'
 
 export const IntroContainer = styled.div`
-    background: #000;
     display: flex;
     justify-content: flex-start;
     padding: 0 15vh;
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 1;
+    z-index: 0f;
     align-items: flex-end;
     padding-bottom: 15vh;
 
@@ -22,8 +21,8 @@ export const IntroContainer = styled.div`
     }
 
     @font-face {
-        font-family: hyperspacebold;
-        src: url(${hyperspacebold});
+        font-family: binaria;
+        src: url(${binaria});
     }
 
     
@@ -52,11 +51,7 @@ export const IntroBg = styled.div`
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(${bg});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 71%, 27% 99%, 0 99%);
+
 `
 
 export const VideoBg = styled.video`
@@ -132,17 +127,18 @@ export const ContainerText = styled.div`
     margin-right: 0vh;
     padding: 3vh;
     padding-left: 3vh;
-   
+    
    
 `
 
 export const CRH1 = styled.h1`
     font-size: 70px;
-    font-family: hyperspacebold;
-    font-weight: bolder;
+    font-family: binaria;
+    
     color: white;
     letter-spacing: 0.3vh;
     padding-bottom: 0;
+    text-transform: uppercase;
 
     @media screen and (max-width:768px){
         font-size: 8vw;
@@ -155,7 +151,7 @@ export const CRH1 = styled.h1`
 
 export const CRH01 = styled.h1`
     font-size: 10px;
-    font-family: hyperspacebold;
+    font-family: binaria;
     font-weight: bolder;
     color: white;
     letter-spacing: 0.2vh;
@@ -189,7 +185,7 @@ export const CoolestP = styled.p`
     color: white;
     text-transform: uppercase;
     
-
+    letter-spacing: 0.1vh;
     padding-top: 0vh;
     padding-bottom: 2vh;
 
@@ -212,6 +208,14 @@ export const Description = styled.p`
     line-height: 2;
     font-weight: 700;
     width: 50%;
+    
+    letter-spacing: 0.2vh;
+
+    @media screen and (max-width:1366px){
+        font-size: 10px;
+        letter-spacing: 2px;
+        width: 60%;
+    }
 
     @media screen and (max-width:768px){
         font-size: 10px;
@@ -236,6 +240,9 @@ export const IntroColumn2 = styled.a`
 
 export const BtnDiscord = styled.img`
 
-    width: 30vh;
+    width: 45vh;
     height: auto;
+
+
+
 `

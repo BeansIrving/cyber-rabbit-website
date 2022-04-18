@@ -19,6 +19,7 @@ export const FooterContainer = styled.div`
 
     @media screen and (max-width:1024px){
         top:0vh;
+        height: 30vh;
     }
 `
 
@@ -170,6 +171,7 @@ export const SocialImg = styled.img`
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 
     @media screen and (max-width:1024px){
         height: 3vh;
