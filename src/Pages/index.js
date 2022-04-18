@@ -1,16 +1,69 @@
-import React, { useState } from 'react'
-import FAQ from '../Components/FAQ'
-import Features from '../Components/Features'
+import React, { Suspense, useState } from 'react'
+// import FAQ from '../Components/FAQ'
+// import Features from '../Components/Features'
 import Introduction from '../Components/Introduction'
-import Partners from '../Components/Partners'
-import Roadmap from '../Components/Roadmap'
-import Team from '../Components/Team'
-import Token from '../Components/Token'
+// import Partners from '../Components/Partners'
+// import Roadmap from '../Components/Roadmap'
+// import Team from '../Components/Team'
+// import Token from '../Components/Token'
 import Animation from '../Components/Animation'
 import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
-import CyberLayers from '../Components/Cyberlayers'
+// import Footer from '../Components/Footer'
+// import CyberLayers from '../Components/Cyberlayers'
 import Sidebar from '../Components/Sidebar'
+
+
+
+const Features = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Features")), 1000)
+)
+);
+
+const CyberLayers = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Cyberlayers")), 2000)
+)
+);
+
+const Token = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Token")), 3000)
+)
+);
+
+const Roadmap = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Roadmap")), 4000)
+)
+);
+
+const Partners = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Partners")), 5000)
+)
+);
+
+const Team = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Team")), 6000)
+)
+);
+
+const FAQ = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/FAQ")), 7000)
+)
+);
+
+const Footer = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Footer")), 8000)
+)
+);
+
+
+
 
 
 const Home = () => {
@@ -19,20 +72,59 @@ const Home = () => {
     setIsOpen(!isOpen)
   }
   return (
-    <>
+    <div>
     <Sidebar toggle={toggle} isOpen={isOpen}/>
     <Navbar toggle={toggle} />
     <Introduction />
-    <Features />
-    <CyberLayers />
+    <Suspense fallback={<div></div>}>
+      <Features />
+   
+    </Suspense>
+
+    <Suspense fallback={<div></div>}>
+        <CyberLayers />
+   
+    </Suspense>
+
+    <Suspense fallback={<div></div>}>
     <Token />
+   
+    </Suspense>
+
+    <Suspense fallback={<div></div>}>
     <Roadmap />
-    <Partners />
-    <Team /> 
-    <FAQ />
-    <Footer />
+   
+    </Suspense>
     
-    </>
+    <Suspense fallback={<div></div>}>
+    <Partners />
+   
+    </Suspense>
+    
+    <Suspense fallback={<div></div>}>
+    <Team /> 
+   
+    </Suspense>
+
+    <Suspense fallback={<div></div>}>
+    <FAQ />
+   
+    </Suspense>
+    
+    <Suspense fallback={<div>loading...</div>}>
+    <Footer />
+   
+    </Suspense>
+    
+    
+   
+
+
+  
+
+
+
+    </div>
    
   )
 }

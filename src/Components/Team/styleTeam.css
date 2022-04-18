@@ -195,3 +195,12 @@
     }
   }
   
+  .swiper-pagination-bullet-active {
+    background-color: #eb102e !important;
+  }
+  
+  .swiper-button-next { color: #eb102e !important; }
+  
+  .swiper-button-prev { color: #eb102e !important; }
+  
+  

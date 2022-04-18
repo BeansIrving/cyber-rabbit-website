@@ -4,12 +4,13 @@ import { TeamContainer, TeamBg, TeamContent,
         TeamP, TeamName, TeamTitle, TeamDescription,
         ImgWrapper, TeamImg, ColumnContent, ColumnContent2} from './TeamElements'
 
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation, Thumbs } from "swiper";
 import "./styleTeam.css";
 
 import Founder from "../../Image/teamAssets/1.png"
@@ -49,8 +50,10 @@ const Team = () => {
                     <ColumnContent2>
                     <Swiper
                             slidesPerView={"auto"}
-                            spaceBetween={50}
+                            spaceBetween={40}
                             loop={true}
+                            navigation={true}
+                            pagination={true}
                            
                             thumbs={{ swiper: thumbsSwiper }}
                             modules={[FreeMode, Navigation, Thumbs]}

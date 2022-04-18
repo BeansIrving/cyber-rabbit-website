@@ -4,11 +4,15 @@ import { RoadmapContainer, RoadmapBg, RoadmapContent,
         RoadmapBottomTitle, RoadmapTitle,ColumnContent, InProgress,
         ColumnContent2, RoadmapH1, RoadmapLine, PhaseH1 } from './RoadmapElements'
 
+import { FreeMode, Navigation, Thumbs } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
 import roadmapline from '../../Image/roadmapAssets/roadmapline.png'
 import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.png'
 import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.png'
@@ -37,6 +41,12 @@ const Roadmap = () => {
                             slidesPerView={"auto"}
                             spaceBetween={3}
                          
+                            navigation={true}
+                            pagination={true}
+                     
+
+                      
+                            modules={[FreeMode, Navigation, Thumbs, Pagination]}
                             className="mySwiperRoadmap"
                         >
                             <SwiperSlide className="mySwiperRoadmap-slide">

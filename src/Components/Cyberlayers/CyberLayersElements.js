@@ -33,7 +33,7 @@ export const CyberContainer = styled.div`
 
     @media screen and (max-width:1366px){
         padding: 0 5vh;
-        height: 200vh;
+        height: 250vh;
     }
     
     @media screen and (max-width:1024px){

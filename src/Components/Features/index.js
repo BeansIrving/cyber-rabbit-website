@@ -25,6 +25,8 @@ import { FreeMode, Navigation, Thumbs } from "swiper";
 
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 
 import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -87,9 +89,12 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                                 slidesPerView={"auto"}
                                 spaceBetween={30}
                                 loop={true}
-                           
+                                navigation={true}
+                                pagination={true}
+                         
+
                                 thumbs={{ swiper: thumbsSwiper }}
-                                modules={[FreeMode, Navigation, Thumbs]}
+                                modules={[FreeMode, Navigation, Thumbs, Pagination]}
                                
                                 className="mySwiperFeatures"
                             >
