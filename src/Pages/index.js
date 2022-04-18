@@ -22,43 +22,43 @@ setTimeout(() => resolve(import("../Components/Features")), 1000)
 
 const CyberLayers = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Cyberlayers")), 2000)
+setTimeout(() => resolve(import("../Components/Cyberlayers")), 3000)
 )
 );
 
 const Token = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Token")), 3000)
+setTimeout(() => resolve(import("../Components/Token")), 4000)
 )
 );
 
 const Roadmap = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Roadmap")), 4000)
+setTimeout(() => resolve(import("../Components/Roadmap")), 5000)
 )
 );
 
 const Partners = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Partners")), 5000)
+setTimeout(() => resolve(import("../Components/Partners")), 6000)
 )
 );
 
 const Team = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Team")), 6000)
+setTimeout(() => resolve(import("../Components/Team")), 7000)
 )
 );
 
 const FAQ = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/FAQ")), 7000)
+setTimeout(() => resolve(import("../Components/FAQ")), 8000)
 )
 );
 
 const Footer = React.lazy(() => 
 new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Footer")), 8000)
+setTimeout(() => resolve(import("../Components/Footer")), 9000)
 )
 );
 

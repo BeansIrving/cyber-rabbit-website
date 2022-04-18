@@ -5,7 +5,6 @@ import bg from '../../Image/bg/team-bg.png'
 export const TeamContainer = styled.div`
     background: #3d050c;
     display: flex;
-    
     padding: 5vh 15vh;
     height: 140vh;
     position: relative;
