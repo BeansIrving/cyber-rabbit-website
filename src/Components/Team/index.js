@@ -50,10 +50,10 @@ const Team = () => {
                     <ColumnContent2>
                     <Swiper
                             slidesPerView={"auto"}
-                            spaceBetween={40}
-                            loop={true}
+                            spaceBetween={30}
+                            
                             navigation={true}
-                            pagination={true}
+                    
                            
                             thumbs={{ swiper: thumbsSwiper }}
                             modules={[FreeMode, Navigation, Thumbs]}

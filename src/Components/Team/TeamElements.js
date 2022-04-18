@@ -7,7 +7,7 @@ export const TeamContainer = styled.div`
     display: flex;
     
     padding: 5vh 15vh;
-    height: 115vh;
+    height: 140vh;
     position: relative;
     z-index: 1;
     align-items: center;
@@ -24,7 +24,7 @@ export const TeamContainer = styled.div`
     }
 
     @media screen and (max-width:1366px){
-        padding: 5vh 5vh;
+        padding: 5vh 10vh;
         height: 180vh;
     }
 
@@ -39,13 +39,11 @@ export const TeamContainer = styled.div`
 
     @media screen and (max-width:468px){
         padding: 2vh 2vh;
-        height: 120vh;
-    }
-
-
-    @media screen and (max-width:300px){
         height: 180vh;
     }
+
+
+ 
 
 `
 
@@ -155,6 +153,10 @@ export const TeamName = styled.h1`
     font-size: 3vh;
     letter-spacing: 0.7vh;
     text-transform: uppercase;
+
+    @media screen and (max-width:468px){
+        font-size: 2vh;
+    }
 `
 
 export const TeamTitle = styled.p`
@@ -163,6 +165,9 @@ export const TeamTitle = styled.p`
     letter-spacing: 0.3vh;
     text-transform: uppercase;
     color: red;
+    @media screen and (max-width:468px){
+        font-size: 1.5vh;
+    }
 `
 
 export const TeamDescription = styled.p`
@@ -172,13 +177,25 @@ export const TeamDescription = styled.p`
     letter-spacing: 0.3vh;
     text-transform: uppercase;
     color: #fff;
+    @media screen and (max-width:468px){
+        font-size: 1.5vh;
+        line-height: normal;
+    }
 `
 
 export const ImgWrapper = styled.div`
     background-color: rgba(255,0,0,0.2);
     border-radius: 15px;
     height: 40vh;
-  
+    width: auto;
+
+    @media screen and (max-width:768px){
+        height: 70vh;
+    }
+
+    @media screen and (max-width:468px){
+        height: 50vh;
+    }
 `
 
 export const TeamImg = styled.img`

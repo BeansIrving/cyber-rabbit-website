@@ -111,8 +111,8 @@ export const data = [
       answer3: "c. 2nd Generation Collection - TBA",
   },
   {
-      question: 'How many NFTs can I mint during Whitelist and Public Sale?',
-      answer: "a. Genesis Collection - WL Sale: 2, Public Sale: 2",
+      question: 'How many NFTS can I mint during whitelist and public sale?',
+      answer: "a. Genesis Collection - WL Sale: 1 (2 if Supercharged) Public Sale:1",
       answer2: "b. Main Collection - TBA",
       answer3: "c. 2nd Generation Collection - TBA",
   },

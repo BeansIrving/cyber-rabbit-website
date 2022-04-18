@@ -35,7 +35,7 @@ const Navbar = ( {toggle} ) => {
             
             <NavBtnLink> <Dao src={transparentMint}></Dao> </NavBtnLink>
             <NavBtnLink> <Mint src={transparentMint}></Mint> </NavBtnLink> */}
-            <NavBtnLinks href="https://drive.google.com/file/d/1i5Ie9p-iwWB2NAe4JcwXJ6sL0gUovWE-/view?usp=sharing" target="_blank" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks>
+            <NavBtnLinks href="https://drive.google.com/file/d/1GMs94j54lXOSgQZK4od-d7XroihlvPnz/view?usp=sharing" target="_blank" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks>
 
             </NavBtn>
         </NavbarContainer>
