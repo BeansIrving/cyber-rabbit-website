@@ -36,7 +36,7 @@ const Team = () => {
             <TeamRow>
                 <TeamColumn>
                 <TeamH1>MEET</TeamH1>
-                        <TeamH1v2>THE TEAM</TeamH1v2>
+                        <TeamH1v2 id='team'>THE TEAM</TeamH1v2>
                         <TeamP>
                             Welcome to Cyber Rabbit, as an act of transparency, we want to give you guys a brief intro 
                             as to who the team behind the coolest rabbits in the Metaverse is formed of, and so, here they are! 

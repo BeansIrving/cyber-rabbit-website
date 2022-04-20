@@ -21,19 +21,19 @@ const FAQ = () => {
     }
 
   return (
-    <FAQContainer>
+    <FAQContainer >
       <FAQBg>
 
       </FAQBg>
 
       <FAQContent>
         <FAQRow>
-          <FAQColumnContent>
+          <FAQColumnContent >
 
           
           <FAQColumn>
             <ColumnContent>
-              <DesignP>001</DesignP>
+              <DesignP id='faqmoto'>001</DesignP>
             </ColumnContent>
 
             <ColumnContent2>
@@ -44,7 +44,7 @@ const FAQ = () => {
           </FAQColumn>
           </FAQColumnContent>
 
-          <FAQColumnContent>
+          <FAQColumnContent >
                 <div className='wrapper'>
                     <div className='accordion' >
                         

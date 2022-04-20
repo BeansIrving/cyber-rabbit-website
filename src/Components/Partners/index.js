@@ -31,7 +31,7 @@ import alpha from '../../Image/partnerAssets/alpha.png'
 import elpads from '../../Image/partnerAssets/elpads.png'
 const Partners = () => {
   return (
-    <PartnersContainer>
+    <PartnersContainer id='partners'>
         <PartnersBg>
 
         </PartnersBg>

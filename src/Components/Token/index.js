@@ -11,7 +11,7 @@ import secondUtil from "../../Image/tokenAssets/secondUtilText.png"
 import lastUtil from "../../Image/tokenAssets/lastUtilText.png"
 const Token = () => {
   return (
-    <TokenContainer>
+    <TokenContainer id='token'>
         <TokenBg>
           {/* <TokenDesign src={tokenD}/> */}
         </TokenBg>

@@ -21,7 +21,7 @@ import "./styleRoadmap.css";
 
 const Roadmap = () => {
   return (
-    <RoadmapContainer>
+    <RoadmapContainer id='roadmap'>
         <RoadmapBg>
 
         </RoadmapBg>

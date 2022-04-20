@@ -9,7 +9,9 @@ const Introduction = () => {
   return (
     <IntroContainer>
       <IntroBg>
-    
+            <VideoBg id='vid' autoPlay loop playsInline src={video} muted type='video/mp4'>
+                    
+            </VideoBg>
       </IntroBg>
 
       <IntroContent>

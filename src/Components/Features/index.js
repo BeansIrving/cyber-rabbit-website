@@ -42,7 +42,7 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
 
 
   return (
-    <FeaturesContainer>
+    <FeaturesContainer >
         <FeaturesBg>
 
         </FeaturesBg>
@@ -56,7 +56,7 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                     
                     <DescriptionContainer>
                         
-                        <FeaturesH1>FEATURES</FeaturesH1>
+                        <FeaturesH1 id='features'>FEATURES</FeaturesH1>
                         <FeaturesDescription>As the project aims to make a name for itself in the NFT Space, the main
                             brains behind Cyber Rabbit proposed similar yet reinvented mechanics of previous projects
                             in the industry, adding its authentic Cyber Rabbit motif and style in each. Hence, this

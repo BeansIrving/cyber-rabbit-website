@@ -4,15 +4,30 @@ import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
 import movement from '../../Image/navbarAssets/movement.png';
 import collab from '../../Image/navbarAssets/collab.png';
-import whitepaper from '../../Image/navbarAssets/whitepaper.png';
+import whitepaper from '../../Image/navbarAssets/navbarPages/whitepaper.png';
 import dao from '../../Image/navbarAssets/dao.png';
 import mint from '../../Image/navbarAssets/mint.png';
+import features from '../../Image/navbarAssets/navbarPages/featuresNonHover.png';
+import augment from '../../Image/navbarAssets/navbarPages/Augment.png';
+import token from '../../Image/navbarAssets/navbarPages/token.png';
+import roadmap from '../../Image/navbarAssets/navbarPages/roadmap.png';
+import partners from '../../Image/navbarAssets/navbarPages/partners.png';
+import team from '../../Image/navbarAssets/navbarPages/team.png';
+import faq from '../../Image/navbarAssets/navbarPages/faq.png';
 
 import movementHover from '../../Image/navbarAssets/movementHover.png';
 import collabHover from '../../Image/navbarAssets/collabHover.png';
-import whitepaperHover from '../../Image/navbarAssets/whitepaperHover.png';
+import whitepaperHover from '../../Image/navbarAssets/navbarPages/whitepaperHover.png';
 import daoHover from '../../Image/navbarAssets/daoHover.png';
 import mintHover from '../../Image/navbarAssets/mintHover.png';
+import featuresHover from '../../Image/navbarAssets/navbarPages/featuresHover.png';
+import augmentHover from '../../Image/navbarAssets/navbarPages/augmentHover.png';
+import tokenHover from '../../Image/navbarAssets/navbarPages/tokenHover.png';
+import roadmapHover from '../../Image/navbarAssets/navbarPages/roadmapHover.png';
+import partnersHover from '../../Image/navbarAssets/navbarPages/partnerHover.png';
+import teamHover from '../../Image/navbarAssets/navbarPages/teamHover.png';
+import faqHover from '../../Image/navbarAssets/navbarPages/faqHover.png';
+
 
 import navbarcontainer from '../../Image/navbarAssets/new-nav.png';
 
@@ -153,8 +168,8 @@ export const NavLinks = styled(LinkR)`
 
 
 export const NavBtnLink = styled(LinkS)`
- 
     padding: 0.5vh;
+    padding-bottom: 1vh;
 `
 
 export const NavBtnLinks = styled.a`
@@ -250,3 +265,116 @@ export const ImgLogo = styled.img`
     width: auto;
 
 `
+
+export const Features = styled.img`
+    cursor: pointer;
+    background-image: url(${features});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${featuresHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const CyberLayers = styled.img`
+    cursor: pointer;
+    background-image: url(${augment});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${augmentHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Token = styled.img`
+    cursor: pointer;
+    background-image: url(${token});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4.5vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${tokenHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Roadmap = styled.img`
+    cursor: pointer;
+    background-image: url(${roadmap});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${roadmapHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Partners = styled.img`
+    cursor: pointer;
+    background-image: url(${partners});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${partnersHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Team = styled.img`
+    cursor: pointer;
+    background-image: url(${team});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4.5vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${teamHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
+export const Faq = styled.img`
+    cursor: pointer;
+    background-image: url(${faq});
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4.5vh;
+    width: auto;
+
+    &:hover{
+        background-image: url(${faqHover});
+        background-position: left;
+        transition: all 0.3s ease-in-out;
+    }
+`
+
