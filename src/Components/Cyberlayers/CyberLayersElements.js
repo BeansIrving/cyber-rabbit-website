@@ -77,6 +77,7 @@ export const CyberRabbit = styled.img`
     height: auto;
     overflow: hidden;
     z-index: 1;
+    
 `
 
 export const CyberRabbitText = styled.img`
