@@ -50,13 +50,13 @@ const FAQ = () => {
                         
                         {data.map((item, i) => (
                             <div className='hover' >
-                        <ImgTop src={containerTop} onClick={() => toggle(i)}/>      
+                   
                             <div className='item' onClick={() => toggle(i)}>
                                 <div className='title' >
                                     <h2>{item.question}</h2>
                                 
                                 </div>
-                                <ImgBottomHide src={selected === i  ?  null : containerBottom} onClick={() => toggle(i)} />
+                             
                                 <div className={selected === i ? 'content show' : 'content'}>
                                   <p >
                                     
@@ -67,7 +67,7 @@ const FAQ = () => {
                                     {item.answer3}
                                     
                                   </p>
-                                  <ImgBottom src={containerBottom} />   
+                               
                                   </div>
                             </div>
                             
