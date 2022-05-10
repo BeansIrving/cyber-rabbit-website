@@ -35,7 +35,7 @@ const Introduction = () => {
             
           </IntroColumn>
 
-          <IntroColumn2 href="https://discord.gg/qMQBdAR2" target="_blank" rel="noopener">
+          <IntroColumn2 href="https://discord.gg/cyberrabbitnft" target="_blank" rel="noopener">
             <BtnDiscord src={discord}></BtnDiscord>
           </IntroColumn2>
         </IntroRow>
