@@ -64,6 +64,7 @@ export const MintingColumn = styled.div`
 export const BtnWrapper = styled.div`
     position: relative;
     left: 50vh;
+    padding-bottom: 2vh;
 `
 
 export const BtnConnect = styled.button`
