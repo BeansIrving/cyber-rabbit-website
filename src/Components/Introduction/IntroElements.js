@@ -11,7 +11,7 @@ export const IntroContainer = styled.div`
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 0f;
+    z-index: 0;
     align-items: flex-end;
     padding-bottom: 15vh;
 
