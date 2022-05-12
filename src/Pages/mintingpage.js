@@ -9,7 +9,8 @@ const mintingpage = () => {
         <Navbar />
       
         <Minting />
-   
+
+        <Footer />
     </>
   )
 }
