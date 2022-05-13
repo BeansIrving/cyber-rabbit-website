@@ -14,7 +14,6 @@ const FAQ = () => {
     const toggle = (i) => {
         if( selected === i){
             return setSelected(null)
-            
         }
 
         setSelected(i)
