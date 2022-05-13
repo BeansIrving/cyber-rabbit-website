@@ -4,18 +4,25 @@ import bg from '../../Image/bg/CharacterEquipments-bg.png'
 import intro from '../../Image/introductionAssets/Group165.png'
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
+import featuresFont from '../../Font/features.ttf'
 
 export const CyberContainer = styled.div`
     background: #000;
     display: flex;
     justify-content: center;
     padding: 0 15vh;
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     position: relative;
     z-index: 1;
     padding-bottom: 15vh;
     align-items: center;
+
+    @font-face {
+        font-family: featuresFont;
+        src: url(${featuresFont});
+    }
+
     @font-face {
         font-family: hyperspace;
         src: url(${hyperspace});
@@ -77,7 +84,7 @@ export const CyberRabbit = styled.img`
     height: auto;
     overflow: hidden;
     z-index: 1;
-    
+    cursor: pointer;
 `
 
 export const CyberRabbitText = styled.img`
@@ -89,6 +96,7 @@ export const CyberRabbitText = styled.img`
     height: auto;
     overflow: hidden;
     z-index: 1;
+    
 
     &.animation{
         animation: rabbitText linear 4s;
@@ -112,7 +120,8 @@ export const CyberRabbits = styled.img`
     width: 50vh;
     height: auto;
     overflow: hidden;
-    z-index: 1;
+    z-index: 0;
+    cursor: pointer;
 `
 
 export const CyberHead = styled.img`
@@ -147,8 +156,8 @@ export const CyberHead = styled.img`
 export const CyberHeadGearText = styled.img`
     position: absolute;
     top: 5%;
-    left: 90%;
-    transform: translate(-90%, 0);
+    left: 100%;
+    transform: translate(-100%, 0);
     width: 40vh;
     height: auto;
     overflow: hidden;
@@ -419,7 +428,7 @@ export const CyberPants = styled.img`
 export const CyberPantsText = styled.img`
     position: absolute;
     bottom: 15%;
-    left: 98%;
+    left: 100%;
     transform: translate(-98%, 0);
     width: 40vh;
     height: auto;
@@ -467,7 +476,7 @@ export const CyberColumn = styled.div`
 
 export const HidePCContainer = styled.div`
     
-
+   
     @media screen and (max-width:1366px){
         display: none;
     }
@@ -529,6 +538,7 @@ export const RabbitGears = styled.img`
 `
 
 export const CyberRabbitsButton = styled.img`
+    cursor: pointer;
     position: absolute;
     left: 50%;
     top: 17%;
@@ -536,8 +546,8 @@ export const CyberRabbitsButton = styled.img`
     width: 50vh;
     height: auto;
     overflow: hidden;
-    z-index: 4;
-    cursor: pointer;
+    z-index: 5;
+    
 `
 
 export const ImgWrapper = styled.div`
@@ -546,4 +556,16 @@ export const ImgWrapper = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+`
+
+export const CyberH1 = styled.h1`
+    position: absolute;
+    text-align: center;
+    top: 5vh;
+    width: 50vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 5;
+    font-family: featuresFont;
+    text-transform: uppercase;
 `

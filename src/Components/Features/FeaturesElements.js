@@ -167,7 +167,7 @@ export const FeaturesFlexContainer = styled.div`
 export const CardImg = styled.img`
     height: 30vw;
     width: auto;
-    z-index: 4;
+    z-index: 5;
     position: relative;
     left: 0.7vh;
     @media screen and (max-width:1024px){
@@ -190,7 +190,7 @@ export const CardImg = styled.img`
 
 export const ColumnContent = styled.div`
     width: auto;
-    z-index: 1;
+
     order: 1;
 
   
@@ -294,3 +294,4 @@ export const SwiperContainer = styled.div`
     display: flex;
     justify-content: center;
 `
+

@@ -3,13 +3,13 @@ import { useInView } from 'react-intersection-observer'
 import { motion, AnimatePresence } from "framer-motion"
 
 import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
-        CyberRabbit, CyberPants, CyberGear, CyberSuit, CyberHead,
+        CyberPants, CyberGear, CyberSuit, CyberHead,
         CyberLHand, CyberRHand, CyberRabbits, CyberGearText,
         CyberSuitText, CyberRHandText, CyberPantsText, 
         CyberLHandText, CyberHeadGearText, CyberRabbitText,
         HidePCContainer, RabbitMobile, CyberRabbitFlexContainer,
         ColumnContent, Description, RabbitGears, CyberRabbitsButton,
-        ImgWrapper} from "./CyberLayersElements"
+        ImgWrapper, CyberH1} from "./CyberLayersElements"
 
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
@@ -46,31 +46,41 @@ const CyberLayers = () => {
   
 
   return (
-    <CyberContainer id='cyberlayers'>
+    <CyberContainer id='cyberlayers' ref = {ref}>
         <CyberBg>
 
         </CyberBg>
 
-        <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? 'show' : 'hide'}
         
-        <HidePCContainer>
-          <CyberRabbitsButton src={rabbit} />
-        </HidePCContainer>
+
+       
+
+        <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? '' : ''}
+        <CyberH1>Click To Interact</CyberH1>
         
+       
+
+        {visible ? null : <HidePCContainer>
+          <CyberRabbitsButton src={rabbit}/>
+          </HidePCContainer>}
+         <HidePCContainer>
+         <CyberRabbits src={rabbit} />
+         </HidePCContainer>
+         
         
         <AnimatePresence >
             { visible ? 
             <motion.div 
                 key="box"
-                initial={{y: "50%", opacity:0, scale: 0.5}}
+                initial={{y: "0", opacity:0, scale: 0.5}}
                 animate={{y: 0, opacity: 1, scale: 1}}
-                exit={{y: "50%", opacity:0, scale: 0.5}}
+                exit={{y: "0", opacity:0, scale: 0.5}}
                 transition={{duration: 0.2, ease: "easeOut"}}
                 className="box"
                 >
                 <HidePCContainer>
                 
-                <CyberRabbits src={rabbit} ref = {ref}/>
+                
         
                 <CyberRabbitText src={rabbitText} className={inView ? 'animation' : ''}/>
         
@@ -78,7 +88,7 @@ const CyberLayers = () => {
         
                 <CyberHeadGearText src={gearheadText} className={inView ? 'animation' : ''}/>
         
-                <CyberGear src={gear} className={inView ? 'animation' : ''}/>
+                 <CyberGear src={gear} className={inView ? 'animation' : ''}/>
         
                 <CyberGearText src={gearText} className={inView ? 'animation' : ''}/>  
         
@@ -96,8 +106,8 @@ const CyberLayers = () => {
         
                 <CyberPants src={pants} className={inView ? 'animation' : ''}/>
         
-                <CyberPantsText src={pantsText} className={inView ? 'animation' : ''}/>
-        
+                <CyberPantsText src={pantsText} className={inView ? 'animation' : ''}/> 
+    
                 
                 </HidePCContainer>
             </motion.div> : null }
