@@ -126,7 +126,7 @@ const Team = () => {
                                 <TeamImg src={FrontendDeveloper}/>
                             </ImgWrapper>
 
-                            <TeamName>BinZ</TeamName>
+                            <TeamName>BinZAli</TeamName>
                             <TeamTitle>Frontend Developer</TeamTitle>
 
                             <TeamDescription>
