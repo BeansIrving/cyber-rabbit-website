@@ -527,3 +527,23 @@ export const RabbitGears = styled.img`
         justify-content: center;
     }
 `
+
+export const CyberRabbitsButton = styled.img`
+    position: absolute;
+    left: 50%;
+    top: 17%;
+    transform: translate(-50%, 0);
+    width: 50vh;
+    height: auto;
+    overflow: hidden;
+    z-index: 4;
+    cursor: pointer;
+`
+
+export const ImgWrapper = styled.div`
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+`

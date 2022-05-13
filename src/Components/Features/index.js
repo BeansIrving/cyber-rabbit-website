@@ -97,7 +97,7 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
                                 modules={[FreeMode, Navigation, Thumbs, Pagination]}
                                
                                 className="mySwiperFeatures"
-                            >
+                                >
                                 <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.GenesisCollection) || setTextGenesis("Cyber Rabbit will release a Genesis collection of 1000 3D-rendered depictions of rabbits in futuristic attires with its very own utilities")}><ImgCard src={GenesisCollection}/></SwiperSlide>
                                 <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card2) || setTextGenesis("A Portion of funds collected from the public sale will be donated to community chosen charities/foundations that will help to buy food and shelter for these animals.")}><ImgCard src={card2}/></SwiperSlide>
                                 <SwiperSlide className="mySwiperFeatures-slide" onClick={() => setSelected(card.card3) || setTextGenesis("The holders of the Genesis collection will be able to breed their 2 Genesis NFT to yield Main Collection Cyber Rabbit using $CARROT tokens.")}><ImgCard src={card3}/></SwiperSlide>

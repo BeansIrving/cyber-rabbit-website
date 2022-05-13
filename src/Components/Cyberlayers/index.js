@@ -1,12 +1,15 @@
 import React, {useRef, useEffect, useState} from 'react'
 import { useInView } from 'react-intersection-observer'
+import { motion, AnimatePresence } from "framer-motion"
+
 import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         CyberRabbit, CyberPants, CyberGear, CyberSuit, CyberHead,
         CyberLHand, CyberRHand, CyberRabbits, CyberGearText,
         CyberSuitText, CyberRHandText, CyberPantsText, 
         CyberLHandText, CyberHeadGearText, CyberRabbitText,
         HidePCContainer, RabbitMobile, CyberRabbitFlexContainer,
-        ColumnContent, Description, RabbitGears} from "./CyberLayersElements"
+        ColumnContent, Description, RabbitGears, CyberRabbitsButton,
+        ImgWrapper} from "./CyberLayersElements"
 
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
@@ -34,7 +37,7 @@ import pantsText from '../../Image/cyberlayersAssets/pantsText.png'
 
 
 const CyberLayers = () => {
-
+  const [visible, setVisible] = React.useState(false);
   const { ref, inView } = useInView({
 		rootMargin: '-100px',
 	});
@@ -48,41 +51,58 @@ const CyberLayers = () => {
 
         </CyberBg>
 
-        <HidePCContainer>
-          
-
-                
-        <CyberRabbits src={rabbit}  ref={ref} />
-
-        <CyberRabbitText src={rabbitText} className={inView ? 'animation' : ''}/>
-
-
-        <CyberHead src={head} className={inView ? 'animation' : ''}/>
-
-        <CyberHeadGearText src={gearheadText} className={inView ? 'animation' : ''}/>
-
-        <CyberGear src={gear} className={inView ? 'animation' : ''}/>
-
-        <CyberGearText src={gearText} className={inView ? 'animation' : ''}/>  
-
-        <CyberSuit src={suit} className={inView ? 'animation' : ''}/>
-
-        <CyberSuitText src={suitText} className={inView ? 'animation' : ''}/>
-
-        <CyberLHand src={lhand} className={inView ? 'animation' : ''}/>
-
-        <CyberLHandText src={lefthandText} className={inView ? 'animation' : ''}/>
-
-        <CyberRHand src={rhand} className={inView ? 'animation' : ''}/>
-
-        <CyberRHandText src={righthandText} className={inView ? 'animation' : ''}/>
-
-        <CyberPants src={pants} className={inView ? 'animation' : ''}/>
-
-        <CyberPantsText src={pantsText} className={inView ? 'animation' : ''}/>
-
+        <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? 'show' : 'hide'}
         
+        <HidePCContainer>
+          <CyberRabbitsButton src={rabbit} />
         </HidePCContainer>
+        
+        
+        <AnimatePresence >
+            { visible ? 
+            <motion.div 
+                key="box"
+                initial={{y: "50%", opacity:0, scale: 0.5}}
+                animate={{y: 0, opacity: 1, scale: 1}}
+                exit={{y: "50%", opacity:0, scale: 0.5}}
+                transition={{duration: 0.2, ease: "easeOut"}}
+                className="box"
+                >
+                <HidePCContainer>
+                
+                <CyberRabbits src={rabbit} ref = {ref}/>
+        
+                <CyberRabbitText src={rabbitText} className={inView ? 'animation' : ''}/>
+        
+                <CyberHead src={head} className={inView ? 'animation' : ''}/>
+        
+                <CyberHeadGearText src={gearheadText} className={inView ? 'animation' : ''}/>
+        
+                <CyberGear src={gear} className={inView ? 'animation' : ''}/>
+        
+                <CyberGearText src={gearText} className={inView ? 'animation' : ''}/>  
+        
+                <CyberSuit src={suit} className={inView ? 'animation' : ''}/>
+        
+                <CyberSuitText src={suitText} className={inView ? 'animation' : ''}/>
+        
+                <CyberLHand src={lhand} className={inView ? 'animation' : ''}/>
+        
+                <CyberLHandText src={lefthandText} className={inView ? 'animation' : ''}/>
+        
+                <CyberRHand src={rhand} className={inView ? 'animation' : ''}/>
+        
+                <CyberRHandText src={righthandText} className={inView ? 'animation' : ''}/>
+        
+                <CyberPants src={pants} className={inView ? 'animation' : ''}/>
+        
+                <CyberPantsText src={pantsText} className={inView ? 'animation' : ''}/>
+        
+                
+                </HidePCContainer>
+            </motion.div> : null }
+        </AnimatePresence>
+        </ImgWrapper>
 
         <CyberContent>
             <CyberRow>
