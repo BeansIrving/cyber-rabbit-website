@@ -3,7 +3,7 @@ import { IntroContainer, IntroBg,
         IntroContent, IntroRow, IntroColumn, CRH1, CRH01,
         CoolestP, Description, ContainerText, IntroColumn2, VideoBg,
         BtnDiscord } from './IntroElements'
-import video from '../../Videos/introanim.mp4'
+import video from '../../video/Stella.mp4'
 import discord from '../../Image/introductionAssets/joindiscord.png'
 const Introduction = () => {
   return (

@@ -51,10 +51,10 @@ export const IntroBg = styled.div`
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-image: url(${bg});
+    /* background-image: url(${bg});
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 71%, 27% 99%, 0 99%);
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 27% 99%, 0 99%); */
 
 
 `
