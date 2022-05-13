@@ -11,6 +11,8 @@ import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         ColumnContent, Description, RabbitGears, CyberRabbitsButton,
         ImgWrapper, CyberH1} from "./CyberLayersElements"
 
+import armoredrabbit from '../../Image/cyberlayersAssets/armoredrabbit.png'
+
 import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
 import head from '../../Image/cyberlayersAssets/Head.png'
 import gear from '../../Image/cyberlayersAssets/Gear.png'
@@ -60,12 +62,12 @@ const CyberLayers = () => {
         
        
 
-        {visible ? null : <HidePCContainer>
-          <CyberRabbitsButton src={rabbit}/>
-          </HidePCContainer>}
-         <HidePCContainer>
+        {visible ? <HidePCContainer>
          <CyberRabbits src={rabbit} />
-         </HidePCContainer>
+         </HidePCContainer> : <HidePCContainer>
+          <CyberRabbitsButton src={armoredrabbit}/>
+          </HidePCContainer>}
+         
          
         
         <AnimatePresence >

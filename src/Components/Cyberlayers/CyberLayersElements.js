@@ -475,7 +475,7 @@ export const CyberColumn = styled.div`
 `
 
 export const HidePCContainer = styled.div`
-    
+    cursor: pointer;
    
     @media screen and (max-width:1366px){
         display: none;
@@ -541,7 +541,7 @@ export const CyberRabbitsButton = styled.img`
     cursor: pointer;
     position: absolute;
     left: 50%;
-    top: 17%;
+    top: 7.1%;
     transform: translate(-50%, 0);
     width: 50vh;
     height: auto;
