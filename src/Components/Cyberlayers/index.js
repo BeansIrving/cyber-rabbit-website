@@ -58,14 +58,18 @@ const CyberLayers = () => {
        
 
         <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? '' : ''}
-        <CyberH1>Click To Interact</CyberH1>
+
+        <HidePCContainer>
+          <CyberH1>Click To Interact</CyberH1>
+        </HidePCContainer>
+        
         
        
 
         {visible ? <HidePCContainer>
          <CyberRabbits src={rabbit} />
          </HidePCContainer> : <HidePCContainer>
-          <CyberRabbitsButton src={armoredrabbit}/>
+            <CyberRabbitsButton src={armoredrabbit}/>
           </HidePCContainer>}
          
          

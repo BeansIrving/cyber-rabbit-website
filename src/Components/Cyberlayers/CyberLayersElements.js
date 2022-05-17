@@ -560,9 +560,9 @@ export const ImgWrapper = styled.div`
 
 export const CyberH1 = styled.h1`
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 5vh;
-    width: 50vh;
+    left: 42%;
     height: auto;
     overflow: hidden;
     z-index: 5;
