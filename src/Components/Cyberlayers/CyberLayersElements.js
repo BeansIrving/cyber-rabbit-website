@@ -7,10 +7,10 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'
 
 export const CyberContainer = styled.div`
-    background: #000;
+    /* background: #000; */
     display: flex;
     justify-content: center;
-    padding: 0 15vh;
+    padding: 10vh 15vh;
     height: 120vh;
     width: 100%;
     position: relative;
@@ -74,6 +74,7 @@ export const CyberBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 0 8px 8px #000 inset;
 `
 
 export const CyberRabbit = styled.img`
@@ -90,7 +91,7 @@ export const CyberRabbit = styled.img`
 export const CyberRabbitText = styled.img`
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: -5%;
     transform: translate(-50%, 0);
     width: 50vh;
     height: auto;
@@ -375,7 +376,7 @@ export const CyberRHand = styled.img`
 
 export const CyberRHandText = styled.img`
     position: absolute;
-    bottom: 8%;
+    bottom: 4%;
     left: 3%;
     transform: translate(-3%, 0);
     width: 40vh;
@@ -476,7 +477,7 @@ export const CyberColumn = styled.div`
 
 export const HidePCContainer = styled.div`
     cursor: pointer;
-   
+    
     @media screen and (max-width:1366px){
         display: none;
     }
@@ -541,7 +542,7 @@ export const CyberRabbitsButton = styled.img`
     cursor: pointer;
     position: absolute;
     left: 50%;
-    top: 7.1%;
+    top: 6%;
     transform: translate(-50%, 0);
     width: 50vh;
     height: auto;

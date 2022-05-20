@@ -1,11 +1,10 @@
 
 .mySwiperFeatures {
-    width: 63vw;
+    width: 60vw;
     height: auto;
     position: relative;
-    top: 24vh;
+    top: 26vh;
     left: -45vh;
-    
   }
   
   .mySwiperFeatures-slide {
@@ -46,57 +45,66 @@
   .mySwiperFeatures-slide:nth-child(3n) {
     width: 20%;
   }
- 
+  
+  @media screen and (max-width:1660px){
+    .mySwiperFeatures {
+      width: 60vw;
+      height: auto;
+      position: relative;
+      top: 23vh;
+      left: -45vh;
+    }
+  }
   
 
   @media screen and (max-width:1366px){
       
-.mySwiperFeatures {
-    width: 50vw;
-    height: auto;
-    position: relative;
-    top: 0vh;
-    left: 0vh;
-  }
-  
-  .mySwiperFeatures-slide {
-    text-align: center;
+  .mySwiperFeatures {
+      width: 50vw;
+      height: auto;
+      position: relative;
+      top: 0vh;
+      left: 0vh;
+    }
+    
+    .mySwiperFeatures-slide {
+      text-align: center;
 
-  
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  
-  .mySwiperFeatures-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .mySwiperFeatures-slide:nth-child(1n) {
-    width: 20%;
-  }
-  
-  .mySwiperFeatures-slide:nth-child(2n) {
-    width: 20%;
-  }
-  
-  .mySwiperFeatures-slide:nth-child(3n) {
-    width: 20%;
-  }
-  }
+    
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    
+    .mySwiperFeatures-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .mySwiperFeatures-slide:nth-child(1n) {
+      width: 20%;
+    }
+    
+    .mySwiperFeatures-slide:nth-child(2n) {
+      width: 20%;
+    }
+    
+    .mySwiperFeatures-slide:nth-child(3n) {
+      width: 20%;
+    }
+    }
 
   @media screen and (max-width:1024px){
       

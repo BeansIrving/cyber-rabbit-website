@@ -28,6 +28,7 @@ export const PartnersBg = styled.div`
     overflow: hidden;
     z-index: 0;
     background-image: linear-gradient( rgba(255,0,0,0), rgba(0,0,0,0.9));
+    box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
 `
 
 export const PartnersContent = styled.div`

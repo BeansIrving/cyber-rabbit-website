@@ -87,7 +87,7 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
 
                             <Swiper
                                 slidesPerView={"auto"}
-                                spaceBetween={30}
+                                spaceBetween={0}
                                 loop={true}
                                 navigation={true}
                                 pagination={true}

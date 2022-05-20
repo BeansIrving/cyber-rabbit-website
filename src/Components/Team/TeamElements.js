@@ -3,7 +3,7 @@ import featuresFont from '../../Font/features.ttf'
 import bg from '../../Image/bg/team-bg.png'
 
 export const TeamContainer = styled.div`
-    background: #3d050c;
+    /* background: #3d050c; */
     display: flex;
     padding: 5vh 15vh;
     height: 140vh;
@@ -58,6 +58,7 @@ export const TeamBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 0 8px 8px #000 inset;
 `
 
 export const TeamContent = styled.div`

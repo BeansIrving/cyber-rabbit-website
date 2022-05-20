@@ -5,7 +5,7 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import bg from '../../Image/bg/FAQ-bg.png'
 
 export const FAQContainer = styled.div`
-    background: #3d050c;
+
     display: flex;
     width: auto;
     padding: 5vh 15vh;
@@ -68,6 +68,7 @@ export const FAQBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
 `
 
 export const FAQContent = styled.div`

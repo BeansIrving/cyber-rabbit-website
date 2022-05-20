@@ -7,7 +7,7 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'
 
 export const RoadmapContainer = styled.div`
-    background: #000;
+    /* background: #000; */
     display: flex;
     padding: 0 0vh;
     height: 110vh;
@@ -61,7 +61,7 @@ export const RoadmapBg = styled.div`
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
-   
+    box-shadow: 0 5px 8px 10px rgba(0,0,0,0.75) inset;
    
 `
 

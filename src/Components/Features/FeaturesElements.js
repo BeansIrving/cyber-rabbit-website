@@ -5,7 +5,7 @@ import featuresFont from '../../Font/features.ttf'
 import bg from '../../Image/bg/feature-bg.png'
 
 export const FeaturesContainer = styled.div`
-    background: #000;
+    /* background: #000; */
     display: flex;
     justify-content: flex-start;
     padding: 15vh 15vh;
@@ -64,6 +64,7 @@ export const FeaturesBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 0 8px 8px #000 inset;
 `
 
 export const FeaturesContent = styled.div`

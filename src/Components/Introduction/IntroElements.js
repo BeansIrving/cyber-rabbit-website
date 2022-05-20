@@ -5,6 +5,7 @@ import hyperspace from '../../Font/Hyperspace.otf'
 import binaria from '../../Font/features.ttf'
 
 export const IntroContainer = styled.div`
+    background-color: #000;
     display: flex;
     justify-content: flex-start;
     padding: 0 15vh;
@@ -51,10 +52,10 @@ export const IntroBg = styled.div`
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    /* background-image: url(${bg});
+    background-image: url(${bg});
     background-size: cover;
     background-position: center;
-    clip-path: polygon(0 0, 100% 0, 100% 71%, 27% 99%, 0 99%); */
+    clip-path: polygon(0 0, 100% 0, 100% 71%, 27% 99%, 0 99%);
 
 
 `

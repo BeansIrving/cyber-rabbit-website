@@ -5,7 +5,7 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import bg from '../../Image/bg/token-bg.png'
 
 export const TokenContainer = styled.div`
-    background: #3d050c;
+    /* background: #3d050c; */
     display: flex;
     width: auto;
     padding: 5vh 15vh;
@@ -60,6 +60,7 @@ export const TokenBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 0 8px 8px #000 inset;
 `
 
 export const TokenContent = styled.div`

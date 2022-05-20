@@ -2,6 +2,7 @@ import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
 
 export const FooterContainer = styled.div`
+    background: #000;
     display: flex;
     justify-content: center;
     padding: 0 0;
