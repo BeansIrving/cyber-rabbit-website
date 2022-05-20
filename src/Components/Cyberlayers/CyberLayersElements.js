@@ -100,7 +100,7 @@ export const CyberRabbitText = styled.img`
     
 
     &.animation{
-        animation: rabbitText linear 4s;
+        animation: rabbitText linear 2s;
     }
 
     @keyframes rabbitText {
@@ -136,7 +136,7 @@ export const CyberHead = styled.img`
     z-index: 1;
 
     &.animation{
-        animation:head 3s normal forwards;
+        animation:head 1s normal forwards;
     }
 
     @keyframes head {
@@ -166,7 +166,7 @@ export const CyberHeadGearText = styled.img`
     
 
     &.animation{
-        animation: gearText linear 4s;
+        animation: gearText linear 2s;
     }
 
     @keyframes gearText {
@@ -193,7 +193,7 @@ export const CyberGear = styled.img`
     z-index: 0;
 
     &.animation{
-        animation:gear 3s normal forwards;
+        animation:gear 1s normal forwards;
     }
 
     @keyframes gear {
@@ -221,7 +221,7 @@ export const CyberGearText = styled.img`
     z-index: 0;
 
     &.animation{
-        animation: gearText linear 4s;
+        animation: gearText linear 2s;
     }
 
     @keyframes gearText {
@@ -246,7 +246,7 @@ export const CyberSuit = styled.img`
     z-index: 3;
 
     &.animation{
-        animation:suit 3s normal forwards;
+        animation:suit 1s normal forwards;
     }
 
     @keyframes suit {
@@ -274,7 +274,7 @@ export const CyberSuitText = styled.img`
     z-index: 3;
 
     &.animation{
-        animation: gearText linear 5s;
+        animation: gearText linear 2s;
     }
 
     @keyframes gearText {
@@ -300,7 +300,7 @@ export const CyberLHand = styled.img`
     z-index: 3;
 
     &.animation{
-        animation:lhand 3s normal forwards;
+        animation:lhand 1s normal forwards;
     }
 
     @keyframes lhand {
@@ -329,7 +329,7 @@ export const CyberLHandText = styled.img`
     z-index: 4;
 
     &.animation{
-        animation: lhandText linear 5s;
+        animation: lhandText linear 2s;
     }
 
     @keyframes lhandText {
@@ -353,7 +353,7 @@ export const CyberRHand = styled.img`
     z-index: 3;
 
     &.animation{
-        animation:rhand 3s normal forwards;
+        animation:rhand 1s normal forwards;
     }
 
     @keyframes rhand {
@@ -385,7 +385,7 @@ export const CyberRHandText = styled.img`
     z-index: 3;
 
     &.animation{
-        animation: handText linear 5s;
+        animation: handText linear 2s;
     }
 
     @keyframes handText {
@@ -409,7 +409,7 @@ export const CyberPants = styled.img`
     z-index: 2;
 
     &.animation{
-        animation:pants 3s normal forwards;
+        animation:pants 1s normal forwards;
     }
 
     @keyframes pants {
@@ -437,7 +437,7 @@ export const CyberPantsText = styled.img`
     z-index: 3;
 
     &.animation{
-        animation: pantsText linear 5s;
+        animation: pantsText linear 2s;
     }
 
     @keyframes pantsText {
