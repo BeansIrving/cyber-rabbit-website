@@ -68,6 +68,7 @@ const CyberLayers = () => {
 
         {visible ? <HidePCContainer>
          <CyberRabbits src={rabbit} />
+
          </HidePCContainer> : <HidePCContainer>
             <CyberRabbitsButton src={armoredrabbit}/>
           </HidePCContainer>}
