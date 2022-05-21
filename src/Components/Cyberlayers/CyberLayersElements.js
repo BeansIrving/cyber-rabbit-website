@@ -549,6 +549,10 @@ export const CyberRabbitsButton = styled.img`
     overflow: hidden;
     z-index: 5;
     
+
+    @media screen and (max-width:1660px){
+        top: 7.1%;
+    }
 `
 
 export const ImgWrapper = styled.div`
