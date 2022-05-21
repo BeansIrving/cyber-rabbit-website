@@ -49,28 +49,38 @@ const CyberLayers = () => {
 
   return (
     <CyberContainer id='cyberlayers' ref = {ref}>
+
+        <CyberH1>Click To Interact</CyberH1>
+
         <CyberBg>
 
         </CyberBg>
 
         
-
+        
        
 
         <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? '' : ''}
 
-        <HidePCContainer>
-          <CyberH1>Click To Interact</CyberH1>
-        </HidePCContainer>
+        
         
         
        
 
-        {visible ? <HidePCContainer>
+        {visible ? <HidePCContainer className={inView ? 'animation' : ''}>
+          
+        
          <CyberRabbits src={rabbit} />
 
+
+
          </HidePCContainer> : <HidePCContainer>
-            <CyberRabbitsButton src={armoredrabbit}/>
+         
+
+         <CyberRabbitsButton src={armoredrabbit} className={inView ? 'animation' : ''}/>
+      
+             
+        
           </HidePCContainer>}
          
          
@@ -79,15 +89,14 @@ const CyberLayers = () => {
             { visible ? 
             <motion.div 
                 key="box"
-                initial={{y: "0", opacity:0, scale: 0.5}}
+                initial={{y: "0", opacity:0, scale: 1}}
                 animate={{y: 0, opacity: 1, scale: 1}}
                 exit={{y: "0", opacity:0, scale: 0.5}}
                 transition={{duration: 0.2, ease: "easeOut"}}
                 className="box"
                 >
                 <HidePCContainer>
-                
-                
+                  
         
                 <CyberRabbitText src={rabbitText} className={inView ? 'animation' : ''}/>
         

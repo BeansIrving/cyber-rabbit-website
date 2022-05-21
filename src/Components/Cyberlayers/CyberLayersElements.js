@@ -8,7 +8,7 @@ import featuresFont from '../../Font/features.ttf'
 
 export const CyberContainer = styled.div`
     /* background: #000; */
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 10vh 15vh;
     height: 120vh;
@@ -123,6 +123,19 @@ export const CyberRabbits = styled.img`
     overflow: hidden;
     z-index: 0;
     cursor: pointer;
+
+    &.animation{
+        animation: rabbit linear .2s;
+    }
+
+    @keyframes rabbit {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
 `
 
 export const CyberHead = styled.img`
@@ -477,6 +490,8 @@ export const CyberColumn = styled.div`
 
 export const HidePCContainer = styled.div`
     cursor: pointer;
+    flex-wrap: wrap;
+    justify-content: center;
     
     @media screen and (max-width:1366px){
         display: none;
@@ -548,7 +563,19 @@ export const CyberRabbitsButton = styled.img`
     height: auto;
     overflow: hidden;
     z-index: 5;
-    
+
+    &.animation{
+        animation: rabbit linear .7s;
+    }
+
+    @keyframes rabbit {
+        0% {
+            opacity: 0;
+        }
+        100% { 
+            opacity: 1;
+         }
+    }
 
     @media screen and (max-width:1660px){
         top: 7.1%;
@@ -565,9 +592,10 @@ export const ImgWrapper = styled.div`
 
 export const CyberH1 = styled.h1`
     position: absolute;
-    text-align: left;
-    top: 5vh;
-    left: 42%;
+    left: 50%;
+    top: 6%;
+    transform: translate(-50%, 0);
+    text-align: center;
     height: auto;
     overflow: hidden;
     z-index: 5;
