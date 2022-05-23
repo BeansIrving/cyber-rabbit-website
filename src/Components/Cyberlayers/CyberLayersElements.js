@@ -41,6 +41,8 @@ export const CyberContainer = styled.div`
     @media screen and (max-width:1366px){
         padding: 0 5vh;
         height: 250vh;
+        display: flex;
+        justify-content: center;
     }
     
     @media screen and (max-width:1024px){
@@ -484,7 +486,9 @@ export const CyberColumn = styled.div`
     display: none;
 
     @media screen and (max-width:1366px){
-        display: inline;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
     }
 `
 
@@ -501,6 +505,7 @@ export const HidePCContainer = styled.div`
 export const RabbitMobile = styled.img`
     height: auto;  
     width: 20vh;
+    z-index: 5;
 
     @media screen and (max-width:1024px){
         display: flex;
@@ -511,8 +516,13 @@ export const RabbitMobile = styled.img`
 export const CyberRabbitFlexContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     width: 50vw;
+    z-index: 10;
+
+    @media screen and (max-width: 1366px){
+        width: 80vw;
+    }
 
     @media screen and (max-width: 1024px){
         width: 80vw;
@@ -529,6 +539,7 @@ export const ColumnContent = styled.div`
     padding:2vh 5vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     @media screen and (max-width:768px){
         flex-wrap: wrap;
@@ -588,6 +599,10 @@ export const ImgWrapper = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width:1366px){
+        display: none;
+    }
 `
 
 export const CyberH1 = styled.h1`
@@ -601,4 +616,8 @@ export const CyberH1 = styled.h1`
     z-index: 5;
     font-family: featuresFont;
     text-transform: uppercase;
+
+    @media screen and (max-width:1366px){
+        display: none;
+    }
 `

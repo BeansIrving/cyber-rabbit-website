@@ -50,7 +50,7 @@ const CyberLayers = () => {
   return (
     <CyberContainer id='cyberlayers' ref = {ref}>
 
-        <CyberH1>Click To Interact</CyberH1>
+        <CyberH1>Click to Interact</CyberH1>
 
         <CyberBg>
 
@@ -58,7 +58,7 @@ const CyberLayers = () => {
 
         
         
-       
+
 
         <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? '' : ''}
 
@@ -134,7 +134,7 @@ const CyberLayers = () => {
             <CyberRow>
                 <CyberColumn>
 
-                  <CyberRabbitFlexContainer>
+                <CyberRabbitFlexContainer>
                     <ColumnContent>
                       <RabbitMobile src={rabbit}/>
                       
