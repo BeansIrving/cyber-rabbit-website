@@ -8,7 +8,7 @@ export const AnimationContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 0;
+    padding: 0 15vh;
     height: 100vh;
     width: 100%;
     position: relative;
@@ -110,6 +110,7 @@ export const AnimationH1 = styled.h1`
 
 export const AnimationDes = styled.p`
     width: 80%;
+    padding-left: 2vh;
 
     @media screen and (max-width:1024px){
         width: auto;
