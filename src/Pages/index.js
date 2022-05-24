@@ -6,7 +6,7 @@ import Introduction from '../Components/Introduction'
 // import Roadmap from '../Components/Roadmap'
 // import Team from '../Components/Team'
 // import Token from '../Components/Token'
-import Animation from '../Components/Animation'
+// import Animation from '../Components/Animation'
 import Navbar from '../Components/Navbar'
 // import Footer from '../Components/Footer'
 // import CyberLayers from '../Components/Cyberlayers'
@@ -23,6 +23,12 @@ setTimeout(() => resolve(import("../Components/Features")), 1000)
 const CyberLayers = React.lazy(() => 
 new Promise((resolve, reject) =>
 setTimeout(() => resolve(import("../Components/Cyberlayers")), 3000)
+)
+);
+
+const Animation = React.lazy(() => 
+new Promise((resolve, reject) =>
+setTimeout(() => resolve(import("../Components/Animation")), 3000)
 )
 );
 
@@ -83,6 +89,11 @@ const Home = () => {
 
     <Suspense fallback={<div></div>}>
         <CyberLayers />
+   
+    </Suspense>
+
+    <Suspense fallback={<div></div>}>
+        <Animation />
    
     </Suspense>
 
