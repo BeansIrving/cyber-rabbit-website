@@ -11,7 +11,7 @@ import Navbar from '../Components/Navbar'
 // import Footer from '../Components/Footer'
 // import CyberLayers from '../Components/Cyberlayers'
 import Sidebar from '../Components/Sidebar'
-
+import SidebarAnim from '../Components/SidebarAnim'
 
 
 const Features = React.lazy(() => 
@@ -74,13 +74,28 @@ setTimeout(() => resolve(import("../Components/Footer")), 9000)
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
+
+  const [isOpenAnim, setIsopenAnim] = useState(false)
+
+
   const toggle = () => {
     setIsOpen(!isOpen)
   }
+
+  const toggleAnim = () => {
+    setIsopenAnim(!isOpenAnim)
+  }
+
+  
+
   return (
     <div>
+    <SidebarAnim toggleAnim={toggleAnim} isOpenAnim={isOpenAnim}/>
+    
     <Sidebar toggle={toggle} isOpen={isOpen}/>
+    
     <Navbar toggle={toggle} />
+
     <Introduction />
     <Suspense fallback={<div></div>}>
       <Features />
@@ -93,7 +108,9 @@ const Home = () => {
     </Suspense>
 
     <Suspense fallback={<div></div>}>
-        <Animation />
+
+    
+        <Animation toggleAnim={toggleAnim}/>
    
     </Suspense>
 

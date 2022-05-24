@@ -1,11 +1,15 @@
 import React from 'react'
+import { useRef } from "react";
+import { motion } from "framer-motion";
 import { AnimationContainer, AnimationBg,
         AnimationRow, AnimationColumn,
         ColumnContent, AnimationH1,
-        AnimationDes, ImgTrailer,
+        AnimationDes, ImgWrapper,
+        WatchTrailer, 
          } from "./AnimationElements"
 import watchtrailer from "../../Image/animationAssets/watchtrailer.png"
-const Animation = () => {
+const Animation = ({toggleAnim}) => {
+  const constraintsRef = useRef(null);
   return (
     <AnimationContainer>
         <AnimationBg>
@@ -27,7 +31,22 @@ const Animation = () => {
             </ColumnContent>
               
             <ColumnContent>
-              <ImgTrailer src={watchtrailer}/>
+
+            <ImgWrapper>
+              <motion.div className="containerAnim" ref={constraintsRef}>
+              <motion.div
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -360,
+                  borderRadius: "100%"
+                }} 
+              className="itemAnim" onClick={toggleAnim}/>
+              <motion.div/> 
+              </motion.div>
+            </ImgWrapper>
+            
+            <WatchTrailer>Watch the teaser trailer</WatchTrailer>
+
             </ColumnContent>
           </AnimationColumn>
         </AnimationRow>

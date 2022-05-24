@@ -50,3 +50,88 @@ hr{
 .box{
   width: 100vw;
 }
+
+.containerAnim {
+  width: 38vw;
+  height: 45vh;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  background-image: url(./Image/animationAssets/watchtrailer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.itemAnim {
+  width: 40px;
+  height: 40px;
+  border-radius: inherit;
+  background-color: rgba(0,0,0,0.5);
+  padding: 4vh;
+  border-radius: 50%;
+  background-image: url(./Image/animationAssets/btnplay.png);
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: 2px solid #fff;
+  z-index: 5;
+}
+
+@media screen and (max-width:1366px){
+  .containerAnim {
+    width: 740px;
+    height: 450px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background-image: url(./Image/animationAssets/watchtrailer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width:1024px){
+  .containerAnim {
+    width: 500px;
+    height: 300px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background-image: url(./Image/animationAssets/watchtrailer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width:768px){
+  .containerAnim {
+    width: 400px;
+    height: 240px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background-image: url(./Image/animationAssets/watchtrailer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width:468px){
+  .containerAnim {
+    width: 340px;
+    height: 200px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    background-image: url(./Image/animationAssets/watchtrailer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

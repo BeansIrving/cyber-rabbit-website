@@ -40,25 +40,6 @@ export const AnimationBg = styled.div`
     box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
 `
 
-export const Button = styled.img`
-    display: flex;
-    justify-content: flex-start;
-    height: 10vh;
-    width: auto;
-    cursor: pointer;
-    z-index: 5;
-    opacity: 0.5;
-
-    &:hover{
-        transition: .2s all ease-in-out;
-        opacity: 1.0;
-    }
-
-    @media screen and (max-width:468px){
-        height: 8vh;
-        width: auto;
-    }
-`
 
 export const AnimationRow = styled.div`
     display: flex;
@@ -70,7 +51,7 @@ export const AnimationColumn = styled.div`
     display: flex;
     justify-content: center;
 
-    @media screen and (max-width:1024px){
+    @media screen and (max-width:1366px){
         
         flex-wrap: wrap;
         justify-content: center;
@@ -132,4 +113,16 @@ export const ImgTrailer = styled.img`
         height: auto;
         width: 40vh;
     }
+`
+
+export const ImgWrapper = styled.div`
+    flex-wrap: wrap;
+    cursor: pointer;
+`
+
+export const WatchTrailer = styled.h2`
+    font-family:features;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 2vh;
 `
