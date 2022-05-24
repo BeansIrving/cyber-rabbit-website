@@ -100,7 +100,7 @@ export const data = [
   },
   {
       question: 'When are the dates of the launch of each NFT Collection?',
-      answer: "a. Genesis Collection - TBA for WL Sale, TBA for Public Sale",
+      answer: " a. Genesis Collection - June 14, 2022",
       answer2: "b. Main Collection - TBA",
       answer3: "c. 2nd Generation Collection - TBA",
   },
@@ -112,7 +112,7 @@ export const data = [
   },
   {
       question: 'How many NFTS can I mint during whitelist and public sale?',
-      answer: "a. Genesis Collection - WL Sale: 1 (2 if Supercharged) Public Sale:1",
+      answer: "a. Genesis Collection - WL Sale: 2 (3 if Supercharged) Public Sale: 2",
       answer2: "b. Main Collection - TBA",
       answer3: "c. 2nd Generation Collection - TBA",
   },

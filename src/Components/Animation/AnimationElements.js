@@ -6,7 +6,7 @@ import features from '../../Font/features.ttf'
 export const AnimationContainer = styled.div`
     background: #0c0c0c;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     padding: 0 0;
     height: 100vh;
@@ -67,22 +67,68 @@ export const AnimationRow = styled.div`
 `
 
 export const AnimationColumn = styled.div`
-    padding: 10vh;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width:1024px){
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 `
 
 export const ColumnContent = styled.div`
-    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 5vh;
 `
 
 export const AnimationH1 = styled.h1`
     font-family: features;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-bottom: 5vh;
+    font-size: 5vh;
+
+    @media screen and (max-width:1024px){
+        text-align: center;
+        padding-bottom: 2.5vh;
+        width: auto;
+        padding:2vh 10vh;
+    }
+
+    @media screen and (max-width:768px){
+        text-align: center;
+        padding-bottom: 2.5vh;
+        width: auto;
+        padding:2vh 5vh;
+        font-size: 4vh;
+    }
+    
 `
 
 export const AnimationDes = styled.p`
-    width: auto;
+    width: 80%;
+
+    @media screen and (max-width:1024px){
+        width: auto;
+        padding:0vh 10vh;
+    }
+
+    @media screen and (max-width:768px){
+   
+        
+        padding:0vh 5vh;
+        font-size: 2vh;
+    }
+`
+
+export const ImgTrailer = styled.img`
+    height: 40vh;
+
+    @media screen and (max-width:768px){
+        height: auto;
+        width: 40vh;
+    }
 `
