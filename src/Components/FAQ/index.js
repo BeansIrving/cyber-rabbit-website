@@ -106,8 +106,8 @@ export const data = [
   },
   {
       question: 'How much will each NFT cost to mint? ',
-      answer: "a. Genesis Collection - WL Sale: 0.08 ETH, Public Sale: 0.1 ETH",
-      answer2: "b. Main Collection - WL Sale: 0.08 ETH, Public Sale: 0.1 ETH",
+      answer: "a. Genesis Collection - WL Sale: TBA, Public Sale: TBA",
+      answer2: "b. Main Collection - WL Sale: TBA, Public Sale: TBA",
       answer3: "c. 2nd Generation Collection - TBA",
   },
   {
@@ -118,7 +118,7 @@ export const data = [
   },
   {
       question: 'Which marketplace will the Cyber Rabbit NFT be listed on?',
-      answer: 'Opensea'
+      answer: 'TBA'
   },
   
 

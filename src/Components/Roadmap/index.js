@@ -97,7 +97,7 @@ const Roadmap = () => {
                                 <div className='container'>
                                     <ul>
                                         <li className='li'>Main Collection Launch</li>
-                                        <li className='li'>Cyber Rabbit Staking Platform and Mechanic Launch </li>
+                                        <li className='li'>Cyber Rabbit Staking Platform and Mechanics Launch </li>
                                         <li className='li'>Contests and Events for Cyber Rabbit’s furtherment of Advocacy </li>
                                         <li className='li'>Future Exclusive Events for Cyber Rabbit Supporters and holders</li>
                                     </ul>
