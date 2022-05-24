@@ -113,23 +113,25 @@ export const SidebarMenu = styled.ul`
 export const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    font-size: 2vh;
+    justify-content: center;
+    font-size: 3vh;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
     font-family: Orbitron;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
     position:relative;
+    letter-spacing: 0.5vh;
     padding: 2vh;
-    padding-left: 10vh;
+    text-shadow: 0px 2px 8px #ff0000;
     color: #fff;
     cursor: pointer;
 
 
     &:hover{
         color: #871e31;
-        background-color: rgba(255, 255, 255, .1);
         transition: 0.2s ease-in-out; 
     }
 

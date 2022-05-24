@@ -5,13 +5,17 @@ import {
     SidebarMenu, SidebarLink, SidebarLinks, FlexboxContainer,
     Socials,SocialImg, SocialBorder, Container
 }   from './SidebarElements';
-import ReactPlayer  from "react-player"
+import ReactPlayer  from "react-player/lazy"
 import close from '../../Image/close.png'
 
 const SidebarAnim = ({isOpenAnim, toggleAnim}) => {
-    
+  
+  const defaultVideoUrl = "https://www.youtube.com/watch?v=MEYjpXdInsk"
+  const [videoUrl, setVideoUrl] = useState(defaultVideoUrl);
+  
   return (
-      <SideBarContainer isOpenAnim={isOpenAnim} onClick={toggleAnim}>
+    
+      <SideBarContainer isOpenAnim={isOpenAnim} onClick={toggleAnim} >
           <SidebarBg>
              
           </SidebarBg>
@@ -24,7 +28,11 @@ const SidebarAnim = ({isOpenAnim, toggleAnim}) => {
            
 
           <Container>
-            <ReactPlayer url="https://www.youtube.com/watch?v=MEYjpXdInsk" controls={true}/>
+            <ReactPlayer 
+            url={videoUrl}
+            controls={true}
+
+            onEnded={() => setVideoUrl(defaultVideoUrl)}/>
           </Container>
            
 
