@@ -19,7 +19,7 @@ const Navbar = React.lazy(() => import('../Components/Navbar'));
 const Sidebar = React.lazy(() => import('../Components/Sidebar'));
 const SidebarAnim = React.lazy(() => import('../Components/SidebarAnim'));
 const Features = React.lazy(() => import('../Components/Features'));
-const CyberLayers = React.lazy(() => import('../Components/CyberLayers'));
+const CyberLayers = React.lazy(() => import('../Components/Cyberlayers'));
 const Animation = React.lazy(() => import('../Components/Animation'));
 const Token = React.lazy(() => import('../Components/Token'));
 const Roadmap = React.lazy(() => import('../Components/Roadmap'));

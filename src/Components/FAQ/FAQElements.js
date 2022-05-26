@@ -2,7 +2,7 @@ import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
-import bg from '../../Image/bg/FAQ-bg.png'
+import bg from '../../Image/bg/FAQ-bg.webp'
 
 export const FAQContainer = styled.div`
 

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import bg from '../../Image/bg/roadmap-bg.png'
+import bg from '../../Image/bg/roadmap-bg.webp'
 import upperTitle from '../../Image/roadmapAssets/asset1.png'
 import lowerTitle from '../../Image/roadmapAssets/asset2.png'
 import hyperspace from '../../Font/Hyperspace.otf'

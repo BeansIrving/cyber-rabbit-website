@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import featuresFont from '../../Font/features.ttf'
-import bg from '../../Image/bg/feature-bg.png'
+import bg from '../../Image/bg/feature-bg.webp'
 
 export const FeaturesContainer = styled.div`
     /* background: #000; */

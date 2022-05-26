@@ -2,6 +2,7 @@ import React from 'react'
 import { PartnersContainer, PartnersBg, PartnersContent,
         PartnersRow, PartnersColumn, ColumnContent, PartnerH1,
         Img, Gallery } from './PartnersElements'
+
 import nanopass from '../../Image/partnerAssets/nanopass.png'
 import guppygang from '../../Image/partnerAssets/guppy.png'
 import dystopunk from '../../Image/partnerAssets/dysto.png'
@@ -29,6 +30,7 @@ import sfc from '../../Image/partnerAssets/sfc.png'
 import giu from '../../Image/partnerAssets/giu.png'
 import alpha from '../../Image/partnerAssets/alpha.png'
 import elpads from '../../Image/partnerAssets/elpads.png'
+
 const Partners = () => {
   return (
     <PartnersContainer id='partners'>

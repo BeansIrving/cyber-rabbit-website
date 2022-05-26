@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import bg from '../../Image/bg/0100.png'
-import intro from '../../Image/introductionAssets/Group165.png'
+import intro from '../../Image/introductionAssets/Group165.webp'
 import hyperspace from '../../Font/Hyperspace.otf'
 import binaria from '../../Font/features.ttf'
 

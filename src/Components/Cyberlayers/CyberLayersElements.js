@@ -1,6 +1,5 @@
 import styled from "styled-components"
-
-import bg from '../../Image/bg/CharacterEquipments-bg.png'
+import bg from '../../Image/bg/CharacterEquipments-bg.webp'
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'

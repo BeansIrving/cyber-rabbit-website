@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
-import bg from '../../Image/bg/team-bg.png'
+import bg from '../../Image/bg/team-bg.webp'
 
 export const TeamContainer = styled.div`
     /* background: #3d050c; */

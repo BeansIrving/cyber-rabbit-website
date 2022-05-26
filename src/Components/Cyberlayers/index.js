@@ -11,15 +11,15 @@ import { CyberContainer, CyberBg, CyberContent, CyberRow, CyberColumn,
         ColumnContent, Description, RabbitGears, CyberRabbitsButton,
         ImgWrapper, CyberH1} from "./CyberLayersElements"
 
-import armoredrabbit from '../../Image/cyberlayersAssets/armoredrabbit.png'
+import armoredrabbit from '../../Image/cyberlayersAssets/armoredrabbit.webp'
 
-import rabbit from '../../Image/cyberlayersAssets/rabbit.png'
-import head from '../../Image/cyberlayersAssets/Head.png'
-import gear from '../../Image/cyberlayersAssets/Gear.png'
-import suit from '../../Image/cyberlayersAssets/uppersuit.png'
-import lhand from '../../Image/cyberlayersAssets/Lefthand.png'
-import rhand from '../../Image/cyberlayersAssets/Righthand.png'
-import pants from '../../Image/cyberlayersAssets/pants.png'
+import rabbit from '../../Image/cyberlayersAssets/rabbit.webp'
+import head from '../../Image/cyberlayersAssets/Head.webp'
+import gear from '../../Image/cyberlayersAssets/Gear.webp'
+import suit from '../../Image/cyberlayersAssets/uppersuit.webp'
+import lhand from '../../Image/cyberlayersAssets/Lefthand.webp'
+import rhand from '../../Image/cyberlayersAssets/Righthand.webp'
+import pants from '../../Image/cyberlayersAssets/pants.webp'
 
 import headMobile from '../../Image/cyberlayersAssets/mobile/headMobile.png'
 import gearMobile from '../../Image/cyberlayersAssets/mobile/gearMobile.png'
@@ -29,13 +29,13 @@ import lhandMobile from '../../Image/cyberlayersAssets/mobile/lhandMobile.png'
 import rhandMobile from '../../Image/cyberlayersAssets/mobile/rhandMobile.png'
 
 
-import rabbitText from '../../Image/cyberlayersAssets/rabbitText.png'
-import gearText from '../../Image/cyberlayersAssets/gearText.png'
-import gearheadText from '../../Image/cyberlayersAssets/headgearText.png'
-import suitText from '../../Image/cyberlayersAssets/suitText.png'
-import lefthandText from '../../Image/cyberlayersAssets/lefthandText.png'
-import righthandText from '../../Image/cyberlayersAssets/righthandText.png'
-import pantsText from '../../Image/cyberlayersAssets/pantsText.png'
+import rabbitText from '../../Image/cyberlayersAssets/rabbitText.webp'
+import gearText from '../../Image/cyberlayersAssets/gearText.webp'
+import gearheadText from '../../Image/cyberlayersAssets/headgearText.webp'
+import suitText from '../../Image/cyberlayersAssets/suitText.webp'
+import lefthandText from '../../Image/cyberlayersAssets/lefthandText.webp'
+import righthandText from '../../Image/cyberlayersAssets/righthandText.webp'
+import pantsText from '../../Image/cyberlayersAssets/pantsText.webp'
 
 
 const CyberLayers = () => {

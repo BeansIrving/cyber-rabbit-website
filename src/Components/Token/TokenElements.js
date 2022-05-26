@@ -2,7 +2,7 @@ import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
-import bg from '../../Image/bg/token-bg.png'
+import bg from '../../Image/bg/token-bg.webp'
 
 export const TokenContainer = styled.div`
     /* background: #3d050c; */

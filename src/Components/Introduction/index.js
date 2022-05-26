@@ -4,7 +4,7 @@ import { IntroContainer, IntroBg,
         CoolestP, Description, ContainerText, IntroColumn2, VideoBg,
         BtnDiscord } from './IntroElements'
 import video from '../../video/Stella.mp4'
-import discord from '../../Image/introductionAssets/joindiscord.png'
+import discord from '../../Image/introductionAssets/joindiscord.webp'
 const Introduction = () => {
   return (
     <IntroContainer>
