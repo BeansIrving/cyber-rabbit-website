@@ -14,85 +14,20 @@ import React, { Suspense, useState } from 'react'
 // import SidebarAnim from '../Components/SidebarAnim'
 import logo from '../Image/CR.png'
 
+const Introduction = React.lazy(() => import('../Components/Introduction'));
+const Navbar = React.lazy(() => import('../Components/Navbar'));
+const Sidebar = React.lazy(() => import('../Components/Sidebar'));
+const SidebarAnim = React.lazy(() => import('../Components/SidebarAnim'));
+const Features = React.lazy(() => import('../Components/Features'));
+const CyberLayers = React.lazy(() => import('../Components/CyberLayers'));
+const Animation = React.lazy(() => import('../Components/Animation'));
+const Token = React.lazy(() => import('../Components/Token'));
+const Roadmap = React.lazy(() => import('../Components/Roadmap'));
+const Partners = React.lazy(() => import('../Components/Partners'));
+const Team = React.lazy(() => import('../Components/Team'));
+const FAQ = React.lazy(() => import('../Components/FAQ'));
+const Footer = React.lazy(() => import('../Components/Footer'));
 
-
-const Introduction = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Introduction")), 3000)
-)
-);
-
-const Navbar = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Navbar")), 3000)
-)
-);
-
-const Sidebar = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Sidebar")), 3000)
-)
-);
-
-const SidebarAnim = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/SidebarAnim")), 3000)
-)
-);
-
-const Features = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Features")), 3000)
-)
-);
-
-const CyberLayers = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Cyberlayers")), 3000)
-)
-);
-
-const Animation = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Animation")), 3000)
-)
-);
-
-const Token = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Token")), 3000)
-)
-);
-
-const Roadmap = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Roadmap")), 3000)
-)
-);
-
-const Partners = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Partners")), 3000)
-)
-);
-
-const Team = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Team")), 3000)
-)
-);
-
-const FAQ = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/FAQ")), 3000)
-)
-);
-
-const Footer = React.lazy(() => 
-new Promise((resolve, reject) =>
-setTimeout(() => resolve(import("../Components/Footer")), 3000)
-)
-);
 
 
 const Home = () => {

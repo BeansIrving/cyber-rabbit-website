@@ -107,7 +107,7 @@ const index = ({isOpen, toggle}) => {
 
 
 
-            <SidebarLinks href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97%2Fview%3Fusp%3Dsharing%26fbclid%3DIwAR1KMvO6WV6i7mv8zWnHoN7R1uXwK6iOenyQ4o_6nQ0ruuZCKbBTWYvUnPU&h=AT2QE7RWJo56J9HCv0Wc6eGVaZFA_gTYBzGcWxPfibkTlZsMFDyG3FnZo49PuLR6Thwy99KJHjGXJ6Q0b1jlWim67yENtlXGEl_d98INzCZ7w_0dmIAxSSd5pTiFGq7wmmU" target="_blank" rel="noopener">Whitepaper</SidebarLinks>
+            <SidebarLinks href="https://drive.google.com/file/d/1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97/view?usp=sharing" target="_blank" rel="noopener">Whitepaper</SidebarLinks>
             </SidebarMenu>
 
           <Container>

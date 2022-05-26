@@ -10,7 +10,7 @@ import containerBottom from "../../Image/featuresAssets/bottom.png"
 
 const FAQ = () => {
 
-  const [selected, setSelected] = useState(null)
+  const [selected, setSelected] = useState(null);
     const toggle = (i) => {
         if( selected === i){
             return setSelected(null)
