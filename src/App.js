@@ -1,21 +1,30 @@
 
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Home from './Pages/index'
 import Minting from './Pages/mintingpage'
 
 function App() {
   return (
-    <Router>
+  //   <Router>
     
-      <Switch>
-        {/* <Route path="/" component={Home} exact /> */}
-        <Route path="/" component={Home} exact />
-        <Route path="/mintingpage" component={Minting} exact />
+  //     <Switch>
+  //       {/* <Route path="/" component={Home} exact /> */}
+  //       <Route path="/" component={Home} exact />
+  //       <Route path="/mintingpage" component={Minting} exact />
 
-      </Switch>
+  //     </Switch>
   
-   </Router>
+  //  </Router>
+      <div>
+        <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/mintingpage" element={<Minting />} />
+            </Routes>
+        </BrowserRouter>
+      </div>
+      
   );
 }
 
