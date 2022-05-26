@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import {
     SideBarContainer, Icon, CloseIcon,
-    SidebarBg, ImgBg, SideLogo, ImgLogo,
-    SidebarMenu, SidebarLink, SidebarLinks, FlexboxContainer,
-    Socials,SocialImg, SocialBorder, Container
+    SidebarBg, 
+    FlexboxContainer,
+    Container
 }   from './SidebarElements';
 import ReactPlayer  from "react-player/lazy"
 import close from '../../Image/close.png'

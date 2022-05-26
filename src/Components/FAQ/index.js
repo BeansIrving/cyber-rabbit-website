@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { FAQContainer, FAQBg, FAQContent,
         FAQRow, FAQColumn, ColumnContent, 
-        ColumnContent2, ColumnContent3, DesignP, ImgTop, ImgBottom, ImgBottomHide,
+        ColumnContent2, DesignP, ImgTop, ImgBottom, ImgBottomHide,
         Common,FAQColumnContent} from "./FAQElements"
 import './FAQElements.css'
 

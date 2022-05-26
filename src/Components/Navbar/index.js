@@ -2,9 +2,9 @@ import React from 'react'
 import {FaBars} from 'react-icons/fa';
 import {Nav, NavbarContainer, 
   NavLogo,ImgLogo, MobileIcon, 
-  NavMenu, NavLinks, NavBtn, 
-  NavBtnLink, Movement, Collab, NavBtnLinks,
-  Whitepaper, Dao, Mint, Features, CyberLayers,
+  NavMenu, NavBtn, 
+  NavBtnLink, NavBtnLinks,
+  Whitepaper, Features, CyberLayers,
   Token, Roadmap, Partners, Team, Faq
   } from './NavbarElements';
 import logo from '../../Image/navbarAssets/logocyber.png';

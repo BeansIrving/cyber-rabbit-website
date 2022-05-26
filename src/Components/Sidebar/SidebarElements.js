@@ -1,10 +1,7 @@
 import styled from "styled-components";
-import { FaTimes } from 'react-icons/fa';
-import { Link as LinkR} from 'react-router-dom';
 import {Link as LinkS} from 'react-scroll';
 import Orbitron from '../../Font/Binaria-Light.otf'
 import bg from '../../Image/bg/bgsidebar.jpg'
-import close from '../../Image/close.png'
 
 export const SideBarContainer = styled.aside`
     position: fixed;

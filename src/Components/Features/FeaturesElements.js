@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import hyperspace from '../../Font/Hyperspace.otf'
-import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'
 import bg from '../../Image/bg/feature-bg.png'
 

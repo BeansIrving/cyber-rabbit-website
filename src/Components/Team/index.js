@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination } from "swiper";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styleTeam.css";
 

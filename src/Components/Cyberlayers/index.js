@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react'
+import React from 'react'
 import { useInView } from 'react-intersection-observer'
 import { motion, AnimatePresence } from "framer-motion"
 

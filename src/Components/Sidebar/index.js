@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
     SideBarContainer, Icon, CloseIcon,
-    SidebarBg, ImgBg, SideLogo, ImgLogo,
+    SidebarBg, SideLogo, ImgLogo,
     SidebarMenu, SidebarLink, SidebarLinks, FlexboxContainer,
-    Socials,SocialImg, SocialBorder, Container
+    Container
 }   from './SidebarElements';
 
 import logo from '../../Image/CR.png'

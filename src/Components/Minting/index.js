@@ -9,8 +9,7 @@ import { MintingContainer, MintingBg,
         MintH1, MintH1Hide,
         BtnMint, BtnMintWrapper,
         BtnMax, InfoImg,
-        ImgWrapper, BtnMinus,
-        BtnPlus,
+        ImgWrapper,
         }
         from './MintingElements'
 import bg from '../../Image/bg/mintingbg.png'

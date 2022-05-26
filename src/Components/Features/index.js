@@ -2,10 +2,10 @@ import React, { useState } from 'react'
 import { FeaturesContainer, FeaturesBg, FeaturesContent,
         FeaturesRow, FeaturesColumn, Design, FeaturesH1,
         FeaturesDescription, FeaturesFlexContainer, ColumnContent,
-        CardImg, CardText, CardDescription, ColumnContent2, ColumnContent3, 
-        ImgCard, SwiperContainer, DescriptionContainer } from './FeaturesElements'
+        CardImg, CardText, CardDescription, ColumnContent2,
+        ImgCard,  DescriptionContainer } from './FeaturesElements'
 import design from '../../Image/featuresAssets/design.png'
-import Bounce from 'react-reveal/Bounce';
+
 
 
 import GenesisCollection from '../../Image/featuresAssets/cards/1.png'

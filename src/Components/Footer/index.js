@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterContainer, FooterBg, FooterContent, 
     FooterRow, FooterColumn, FooterFlexContainer,
-    ColumnContent,ColumnContent2, Terms, CyberRabbitWrapper,
+    ColumnContent,ColumnContent2, Terms,
     CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer, FooterH3 } from './FooterElements'
 import cyberwhite from '../../Image/navbarAssets/logocyber.png'
 import twitter from '../../Image/footerAssets/twitter.png'
