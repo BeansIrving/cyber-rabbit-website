@@ -58,9 +58,7 @@ export const AnimationColumn = styled.div`
     justify-content: center;
 
     @media screen and (max-width:1366px){
-        
         flex-wrap: wrap;
-        justify-content: center;
     }
 `
 
@@ -81,14 +79,12 @@ export const AnimationH1 = styled.h1`
     @media screen and (max-width:1024px){
         text-align: center;
         padding-bottom: 2.5vh;
-        width: auto;
         padding:2vh 10vh;
     }
 
     @media screen and (max-width:768px){
         text-align: center;
         padding-bottom: 2.5vh;
-        width: auto;
         padding:2vh 5vh;
         font-size: 4vh;
     }
@@ -105,21 +101,12 @@ export const AnimationDes = styled.p`
     }
 
     @media screen and (max-width:768px){
-   
-        
         padding:0vh 5vh;
         font-size: 2vh;
     }
 `
 
-export const ImgTrailer = styled.img`
-    height: 40vh;
 
-    @media screen and (max-width:768px){
-        height: auto;
-        width: 40vh;
-    }
-`
 
 export const ImgWrapper = styled.div`
     flex-wrap: wrap;

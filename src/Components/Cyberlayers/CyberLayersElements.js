@@ -5,7 +5,6 @@ import hyperspacebold from '../../Font/HyperspaceBold.otf'
 import featuresFont from '../../Font/features.ttf'
 
 export const CyberContainer = styled.div`
-    /* background: #000; */
     flex-wrap: wrap;
     justify-content: center;
     padding: 10vh 15vh;
@@ -40,7 +39,6 @@ export const CyberContainer = styled.div`
         padding: 0 5vh;
         height: 250vh;
         display: flex;
-        justify-content: center;
     }
     
     @media screen and (max-width:1024px){
@@ -140,9 +138,7 @@ export const CyberRabbits = styled.img`
 
 export const CyberHead = styled.img`
     position: absolute;
-    bottom: 28%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -197,9 +193,7 @@ export const CyberHeadGearText = styled.img`
 
 export const CyberGear = styled.img`
     position: absolute;
-    left: 50%;
-    bottom: 15%;
-    transform: translate(-55%, 0);
+    
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -250,9 +244,7 @@ export const CyberGearText = styled.img`
 
 export const CyberSuit = styled.img`
     position: absolute;
-    top: 1%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -304,9 +296,7 @@ export const CyberSuitText = styled.img`
 
 export const CyberLHand = styled.img`
     position: absolute;
-    top: 8%;
-    left: 40%;
-    transform: translate(-50%, 0);
+   
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -357,9 +347,7 @@ export const CyberLHandText = styled.img`
 
 export const CyberRHand = styled.img`
     position: absolute;
-    top: 10%;
-    left: 59.5%;
-    transform: translate(-50%, 0);
+    
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -413,9 +401,7 @@ export const CyberRHandText = styled.img`
 
 export const CyberPants = styled.img`
     position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, 0);
+    
     width: 50vh;
     height: auto;
     overflow: hidden;
@@ -541,7 +527,7 @@ export const ColumnContent = styled.div`
 
     @media screen and (max-width:768px){
         flex-wrap: wrap;
-        justify-content: center;
+     
     }
 `
 

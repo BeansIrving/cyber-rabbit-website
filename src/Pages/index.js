@@ -50,7 +50,7 @@ const Home = () => {
     <div>
     <Suspense fallback={
     
-    <div className='loading'><img src={logo} className='blink' height='400px' width='auto'/></div>}
+    <div className='loading'><img src={logo} className='blink' height='100px' width='auto'/></div>}
     
     >
 
@@ -64,7 +64,7 @@ const Home = () => {
     
     <Features />
  
-    <CyberLayers />
+    <CyberLayers /> 
    
     <Animation toggleAnim={toggleAnim}/>
    
