@@ -13,16 +13,16 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "./styleTeam.css";
 
-import Founder from "../../Image/teamAssets/1.png"
-import CoFounder from "../../Image/teamAssets/2.png"
-import ConceptArtist from "../../Image/teamAssets/3.png"
-import Artist from "../../Image/teamAssets/4.png"
-import FrontendDeveloper from "../../Image/teamAssets/5.png"
-import BackendDeveloper from "../../Image/teamAssets/6.png"
-import GraphicsDesigner from "../../Image/teamAssets/7.png"
-import UIUXDeveloper from "../../Image/teamAssets/8and10.png"
-import GameDeveloper from "../../Image/teamAssets/9.png"
-import CommunityRelations from "../../Image/teamAssets/8and10.png"
+import Founder from "../../Image/teamAssets/1.webp"
+import CoFounder from "../../Image/teamAssets/2.webp"
+import ConceptArtist from "../../Image/teamAssets/3.webp"
+import Artist from "../../Image/teamAssets/4.webp"
+import FrontendDeveloper from "../../Image/teamAssets/5.webp"
+import BackendDeveloper from "../../Image/teamAssets/6.webp"
+import GraphicsDesigner from "../../Image/teamAssets/7.webp"
+import UIUXDeveloper from "../../Image/teamAssets/8and10.webp"
+import GameDeveloper from "../../Image/teamAssets/9.webp"
+import CommunityRelations from "../../Image/teamAssets/8and10.webp"
 
 const Team = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
