@@ -2,34 +2,34 @@ import styled from 'styled-components'
 import league from "../../Font/features.ttf"
 import { Link as LinkR} from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll'
-import movement from '../../Image/navbarAssets/movement.png';
-import collab from '../../Image/navbarAssets/collab.png';
-import whitepaper from '../../Image/navbarAssets/navbarPages/whitepaper.png';
-import dao from '../../Image/navbarAssets/dao.png';
-import mint from '../../Image/navbarAssets/mint.png';
-import features from '../../Image/navbarAssets/navbarPages/featuresNonHover.png';
-import augment from '../../Image/navbarAssets/navbarPages/Augment.png';
-import token from '../../Image/navbarAssets/navbarPages/token.png';
-import roadmap from '../../Image/navbarAssets/navbarPages/roadmap.png';
-import partners from '../../Image/navbarAssets/navbarPages/partners.png';
-import team from '../../Image/navbarAssets/navbarPages/team.png';
-import faq from '../../Image/navbarAssets/navbarPages/faq.png';
+import movement from '../../Image/navbarAssets/movement.webp';
+import collab from '../../Image/navbarAssets/collab.webp';
+import whitepaper from '../../Image/navbarAssets/navbarPages/whitepaper.webp';
+import dao from '../../Image/navbarAssets/dao.webp';
+import mint from '../../Image/navbarAssets/mint.webp';
+import features from '../../Image/navbarAssets/navbarPages/featuresNonHover.webp';
+import augment from '../../Image/navbarAssets/navbarPages/Augment.webp';
+import token from '../../Image/navbarAssets/navbarPages/token.webp';
+import roadmap from '../../Image/navbarAssets/navbarPages/roadmap.webp';
+import partners from '../../Image/navbarAssets/navbarPages/partners.webp';
+import team from '../../Image/navbarAssets/navbarPages/team.webp';
+import faq from '../../Image/navbarAssets/navbarPages/faq.webp';
 
-import movementHover from '../../Image/navbarAssets/movementHover.png';
-import collabHover from '../../Image/navbarAssets/collabHover.png';
-import whitepaperHover from '../../Image/navbarAssets/navbarPages/whitepaperHover.png';
-import daoHover from '../../Image/navbarAssets/daoHover.png';
-import mintHover from '../../Image/navbarAssets/mintHover.png';
-import featuresHover from '../../Image/navbarAssets/navbarPages/featuresHover.png';
-import augmentHover from '../../Image/navbarAssets/navbarPages/augmentHover.png';
-import tokenHover from '../../Image/navbarAssets/navbarPages/tokenHover.png';
-import roadmapHover from '../../Image/navbarAssets/navbarPages/roadmapHover.png';
-import partnersHover from '../../Image/navbarAssets/navbarPages/partnerHover.png';
-import teamHover from '../../Image/navbarAssets/navbarPages/teamHover.png';
-import faqHover from '../../Image/navbarAssets/navbarPages/faqHover.png';
+import movementHover from '../../Image/navbarAssets/movementHover.webp';
+import collabHover from '../../Image/navbarAssets/collabHover.webp';
+import whitepaperHover from '../../Image/navbarAssets/navbarPages/whitepaperHover.webp';
+import daoHover from '../../Image/navbarAssets/daoHover.webp';
+import mintHover from '../../Image/navbarAssets/mintHover.webp';
+import featuresHover from '../../Image/navbarAssets/navbarPages/featuresHover.webp';
+import augmentHover from '../../Image/navbarAssets/navbarPages/augmentHover.webp';
+import tokenHover from '../../Image/navbarAssets/navbarPages/tokenHover.webp';
+import roadmapHover from '../../Image/navbarAssets/navbarPages/roadmapHover.webp';
+import partnersHover from '../../Image/navbarAssets/navbarPages/partnerHover.webp';
+import teamHover from '../../Image/navbarAssets/navbarPages/teamHover.webp';
+import faqHover from '../../Image/navbarAssets/navbarPages/faqHover.webp';
 
 
-import navbarcontainer from '../../Image/navbarAssets/new-nav.png';
+import navbarcontainer from '../../Image/navbarAssets/new-nav.webp';
 
 export const Nav = styled.nav`
     background: url(${navbarcontainer});

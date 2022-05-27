@@ -3,7 +3,7 @@ import { FooterContainer, FooterBg, FooterContent,
     FooterRow, FooterColumn, FooterFlexContainer,
     ColumnContent,ColumnContent2, Terms,
     CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer, FooterH3 } from './FooterElements'
-import cyberwhite from '../../Image/navbarAssets/logocyber.png'
+import cyberwhite from '../../Image/navbarAssets/logocyber.webp'
 import twitter from '../../Image/footerAssets/twitter.png'
 import discord from '../../Image/footerAssets/discord.png'
 import facebook from '../../Image/footerAssets/facebook.png'

@@ -23,6 +23,12 @@ export const AnimationContainer = styled.div`
         font-family: features;
         src: url(${features});
     }
+    
+    @media screen and (max-width:1024px){
+        height: 120vh;
+    }
+
+
 `
 
 export const AnimationBg = styled.div`

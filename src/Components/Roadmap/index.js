@@ -13,9 +13,9 @@ import { Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
-import roadmapline from '../../Image/roadmapAssets/roadmapline.png'
-import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.png'
-import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.png'
+import roadmapline from '../../Image/roadmapAssets/roadmapline.webp'
+import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.webp'
+import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.webp'
 
 import "./styleRoadmap.css";
 

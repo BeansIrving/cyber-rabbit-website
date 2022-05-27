@@ -7,9 +7,9 @@ import {Nav, NavbarContainer,
   Whitepaper, Features, CyberLayers,
   Token, Roadmap, Partners, Team, Faq
   } from './NavbarElements';
-import logo from '../../Image/navbarAssets/logocyber.png';
-import transparent from '../../Image/navbarAssets/transparent.png';
-import transparentMint from '../../Image/navbarAssets/transparentMint.png';
+import logo from '../../Image/navbarAssets/logocyber.webp';
+import transparent from '../../Image/navbarAssets/transparent.webp';
+import transparentMint from '../../Image/navbarAssets/transparentMint.webp';
 
 
 

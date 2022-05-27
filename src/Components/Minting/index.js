@@ -13,7 +13,7 @@ import { MintingContainer, MintingBg,
         }
         from './MintingElements'
 import bg from '../../Image/bg/mintingbg.webp'
-import info from '../../Image/minting/Info.png'
+import info from '../../Image/minting/Info.webp'
 const Minting = () => {
   return (
     <MintingContainer>

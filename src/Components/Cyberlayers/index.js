@@ -21,12 +21,12 @@ import lhand from '../../Image/cyberlayersAssets/Lefthand.webp'
 import rhand from '../../Image/cyberlayersAssets/Righthand.webp'
 import pants from '../../Image/cyberlayersAssets/pants.webp'
 
-import headMobile from '../../Image/cyberlayersAssets/mobile/headMobile.png'
-import gearMobile from '../../Image/cyberlayersAssets/mobile/gearMobile.png'
-import uppersuitMobile from '../../Image/cyberlayersAssets/mobile/uppersuitMobile.png'
-import pantsMobile from '../../Image/cyberlayersAssets/mobile/pantsMobile.png'
-import lhandMobile from '../../Image/cyberlayersAssets/mobile/lhandMobile.png'
-import rhandMobile from '../../Image/cyberlayersAssets/mobile/rhandMobile.png'
+import headMobile from '../../Image/cyberlayersAssets/mobile/headMobile.webp'
+import gearMobile from '../../Image/cyberlayersAssets/mobile/gearMobile.webp'
+import uppersuitMobile from '../../Image/cyberlayersAssets/mobile/uppersuitMobile.webp'
+import pantsMobile from '../../Image/cyberlayersAssets/mobile/pantsMobile.webp'
+import lhandMobile from '../../Image/cyberlayersAssets/mobile/lhandMobile.webp'
+import rhandMobile from '../../Image/cyberlayersAssets/mobile/rhandMobile.webp'
 
 
 import rabbitText from '../../Image/cyberlayersAssets/rabbitText.webp'
