@@ -25,7 +25,7 @@ const Token = React.lazy(() => import('../Components/Token'));
 const Roadmap = React.lazy(() => import('../Components/Roadmap'));
 const Partners = React.lazy(() => import('../Components/Partners'));
 const Team = React.lazy(() => import('../Components/Team'));
-const FAQ = React.lazy(() => import('../Components/FAQ'));
+const FAQMoto = React.lazy(() => import('../Components/FAQMoto'));
 const Footer = React.lazy(() => import('../Components/Footer'));
 
 
@@ -76,7 +76,7 @@ const Home = () => {
    
     <Team /> 
    
-    <FAQ />
+    <FAQMoto />
    
     <Footer />
    

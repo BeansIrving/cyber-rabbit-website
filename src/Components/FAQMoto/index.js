@@ -8,7 +8,7 @@ import './FAQElements.css'
 import containerTop from "../../Image/featuresAssets/top.png"
 import containerBottom from "../../Image/featuresAssets/bottom.png"
 
-const FAQ = () => {
+const FAQMoto = () => {
 
   const [selected, setSelected] = useState(null);
     const toggle = (i) => {
@@ -83,7 +83,7 @@ const FAQ = () => {
   )
 }
 
-export default FAQ
+export default FAQMoto
 
 export const data = [
   {
