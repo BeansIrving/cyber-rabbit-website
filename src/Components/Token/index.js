@@ -2,7 +2,7 @@ import React from 'react'
 import { TokenContainer, TokenBg, TokenContent, TokenRow, TokenColumn,
         ColumnContent, IntroH1,CarrotH1, CarrotP, ImgToken,
         AssetTop, UtilH1, FirstUtilText, AssetBot, ColumnContent2} from "./TokenElements"
-import token from "../../Image/tokenAssets/token.png"
+import token from "../../Image/tokenAssets/token.webp"
 import assetTop from "../../Image/tokenAssets/asset1.webp"
 import assetBot from "../../Image/tokenAssets/asset2.webp"
 import firstUtil from "../../Image/tokenAssets/firstUtilText.webp"
