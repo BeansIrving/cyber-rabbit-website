@@ -12,7 +12,7 @@ import React, { Suspense, useState } from 'react'
 // import CyberLayers from '../Components/Cyberlayers'
 // import Sidebar from '../Components/Sidebar'
 // import SidebarAnim from '../Components/SidebarAnim'
-import logo from '../Image/CR.png'
+import logo from '../Image/CR.webp'
 
 const Introduction = React.lazy(() => import('../Components/Introduction'));
 const Navbar = React.lazy(() => import('../Components/Navbar'));

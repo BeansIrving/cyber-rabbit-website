@@ -8,15 +8,15 @@ import design from '../../Image/featuresAssets/design.png'
 
 
 
-import GenesisCollection from '../../Image/featuresAssets/cards/1.png'
-import card2 from '../../Image/featuresAssets/cards/2.png'
-import card3 from '../../Image/featuresAssets/cards/3.png'
-import card4 from '../../Image/featuresAssets/cards/4.png'
-import card5 from '../../Image/featuresAssets/cards/5.png'
-import card6 from '../../Image/featuresAssets/cards/6.png'
-import card7 from '../../Image/featuresAssets/cards/7.png'
-import card8 from '../../Image/featuresAssets/cards/8.png'
-import card9 from '../../Image/featuresAssets/cards/9.png'
+import GenesisCollection from '../../Image/featuresAssets/cards/1.webp'
+import card2 from '../../Image/featuresAssets/cards/2.webp'
+import card3 from '../../Image/featuresAssets/cards/3.webp'
+import card4 from '../../Image/featuresAssets/cards/4.webp'
+import card5 from '../../Image/featuresAssets/cards/5.webp'
+import card6 from '../../Image/featuresAssets/cards/6.webp'
+import card7 from '../../Image/featuresAssets/cards/7.webp'
+import card8 from '../../Image/featuresAssets/cards/8.webp'
+import card9 from '../../Image/featuresAssets/cards/9.webp'
 
 import "./styleFeatures.css";
 

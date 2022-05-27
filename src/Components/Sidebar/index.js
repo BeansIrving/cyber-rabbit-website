@@ -6,7 +6,7 @@ import {
     Container
 }   from './SidebarElements';
 
-import logo from '../../Image/CR.png'
+import logo from '../../Image/CR.webp'
 import close from '../../Image/close.png'
 const index = ({isOpen, toggle}) => {
     
