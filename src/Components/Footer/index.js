@@ -4,11 +4,11 @@ import { FooterContainer, FooterBg, FooterContent,
     ColumnContent,ColumnContent2, Terms,
     CyberRabbitLogo,Socials, SocialBorder, SocialImg, TermsContainer, FooterH3 } from './FooterElements'
 import cyberwhite from '../../Image/navbarAssets/logocyber.webp'
-import twitter from '../../Image/footerAssets/twitter.png'
-import discord from '../../Image/footerAssets/discord.png'
-import facebook from '../../Image/footerAssets/facebook.png'
-import instagram from '../../Image/footerAssets/instagram.png'
-import opensea from '../../Image/footerAssets/opensea.png'
+import twitter from '../../Image/footerAssets/twitter.webp'
+import discord from '../../Image/footerAssets/discord.webp'
+import facebook from '../../Image/footerAssets/facebook.webp'
+import instagram from '../../Image/footerAssets/instagram.webp'
+import opensea from '../../Image/footerAssets/opensea.webp'
 const Footer = () => {
   return (
     <FooterContainer>

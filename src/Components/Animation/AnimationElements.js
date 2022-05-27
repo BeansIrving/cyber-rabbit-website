@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import bg from '../../Image/bg/bg.png'
+import bg from '../../Image/bg/bg.webp'
 import hyperspace from '../../Font/HyperspaceRaceVariable.ttf'
 import features from '../../Font/features.ttf'
 
