@@ -8,6 +8,7 @@ import twitter from '../../Image/footerAssets/twitter.webp'
 import discord from '../../Image/footerAssets/discord.webp'
 import facebook from '../../Image/footerAssets/facebook.webp'
 import instagram from '../../Image/footerAssets/instagram.webp'
+import moonly from '../../Image/footerAssets/moonly.webp'
 import opensea from '../../Image/footerAssets/opensea.webp'
 const Footer = () => {
   return (
@@ -61,6 +62,11 @@ const Footer = () => {
 
                             <SocialBorder href="https://www.instagram.com/cyberrrabbit/" target="_blank" rel="noopener">
                             <SocialImg src={instagram}>
+                            </SocialImg>
+                            </SocialBorder>
+
+                            <SocialBorder href="https://moon.ly/?fbclid=IwAR2lp4URUUhYg9C7xUvpNTFoyxsEdoliFuAM1kYzZZ7NSVdDNB48q6PyrUM" target="_blank" rel="noopener">
+                            <SocialImg src={moonly}>
                             </SocialImg>
                             </SocialBorder>
 
