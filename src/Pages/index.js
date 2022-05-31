@@ -61,11 +61,11 @@ const Home = () => {
 
     <Introduction />
     
+    <Animation toggleAnim={toggleAnim}/>
+
     <Features />
  
     <CyberLayers /> 
-   
-    <Animation toggleAnim={toggleAnim}/>
    
     <Token />
    
