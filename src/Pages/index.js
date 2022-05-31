@@ -60,10 +60,10 @@ const Home = () => {
     <Navbar toggle={toggle} />
 
     <Introduction />
-    
-    <Animation toggleAnim={toggleAnim}/>
 
     <Features />
+
+    <Animation toggleAnim={toggleAnim}/>
  
     <CyberLayers /> 
    
