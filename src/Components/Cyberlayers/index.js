@@ -60,7 +60,7 @@ const CyberLayers = () => {
         
 
 
-        <ImgWrapper onClick={() => setVisible(!visible)}>{visible ? '' : ''}
+        <ImgWrapper onClick={() => setVisible(!visible)}>
 
         
         
