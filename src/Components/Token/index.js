@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { TokenContainer, TokenBg, TokenContent, TokenRow, TokenColumn,
         ColumnContent, IntroH1,CarrotH1, CarrotP, ImgToken,
         AssetTop, UtilH1, FirstUtilText, AssetBot, ColumnContent2} from "./TokenElements"
@@ -8,9 +8,16 @@ import assetBot from "../../Image/tokenAssets/asset2.webp"
 import firstUtil from "../../Image/tokenAssets/firstUtilText.webp"
 import secondUtil from "../../Image/tokenAssets/secondUtilText.webp"
 import lastUtil from "../../Image/tokenAssets/lastUtilText.webp"
+import Aos from "aos";
+import "aos/dist/aos.css"
 const Token = () => {
+  useEffect(() =>{
+    Aos.init({ });
+  },[])
   return (
-    <TokenContainer id='token'>
+    <TokenContainer id='token' 
+    data-aos="zoom-in"
+    data-aos-duration="1000">
         <TokenBg>
           {/* <TokenDesign src={tokenD}/> */}
         </TokenBg>

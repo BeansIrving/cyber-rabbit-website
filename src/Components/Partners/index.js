@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { PartnersContainer, PartnersBg, PartnersContent,
         PartnersRow, PartnersColumn, ColumnContent, PartnerH1,
         Img, Gallery } from './PartnersElements'
@@ -31,7 +31,13 @@ import giu from '../../Image/partnerAssets/giu.webp'
 import alpha from '../../Image/partnerAssets/alpha.webp'
 import elpads from '../../Image/partnerAssets/elpads.webp'
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const Partners = () => {
+    useEffect(() =>{
+        Aos.init({ });
+      },[])
   return (
     <PartnersContainer id='partners'>
         <PartnersBg>
@@ -49,92 +55,169 @@ const Partners = () => {
 
 
 
-                        <Gallery>
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={nanopass}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={guppygang}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={dystopunk}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={heart}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={kaiju}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={chain}/>
                         </Gallery>
                         
-                        <Gallery>
+                        <Gallery 
+                        data-aos="flip-up"
+                        data-aos-duration="1000">
                             <Img src={sfc}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={hypno}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery 
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={zooverse}/>
                         </Gallery>
 
 
 
-                        <Gallery>
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={pasty}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={bigbrain}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={omega}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={alphamonster}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={alien}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={ascendants}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={nftpinas}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={oxh}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={black}/>
                         </Gallery>
 
 
 
-                        <Gallery>
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={ape}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={hfc}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={bigbadz}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={nofunds}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={utopia}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={sinag}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={giu}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={alpha}/>
                         </Gallery>
-                        <Gallery>
+
+                        <Gallery
+                        data-aos-duration="1000"
+                        data-aos="flip-up">
                             <Img src={elpads}/>
                         </Gallery>
                     </ColumnContent>

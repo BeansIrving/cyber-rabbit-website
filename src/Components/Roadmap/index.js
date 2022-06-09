@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { RoadmapContainer, RoadmapBg, RoadmapContent,
         RoadmapRow, RoadmapColumn, RoadmapUpperTitle,
         RoadmapBottomTitle, RoadmapTitle,ColumnContent, InProgress,
@@ -19,9 +19,15 @@ import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.webp'
 
 import "./styleRoadmap.css";
 
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 const Roadmap = () => {
+    useEffect(() =>{
+        Aos.init({ });
+      },[])
   return (
-    <RoadmapContainer id='roadmap'>
+    <RoadmapContainer id='roadmap' data-aos="zoom-out-left">
         <RoadmapBg>
 
         </RoadmapBg>

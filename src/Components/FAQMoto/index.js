@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { FAQContainer, FAQBg, FAQContent,
         FAQRow, FAQColumn, ColumnContent, 
         ColumnContent2, DesignP, ImgTop, ImgBottom, ImgBottomHide,
@@ -8,8 +8,13 @@ import './FAQElements.css'
 import containerTop from "../../Image/featuresAssets/top.png"
 import containerBottom from "../../Image/featuresAssets/bottom.png"
 
-const FAQMoto = () => {
+import Aos from "aos";
+import "aos/dist/aos.css"
 
+const FAQMoto = () => {
+  useEffect(() =>{
+    Aos.init({ });
+  },[])
   const [selected, setSelected] = useState(null);
     const toggle = (i) => {
         if( selected === i){
@@ -31,7 +36,8 @@ const FAQMoto = () => {
           <FAQColumnContent >
 
           
-          <FAQColumn>
+          <FAQColumn
+          data-aos="fade-right">
             <ColumnContent>
               <DesignP id='faqmoto'>001</DesignP>
             </ColumnContent>
@@ -42,9 +48,11 @@ const FAQMoto = () => {
             </ColumnContent2>
 
           </FAQColumn>
+
           </FAQColumnContent>
 
-          <FAQColumnContent >
+          <FAQColumnContent 
+          data-aos="fade-left">
                 <div className='wrapper'>
                     <div className='accordion' >
                  

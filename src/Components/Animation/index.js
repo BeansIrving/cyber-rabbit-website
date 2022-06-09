@@ -1,6 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { useRef } from "react";
 import { motion } from "framer-motion";
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+
 import { AnimationContainer, AnimationBg,
         AnimationRow, AnimationColumn,
         ColumnContent, AnimationH1,
@@ -9,6 +13,10 @@ import { AnimationContainer, AnimationBg,
          } from "./AnimationElements"
 const Animation = ({toggleAnim}) => {
   const constraintsRef = useRef(null);
+
+  useEffect(() =>{
+    Aos.init({ });
+  },[])
   return (
     <AnimationContainer>
         <AnimationBg>
@@ -17,7 +25,9 @@ const Animation = ({toggleAnim}) => {
 
         <AnimationRow>
           <AnimationColumn>
-            <ColumnContent>
+            <ColumnContent 
+            data-aos="fade-down"
+            data-aos-duration="1000">
               <AnimationH1>Cyber Rabbit: Night Strike</AnimationH1>
               <AnimationDes>
               Nothing was the same since Helium Corp's Tyrannical rule.
@@ -29,7 +39,9 @@ const Animation = ({toggleAnim}) => {
             </AnimationDes>
             </ColumnContent>
               
-            <ColumnContent>
+            <ColumnContent 
+            data-aos="fade-up"
+            data-aos-duration="1000">
 
             <ImgWrapper>
               <motion.div className="containerAnim" ref={constraintsRef}>
