@@ -20,6 +20,7 @@ const Sidebar = React.lazy(() => import('../Components/Sidebar'));
 const SidebarAnim = React.lazy(() => import('../Components/SidebarAnim'));
 const Features = React.lazy(() => import('../Components/Features'));
 const CyberLayers = React.lazy(() => import('../Components/Cyberlayers'));
+const NFT = React.lazy(() => import('../Components/NFT'));
 const Animation = React.lazy(() => import('../Components/Animation'));
 const Token = React.lazy(() => import('../Components/Token'));
 const Roadmap = React.lazy(() => import('../Components/Roadmap'));
@@ -66,6 +67,8 @@ const Home = () => {
     <Animation toggleAnim={toggleAnim}/>
  
     <CyberLayers /> 
+
+    <NFT /> 
    
     <Token />
    

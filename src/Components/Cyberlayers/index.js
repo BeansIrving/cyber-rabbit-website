@@ -39,7 +39,9 @@ import pantsText from '../../Image/cyberlayersAssets/pantsText.webp'
 
 
 const CyberLayers = () => {
+
   const [visible, setVisible] = React.useState(false);
+  
   const { ref, inView } = useInView({
 		rootMargin: '-100px',
 	});
