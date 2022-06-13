@@ -17,39 +17,20 @@ export const NFTContainer = styled.div`
     }
     
 `
-
-export const NFTContent = styled.div`
-    max-width: 1200px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-export const NFTRow = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
-
-export const NFTColumn = styled.div`
-    flex-wrap: wrap;
-`
-
-export const ImgWrapper = styled.div`
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-
-    
-`
-
-export const ImgNFT = styled.img`
-
-    height: auto;
-    width: 100%;
-    position: relative;
+export const NFTBg = styled.div`
+    position: absolute;
+    top: 0;
+    bottom: 0;
     left: 0;
-
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 `
 
+export const VideoBg = styled.video`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+`

@@ -1,35 +1,21 @@
 import React from 'react'
 import {
     NFTContainer,
-    NFTContent,
-    NFTRow,
-    NFTColumn,
-    ImgWrapper,
-    ImgNFT
+    NFTBg,
+    VideoBg
     }
     from './NFTElements'
 
-import { useInView } from 'react-intersection-observer'
+import video from '../../video/Rolling.mp4'
 
-import top10 from '../../Image/nftAssets/First10.webp'
-import genesiscol from '../../Image/nftAssets/2nd.webp'
-import { AnimatePresence } from 'framer-motion'
 
 const NFT = () => {
-    const { ref, inView } = useInView({
-		rootMargin: '-100px',
-	});
+
   return (
     <NFTContainer>
-        <NFTContent>
-            <NFTRow>
-                <NFTColumn>
-          
-                        <ImgNFT src={top10}/>
-           
-                </NFTColumn>
-            </NFTRow>
-        </NFTContent>
+        <NFTBg>
+          <VideoBg playsInline src={video} autoPlay loop muted type='video/mp4'></VideoBg>
+        </NFTBg>
     </NFTContainer>
   )
 }
