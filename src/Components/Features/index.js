@@ -40,7 +40,7 @@ const Features = () => {
         Aos.init({ });
       },[])
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
-const card = { GenesisCollection, card2, card3, card4, card5, card6, card7, card8, card9 }
+    const card = { GenesisCollection, card2, card3, card4, card5, card6, card7, card8, card9 }
 
 let [selected, setSelected] = useState(card.GenesisCollection);
 let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesis collection of 1000 3D-rendered depictions of rabbits in futuristic attires with its very own utilities");
@@ -93,7 +93,6 @@ let [textGenesis, setTextGenesis] = useState("Cyber Rabbit will release a Genesi
 
                         <ColumnContent2>
                        
-
                             <Swiper 
                                 data-aos="flip-up"
                                 data-aos-duration="800"
