@@ -114,7 +114,7 @@ export const data = [
   },
   {
       question: 'How much will each NFT cost to mint? ',
-      answer: "a. Genesis Collection - WL Sale: TBA, Public Sale: TBA",
+      answer: "a. Genesis Collection - WL Sale: 3.5 SOL, Public Sale: 4 SOL",
       answer2: "b. Main Collection - WL Sale: TBA, Public Sale: TBA",
       answer3: "c. 2nd Generation Collection - TBA",
   },

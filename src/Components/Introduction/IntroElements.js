@@ -2,6 +2,7 @@ import styled from "styled-components";
 import intro from '../../Image/introductionAssets/Group165.webp'
 import hyperspace from '../../Font/Hyperspace.otf'
 import binaria from '../../Font/features.ttf'
+import excluded from '../../Font/Excluded.ttf'
 
 export const IntroContainer = styled.div`
     background-color: #000;
@@ -23,6 +24,11 @@ export const IntroContainer = styled.div`
     @font-face {
         font-family: binaria;
         src: url(${binaria});
+    }
+
+    @font-face {
+        font-family: excluded;
+        src: url(${excluded});
     }
 
     
@@ -236,13 +242,29 @@ export const IntroColumn2 = styled.a`
     justify-content: flex-start;
     cursor: pointer;
     margin-top: 3vh;
+    text-decoration: none;
 `
 
 export const BtnDiscord = styled.img`
-
     width: 45vh;
     height: auto;
-
-
-
 `
+
+export const BtnMint = styled.button`
+    font-family: excluded;
+    border: none;
+    padding: 10px 15px;
+    font-size: 3vh;
+    color: white;
+    background: linear-gradient(to bottom right, #b31100, #5b0009);
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    cursor: pointer;
+
+    :hover{
+        transition:1s all ease-in;
+        background: linear-gradient(to bottom left, #b31100, #5b0009);
+    }
+`
+

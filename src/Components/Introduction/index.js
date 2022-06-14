@@ -4,7 +4,7 @@ import { motion, AnimatePresence} from "framer-motion"
 import { IntroContainer, IntroBg,
         IntroContent, IntroRow, IntroColumn, CRH1, CRH01,
         CoolestP, Description, ContainerText, IntroColumn2, VideoBg,
-        BtnDiscord } from './IntroElements'
+        BtnDiscord, BtnMint, LineDiv } from './IntroElements'
 import video from '../../video/Stella.mp4'
 import discord from '../../Image/introductionAssets/joindiscord.webp'
 const Introduction = () => {
@@ -56,9 +56,21 @@ const Introduction = () => {
             <BtnDiscord src={discord}></BtnDiscord>
           </IntroColumn2>
 
+   
+            
+          {/* <IntroColumn2 href="https://mint.cyberrabbitnft.com">
+         
+            <BtnMint>Mint Now</BtnMint>
+       
+  
+          </IntroColumn2> */}
+      
+          
           </motion.div>
           </AnimatePresence>
           
+          
+
         </IntroRow>
       </IntroContent>
     </IntroContainer>

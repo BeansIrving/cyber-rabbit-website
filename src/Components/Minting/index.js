@@ -71,8 +71,9 @@ const Minting = () => {
                     <hr></hr>
 
                     <BtnMintWrapper>
-                    <BtnMint>Mint</BtnMint>
+                      <BtnMint>Mint</BtnMint>
                     </BtnMintWrapper>
+
                     <ImgWrapper>
                       <InfoImg src={info}/>
                     </ImgWrapper>
