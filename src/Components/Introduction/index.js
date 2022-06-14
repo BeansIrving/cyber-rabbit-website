@@ -58,12 +58,11 @@ const Introduction = () => {
 
    
             
-          {/* <IntroColumn2 href="https://mint.cyberrabbitnft.com">
+          <IntroColumn2 href="https://mint.cyberrabbitnft.com">
          
             <BtnMint>Mint Now</BtnMint>
        
-  
-          </IntroColumn2> */}
+          </IntroColumn2> 
       
           
           </motion.div>
