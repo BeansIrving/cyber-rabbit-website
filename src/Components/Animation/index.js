@@ -11,6 +11,7 @@ import { AnimationContainer, AnimationBg,
         AnimationDes, ImgWrapper,
         WatchTrailer, 
          } from "./AnimationElements"
+         
 const Animation = ({toggleAnim}) => {
   const constraintsRef = useRef(null);
 

@@ -32,6 +32,7 @@ const Footer = React.lazy(() => import('../Components/Footer'));
 
 
 const Home = () => {
+  
   const [isOpen, setIsOpen] = useState(false)
 
   const [isOpenAnim, setIsopenAnim] = useState(false)
