@@ -56,7 +56,6 @@ export const FeaturesBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
