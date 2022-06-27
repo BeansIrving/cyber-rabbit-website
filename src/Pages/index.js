@@ -50,7 +50,11 @@ const Home = () => {
 
   return (
     <div>
-   
+    <Suspense fallback={
+    
+    <div className='loading'><img src={logo} className='blink' height='100px' width='auto'/></div>}
+    
+    >
     <SidebarAnim toggleAnim={toggleAnim} isOpenAnim={isOpenAnim}/>
     
     <Sidebar toggle={toggle} isOpen={isOpen}/>
