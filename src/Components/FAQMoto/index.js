@@ -61,8 +61,14 @@ const FAQMoto = () => {
                                <ImgTop src={containerTop} onClick={() => toggle(i)}/>
                             <div className='item' onClick={() => toggle(i)}>
                                 <div className='title' >
+
                                     <h2>{item.question}</h2>
                               
+
+                                    
+                                    <h2>TVL</h2>
+                                    <h2>$1,000,000.00</h2>
+                                
                                 </div>
                                 <ImgBottomHide src={selected === i ? null : containerBottom} onClick={() => toggle(i)}/>
                                 <div className={selected === i ? 'content show' : 'content'}>
