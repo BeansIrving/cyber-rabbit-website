@@ -61,13 +61,13 @@ const Navbar = ( {toggle} ) => {
             offset={0}> <Token src={transparentMint}></Token> </NavBtnLink>
             {/* <NavBtnLinks href="https://drive.google.com/file/d/1GMs94j54lXOSgQZK4od-d7XroihlvPnz/view?usp=sharing" target="_blank" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks> */}
             
-            <NavBtnLink
+            {/* <NavBtnLink
             to='roadmap'
             smooth={true}
             duration={100}
             spy={true}
             exact='true'
-            offset={0}> <Roadmap src={transparent}></Roadmap> </NavBtnLink>
+            offset={0}> <Roadmap src={transparent}></Roadmap> </NavBtnLink> */}
             
             <NavBtnLink
             to='partners'
@@ -92,7 +92,8 @@ const Navbar = ( {toggle} ) => {
             spy={true}
             exact='true'
             offset={0}> <Faq src={transparentMint}></Faq> </NavBtnLink>
-            <NavBtnLinks href="https://drive.google.com/file/d/1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97/view?usp=sharing" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks>
+            
+            {/* <NavBtnLinks href="https://drive.google.com/file/d/1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97/view?usp=sharing" rel="noopener"> <Whitepaper src={transparent}></Whitepaper> </NavBtnLinks> */}
 
             </NavBtn>
         </NavbarContainer>

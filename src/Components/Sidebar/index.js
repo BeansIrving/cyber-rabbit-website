@@ -60,7 +60,7 @@ const index = ({isOpen, toggle}) => {
               Token
             </SidebarLink>
 
-            <SidebarLink
+            {/* <SidebarLink
               to="roadmap"
               onClick={toggle}
               smooth={true}
@@ -69,7 +69,7 @@ const index = ({isOpen, toggle}) => {
               exact='true'
               offset={0}>
               Roadmap
-            </SidebarLink>
+            </SidebarLink> */}
 
             <SidebarLink
               to="partners"
@@ -104,10 +104,8 @@ const index = ({isOpen, toggle}) => {
               Faq
             </SidebarLink>
 
-
-
-
-            <SidebarLinks href="https://drive.google.com/file/d/1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97/view?usp=sharing" target="_blank" rel="noopener">Whitepaper</SidebarLinks>
+            {/* <SidebarLinks href="https://drive.google.com/file/d/1J2jeyAhia1tk3POJJpxTtTHiTV4JrB97/view?usp=sharing" target="_blank" rel="noopener">Whitepaper</SidebarLinks> */}
+            
             </SidebarMenu>
 
           <Container>

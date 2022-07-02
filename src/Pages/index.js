@@ -69,11 +69,11 @@ const Home = () => {
  
     <CyberLayers /> 
 
-    <NFT /> 
+
    
     <Token />
    
-    <Roadmap />
+
    
     <Partners />
    
