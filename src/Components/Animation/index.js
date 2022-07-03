@@ -9,7 +9,7 @@ import { AnimationContainer, AnimationBg,
         AnimationRow, AnimationColumn,
         ColumnContent, AnimationH1,
         AnimationDes, ImgWrapper,
-        WatchTrailer, 
+        WatchTrailer, TextWrapper,
          } from "./AnimationElements"
          
 const Animation = ({toggleAnim}) => {
@@ -25,26 +25,12 @@ const Animation = ({toggleAnim}) => {
         </AnimationBg>
 
         <AnimationRow>
+
           <AnimationColumn>
             <ColumnContent 
             data-aos="fade-down"
             data-aos-duration="1000">
-              <AnimationH1>Cyber Rabbit: Night Strike</AnimationH1>
-              <AnimationDes>
-              Nothing was the same since Helium Corp's Tyrannical rule.
-              Now they are taking their lives back, one evil AI Construct at a time. 
-              <br></br>
-              Bear witness as we show you what the coolest rabbits in the metaverse is all about 
-              <br></br>
-              are you ready to hop with us?
-            </AnimationDes>
-            </ColumnContent>
-              
-            <ColumnContent 
-            data-aos="fade-up"
-            data-aos-duration="1000">
-
-            <ImgWrapper>
+              <ImgWrapper>
               <motion.div className="containerAnim" ref={constraintsRef}>
               <motion.div
                 whileTap={{
@@ -54,12 +40,32 @@ const Animation = ({toggleAnim}) => {
                 }} 
               className="itemAnim" onClick={toggleAnim}/>
               <motion.div/> 
+              <WatchTrailer>Watch The Trailer</WatchTrailer>
               </motion.div>
+              
             </ImgWrapper>
             
-            <WatchTrailer>Watch the teaser trailer</WatchTrailer>
-
             </ColumnContent>
+
+            <ColumnContent
+            data-aos="fade-up"
+            data-aos-duration="1000">
+       
+                <AnimationH1>Cyber Rabbit: Night Strike</AnimationH1>
+                <AnimationDes>
+                  Nothing was the same since Helium Corp's Tyrannical rule.
+                  Now they are taking their lives back, one evil AI Construct at a time. 
+     
+                  Bear witness as we show you what the coolest rabbits in the metaverse is all about 
+        
+                  are you ready to hop with us?
+                </AnimationDes>
+         
+            </ColumnContent>
+            
+           
+              
+   
           </AnimationColumn>
         </AnimationRow>
     </AnimationContainer>

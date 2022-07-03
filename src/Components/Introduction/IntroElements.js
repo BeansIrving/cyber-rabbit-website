@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import intro from '../../Image/introductionAssets/Group165.webp'
+import nonhover from '../../Image/introductionAssets/Nonhovercopy.webp'
+import hover from '../../Image/introductionAssets/hovercopy.webp'
 import hyperspace from '../../Font/Hyperspace.otf'
 import binaria from '../../Font/features.ttf'
 import excluded from '../../Font/Excluded.ttf'
@@ -8,6 +10,7 @@ export const IntroContainer = styled.div`
     background-color: #000;
     display: flex;
     justify-content: flex-start;
+ 
     padding: 0 15vh;
     height: 100vh;
     width: 100%;
@@ -98,10 +101,7 @@ export const IntroRow = styled.div`
 `
 
 export const IntroColumn = styled.div`
-    background-image: url(${intro});
-    background-repeat: no-repeat;
-    background-position: left;
-    width: 80%;
+
     height: auto;
 
     @media screen and (max-width:1024px){
@@ -114,10 +114,7 @@ export const IntroColumn = styled.div`
     
 
     @media screen and (max-width:468px){
-      
-        width: 95%;
-        height: auto;
-        background: rgba(0, 0, 0, 0.4);
+    
     }
 `
 export const Container = styled.div`
@@ -133,13 +130,24 @@ export const ContainerText = styled.div`
     margin-right: 0vh;
     padding: 3vh;
     padding-left: 3vh;
-    
-   
+    padding-top: 70px;
+    background-image: url(${intro});
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 38vh;
+    background-size: contain;
+
+    @media screen and (max-width:500px){
+          
+        width: 95%;
+        height: auto;
+        background: rgba(0, 0, 0, 0.4);
+    }
 `
 
 export const CRH1 = styled.h1`
     font-size: 70px;
-    font-family: binaria;
+    font-family: Century Gothic;
     
     color: white;
     letter-spacing: 0.3vh;
@@ -157,36 +165,40 @@ export const CRH1 = styled.h1`
 
 export const CRH01 = styled.h1`
     font-size: 10px;
-    font-family: binaria;
+    font-family: Century Gothic;
     font-weight: bolder;
     color: white;
     letter-spacing: 0.2vh;
-    position: relative;
-    top: 90px;
-    left: 2px;
+    position: absolute;
+    top: 19%;
+    left: 0.5%;
+    transform: translate(-0.5%, -19%);
+
+    @media screen and (max-width:1920px){
+        top: 19%;
+        left: 0.5%;
+        transform: translate(-0.5%, -19%);
+    }
 
     @media screen and (max-width:1024px){
         font-size: 10px;
-        top: 85px;
-        left: 2px;
+     
     }
 
     @media screen and (max-width:768px){
         font-size: 10px;
-        top: 80px;
-        left: 2px;
+ 
     }
 
     @media screen and (max-width:468px){
         font-size: 10px;
-        top: 70px;
-        left: 2px;
+ 
     }
     
 `
 
 export const CoolestP = styled.p`
-    font-family: hyperspace;
+    font-family: Century Gothic;
     font-size: 24px;
     color: white;
     text-transform: uppercase;
@@ -208,12 +220,12 @@ export const CoolestP = styled.p`
 `
 
 export const Description = styled.p`
-    font-family: hyperspace;
+    font-family: Century Gothic;
     font-size: 13px;
     color: white;
     line-height: 2;
     font-weight: 700;
-    width: 50%;
+    width: 40%;
     
     letter-spacing: 0.2vh;
 
@@ -221,6 +233,12 @@ export const Description = styled.p`
         font-size: 10px;
         letter-spacing: 2px;
         width: 60%;
+    }
+
+    @media screen and (max-width:1366px){
+        font-size: 10px;
+        letter-spacing: 2px;
+        width: 50%;
     }
 
     @media screen and (max-width:768px){
@@ -251,20 +269,25 @@ export const BtnDiscord = styled.img`
 `
 
 export const BtnMint = styled.button`
-    font-family: excluded;
-    border: none;
-    padding: 10px 15px;
-    font-size: 3vh;
-    color: white;
-    background: linear-gradient(to bottom right, #b31100, #5b0009);
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-
+    padding: 20px 57px;
+    font-size: 23px;
+    text-align: center;
     cursor: pointer;
-
+    outline: none;
+    color: transparent;
+    background-image: url(${nonhover});
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1vh;
+    margin-right: 2vh;
+    font-family: oversouth;
+    background-color: transparent;
+    transition:.5s all ease-in;
     :hover{
-        transition:1s all ease-in;
-        background: linear-gradient(to bottom left, #b31100, #5b0009);
+      
+        background-image: url(${hover});
     }
 `
 

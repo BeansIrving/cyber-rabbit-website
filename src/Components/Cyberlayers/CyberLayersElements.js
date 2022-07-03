@@ -72,7 +72,9 @@ export const CyberBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px #000 inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 46%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 export const CyberRabbit = styled.img`

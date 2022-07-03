@@ -1,15 +1,14 @@
 import styled from "styled-components";
-import bg from '../../Image/bg/bg.webp'
+import bg from '../../Image/bg/Trailer.webp'
 import hyperspace from '../../Font/HyperspaceRaceVariable.ttf'
 import features from '../../Font/features.ttf'
 
 export const AnimationContainer = styled.div`
-    background: #0c0c0c;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 15vh;
-    height: 100vh;
+    height: 105vh;
     width: 100%;
     position: relative;
     z-index: 1;
@@ -28,6 +27,14 @@ export const AnimationContainer = styled.div`
         height: 120vh;
     }
 
+    @media screen and (max-width:768px){
+        padding: 0 2vh;
+    }
+
+    @media screen and (max-width:468px){
+        padding: 0 2vh;
+    }
+
 
 `
 
@@ -37,13 +44,15 @@ export const AnimationBg = styled.div`
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     background-image: url(${bg});
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 46%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 
@@ -54,7 +63,7 @@ export const AnimationRow = styled.div`
 `
 
 export const AnimationColumn = styled.div`
-    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 
     @media screen and (max-width:1366px){
@@ -65,21 +74,24 @@ export const AnimationColumn = styled.div`
 export const ColumnContent = styled.div`
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    padding: 5vh;
+    padding-top: 5vh;
+
+    @media screen and (max-width:1024px){
+        padding-top: 15vh;
+    }
 `
 
 export const AnimationH1 = styled.h1`
     font-family: features;
     text-transform: uppercase;
     letter-spacing: 1px;
-    padding-bottom: 5vh;
-    font-size: 5vh;
+    padding-bottom: 1vh;
+    font-size: 4vh;
 
     @media screen and (max-width:1024px){
         text-align: center;
         padding-bottom: 2.5vh;
-        padding:2vh 10vh;
+        padding:2vh 0vh;
     }
 
     @media screen and (max-width:768px){
@@ -92,12 +104,24 @@ export const AnimationH1 = styled.h1`
 `
 
 export const AnimationDes = styled.p`
-    width: 80%;
-    padding-left: 2vh;
+
+    padding-right: 1000px;
+
+    @media screen and (max-width:1660px){
+        padding-right: 700px;
+    }
+
+    @media screen and (max-width:1366px){
+        padding-right: 500px;
+    }
+
+    @media screen and (max-width:1220px){
+        padding-right: 300px;
+    }
 
     @media screen and (max-width:1024px){
-        width: auto;
-        padding:0vh 10vh;
+        text-align: center;
+        padding:0vh 0vh;
     }
 
     @media screen and (max-width:768px){
@@ -110,12 +134,23 @@ export const AnimationDes = styled.p`
 
 export const ImgWrapper = styled.div`
     flex-wrap: wrap;
-    cursor: pointer;
+    justify-content: center;
+
+    @media screen and (max-width:1024px){
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 50vh;
+    }
 `
 
 export const WatchTrailer = styled.h2`
+    position: absolute;
     font-family:features;
     text-transform: uppercase;
-    text-align: center;
     padding-top: 2vh;
+    bottom: -40px;
+    
 `
+

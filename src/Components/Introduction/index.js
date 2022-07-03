@@ -30,6 +30,7 @@ const Introduction = () => {
          
           
          <ContainerText>
+            
             <CRH1>Cyber Rabbit</CRH1>
             <CoolestP>The Coolest Rabbits in the Metaverse</CoolestP>
 

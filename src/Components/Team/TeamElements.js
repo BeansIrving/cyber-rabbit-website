@@ -58,7 +58,9 @@ export const TeamBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px #000 inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 26%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 export const TeamContent = styled.div`
@@ -184,17 +186,17 @@ export const TeamDescription = styled.p`
 `
 
 export const ImgWrapper = styled.div`
-    background-color: rgba(255,0,0,0.2);
-    border-radius: 15px;
-    height: 40vh;
+
+
+    height: auto;
     width: auto;
 
     @media screen and (max-width:768px){
-        height: 70vh;
+        height: auto;
     }
 
     @media screen and (max-width:468px){
-        height: 50vh;
+        height: auto;
     }
 `
 
@@ -217,4 +219,8 @@ export const ColumnContent = styled.div`
 export const ColumnContent2 = styled.div`
     width: auto;
     padding-top: 8vh;
+`
+
+export const TextWrapper = styled.div`
+    
 `

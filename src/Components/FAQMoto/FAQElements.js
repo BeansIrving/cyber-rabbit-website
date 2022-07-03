@@ -2,7 +2,7 @@ import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
 import hyperspace from '../../Font/Hyperspace.otf'
 import hyperspacebold from '../../Font/HyperspaceBold.otf'
-import bg from '../../Image/bg/FAQ-bg.webp'
+import bg from '../../Image/bg/FAQ.webp'
 
 export const FAQContainer = styled.div`
 
@@ -68,7 +68,9 @@ export const FAQBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 26%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 export const FAQContent = styled.div`

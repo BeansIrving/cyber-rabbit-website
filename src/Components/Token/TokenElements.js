@@ -60,7 +60,9 @@ export const TokenBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px #000 inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 5%, rgba(0, 0, 0, 1) 26%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 export const TokenContent = styled.div`

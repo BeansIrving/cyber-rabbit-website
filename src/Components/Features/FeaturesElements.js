@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import featuresFont from '../../Font/features.ttf'
-import bg from '../../Image/bg/feature-bg.webp'
+import bg from '../../Image/bg/Features.webp'
 
 export const FeaturesContainer = styled.div`
     /* background: #000; */
@@ -60,7 +60,9 @@ export const FeaturesBg = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 8px 8px #000 inset;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 46%, 
+    rgba(0, 0, 0, 1) 60%, transparent 100%);
 `
 
 export const FeaturesContent = styled.div`

@@ -1,8 +1,9 @@
 import styled from "styled-components"
 import featuresFont from '../../Font/features.ttf'
+import bg from '../../Image/bg/partnersbg.webp'
 
 export const PartnersContainer = styled.div`
-    background: #3d050c;
+
     display: flex;
     justify-content: center;
     padding: 5vh 0vh;
@@ -26,9 +27,13 @@ export const PartnersBg = styled.div`
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 0;
-    background-image: linear-gradient( rgba(255,0,0,0), rgba(0,0,0,0.9));
-    box-shadow: 0 0 8px 8px rgba(0,0,0,1) inset;
+    background-image: url(${bg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-mask-image: 
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 46%, 
+    rgba(0, 0, 0, 1) 66%, transparent 100%);
 `
 
 export const PartnersContent = styled.div`
