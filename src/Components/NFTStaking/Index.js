@@ -12,39 +12,31 @@ import {
     Description,
     CardContainer,
     Line,
-    ContainerBox,
     ColumnContent,
+    FlexCardContainer,
+    FlexColumnContent,
+    Card,
+    TextWrapper,
+    CardTitle,
+    CardSubTitle,
+    ButtonWrapper,
+    ButtonStake,
+    ButtonUnstake,
+    ButtonClaim,
+    CardV2,
 }
 
 from './NFTStaking'
 
-import Box from '@mui/material/Box';
-
-import Slider from '@material-ui/core/Slider';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
 import line from '../../Image/nftstakingAssets/designline.webp'
+import dot from '../../Image/nftstakingAssets/dot.webp'
 
 
 
 
 
 const NFTStaking = () => {
-    const muiTheme = createMuiTheme({
-        overrides:{
-          MuiSlider: {
-            thumb:{
-            color: "yellow",
-            },
-            track: {
-              color: 'red'
-            },
-            rail: {
-              color: 'black'
-            }
-          }
-      }
-      });
+
    
   return (
     <Container>
@@ -78,18 +70,72 @@ const NFTStaking = () => {
                     </ColumnContent>
            
                     <ColumnContent>
-                        <ContainerBox>
-                            <Box>
-                            <Slider
-                                size="small"
-                                defaultValue={70}
-                                aria-label="Small"
-                                valueLabelDisplay="auto"
-                                trackColor="yellow"
-                            />
-                            </Box>
-                        </ContainerBox>
+                    <div className="progress">
+                        <div className="progress-value"></div><span className='spanshadow'>
+                        <div class="diamond-border">
+                            <div class="container diamond-shape"></div>
+                        </div>
+                        </span>
+                    </div> 
                     </ColumnContent>
+                    
+                    <FlexCardContainer>
+                        <FlexColumnContent>
+                            <Card>
+                                <TextWrapper>
+                                    <CardTitle>STAKE YOUR NFT's</CardTitle>
+                                    <CardSubTitle><span className='red'>0</span> NFT's Staked</CardSubTitle>
+                                </TextWrapper>
+
+                                <ButtonWrapper>
+                                    <ButtonStake>
+                                        Stake
+                                    </ButtonStake>
+                                </ButtonWrapper>
+                            </Card>
+                        </FlexColumnContent>
+
+                        <FlexColumnContent>
+                            <Card>
+                                <TextWrapper>
+                                    <CardTitle>UNSTAKE YOUR NFT's</CardTitle>
+                                    <CardSubTitle><span className='red'>0</span> NFT's Staked</CardSubTitle>
+                                </TextWrapper>
+
+                                <ButtonWrapper>
+                                    <ButtonUnstake>
+                                        Unstake
+                                    </ButtonUnstake>
+                                </ButtonWrapper>
+                            </Card>
+                        </FlexColumnContent>
+
+                        <FlexColumnContent>
+                            <Card>
+                                <TextWrapper>
+                                    <CardTitle>CLAIM YOUR NFT's</CardTitle>
+                                    <CardSubTitle><span className='red'>0</span> Claimable NFT's</CardSubTitle>
+                                </TextWrapper>
+
+                                <ButtonWrapper>
+                                    <ButtonClaim>
+                                        Claim
+                                    </ButtonClaim>
+                                </ButtonWrapper>
+                            </Card>
+                        </FlexColumnContent>
+                    </FlexCardContainer>
+
+                    <FlexCardContainer>
+                        <FlexColumnContent>
+                            <CardV2>
+                                <TextWrapper>
+                                <CardSubTitle><span className='red'>0</span> NFT's Staked on your wallet</CardSubTitle>
+                                <CardSubTitle><span className='red'>0</span> Selected</CardSubTitle>
+                                </TextWrapper>
+                            </CardV2>
+                        </FlexColumnContent>
+                    </FlexCardContainer>
 
                 </CardContainer>
                         

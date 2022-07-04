@@ -20,8 +20,8 @@ function App() {
       <div>
         <BrowserRouter>
             <Routes>
-              <Route path="/" element={<NFTStaking />} />
-              {/* <Route path="/" element={<Home />} /> */}
+              {/* <Route path="/" element={<NFTStaking />} /> */}
+              <Route path="/" element={<Home />} />
               <Route path="/mintingpage" element={<Minting />} />
               <Route path="/nftstakingpage" element={<NFTStaking />} />
             </Routes>

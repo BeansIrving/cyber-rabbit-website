@@ -171,3 +171,62 @@ hr{
     font-weight: bold;
     letter-spacing: 2px;
 }
+
+.progress {
+
+  justify-content: flex-start;
+  border-radius: 100px;
+  background-color: #bd274a;
+  align-items: center;
+  position: relative;
+  padding: 0 0px;
+  display: flex;
+  height: 5px;
+  width: 75vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  align-items: center;
+}
+
+.progress-value {
+  animation: load1 3s normal forwards;
+  border-radius: 100px;
+  background: #ffd8da;
+  height: 5px;
+  width: 10;
+  box-shadow: 0px 0px 20px 5px red;
+}
+
+@keyframes load1 {
+  0% { width: 0; }
+  100% { width: 84%; }
+}
+
+
+.diamond-border{
+  position: relative;
+  left: -10px;
+  border: 2px solid #fff;
+  height: 30px;
+  text-align: center;
+  transform:rotate(45deg);
+	width:30px;
+  padding:10px;
+  box-shadow: 0px 0px 10px 5px red;
+}
+.diamond-shape {
+  background: #fff;
+  position: relative;
+  right: 5px;
+  bottom: 4px;
+  height: 15px;
+  text-align: center;
+	width:15px;
+  border: 2px solid transparent;
+  box-shadow: 0px 0px 10px 5px red;
+}
+
+
+.red{
+  color: red;
+}
