@@ -269,8 +269,8 @@ export const BtnDiscord = styled.img`
 `
 
 export const BtnMint = styled.button`
-    padding: 20px 57px;
-    font-size: 23px;
+    padding: 20px 55px;
+    font-size: 25px;
     text-align: center;
     cursor: pointer;
     outline: none;
