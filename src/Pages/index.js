@@ -69,15 +69,13 @@ const Home = () => {
  
     <CyberLayers /> 
 
-
-   
     <Token />
    
-
-   
-    <Partners />
+    <Roadmap />
    
     <Team /> 
+
+    <Partners />
    
     <FAQMoto />
    
