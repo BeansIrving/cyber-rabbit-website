@@ -1,140 +1,128 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import { RoadmapContainer, RoadmapBg, RoadmapContent,
-        RoadmapRow, RoadmapColumn, RoadmapUpperTitle,
-        RoadmapBottomTitle, RoadmapTitle,ColumnContent, InProgress,
-        ColumnContent2, RoadmapH1, RoadmapLine, PhaseH1 } from './RoadmapElements'
+        RoadmapRow, RoadmapColumn, 
+        ColumnContent, RoadmapImg,
+        DetailsImg, SwiperContainer,
+        PhaseImg, SwiperContainer1366px,
+        
+        } from './RoadmapElements'
 
-import { FreeMode, Navigation, Thumbs } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import { EffectCoverflow, Pagination, FreeMode, Navigation, Thumbs } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import { Pagination } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import roadmapline from '../../Image/roadmapAssets/roadmapline.webp'
-import roadmaplineLeft from '../../Image/roadmapAssets/roadmaplineLeft.webp'
-import roadmaplineRight from '../../Image/roadmapAssets/roadmaplineRight.webp'
 
 import "./styleRoadmap.css";
 
 import Aos from "aos";
 import "aos/dist/aos.css"
 
+import roadmap from '../../Image/roadmapAssets/roadmaprevamped.webp'
+import details from '../../Image/roadmapAssets/Details.webp'
+
+import phase1 from '../../Image/roadmapAssets/phase1.webp'
+import phase2 from '../../Image/roadmapAssets/phase2.webp'
+import phase3 from '../../Image/roadmapAssets/phase3.webp'
+import phase4 from '../../Image/roadmapAssets/phase4.webp'
+
 const Roadmap = () => {
+    const [thumbsSwiper, setThumbsSwiper] = useState(null);
     useEffect(() =>{
         Aos.init({ });
       },[])
   return (
-    <RoadmapContainer id='roadmap' data-aos="zoom-out-left">
+    <RoadmapContainer id='roadmap'>
         <RoadmapBg>
 
         </RoadmapBg>
-        <RoadmapUpperTitle></RoadmapUpperTitle>
-        <RoadmapBottomTitle></RoadmapBottomTitle>
-      
+       
         <RoadmapContent>
             <RoadmapRow>
                 <RoadmapColumn>
-                    <ColumnContent>
-                        <RoadmapTitle>Roadmap</RoadmapTitle>
-                    </ColumnContent>
-                    
-                    <ColumnContent2>
-                        
+                  <ColumnContent>
+                    <RoadmapImg src={roadmap}/>
+
+                    <DetailsImg src={details}/>
+                  </ColumnContent>
+
+                  <ColumnContent>
+
+                  <SwiperContainer>
                         <Swiper
-                            slidesPerView={"auto"}
-                            spaceBetween={3}
-                         
-                            navigation={true}
-                            pagination={true}
-                     
 
-                      
-                            modules={[FreeMode, Navigation, Thumbs, Pagination]}
-                            className="mySwiperRoadmap"
+                        slidesPerView={4}
+                        spaceBetween={30}
+
+                        navigation={true}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
+
+                        className="mySwiper-Roadmap"
                         >
-                            <SwiperSlide className="mySwiperRoadmap-slide">
-                                <RoadmapH1>&#10003; Achieve</RoadmapH1>
-                                
-                                <RoadmapLine src={roadmaplineLeft}/>
 
-                                <PhaseH1>Phase 1</PhaseH1>
-
-                                <div className='container'>
-                                    <ul>
-                                        <li className='li'>Cyber Rabbit Conceptualization</li>
-                                        <li className='li'>Release of Cyber Rabbit Public Info</li>
-                                        <li className='li'>Cyber Rabbit Discord and Social Media Public Release</li>
-                                        <li className='li'>Cyber Rabbit Partnerships and Collaboration</li>
-                                        <li className='li'>Massive Events and Contest to give way for the release of Cyber Rabbit: Genesis Collection</li>
-                                    </ul>
-                                </div> 
-                                
-                            </SwiperSlide>
-                            
-                            <SwiperSlide className="mySwiperRoadmap-slide">
-                            <InProgress>In Progress</InProgress>
-
-                            <RoadmapLine src={roadmapline}/>
-                            
-                            <PhaseH1>Phase 2</PhaseH1>
-
-                                <div className='container'>
-                                    <ul>
-                                        <li className='li'>Cyber Rabbit: Genesis Collection Public Launch</li>
-                                        <li className='li'>Website Redesign and Rework</li>
-                                        <li className='li'>Start of Genesis Collection $CARROT yielding </li>
-                                        <li className='li'>Launch of the Exclusive Advisory x Partnership Community on Cyber Rabbit’s own Discord Server</li>
-                                        <li className='li'>Launch of the Breeding Platform for the Genesis Collection</li>
-                                        <li className='li'>Launch of the Exclusive Collaboration Space on the Cyber Rabbit’s Website</li>
-                                    </ul>
-                                </div>   
-                            </SwiperSlide>
-                            
-                            <SwiperSlide className="mySwiperRoadmap-slide">
-                            <InProgress>In Progress</InProgress>
-
-                            <RoadmapLine src={roadmapline}/>
-
-                            <PhaseH1>Phase 3</PhaseH1>
-
-                                <div className='container'>
-                                    <ul>
-                                        <li className='li'>Main Collection Launch</li>
-                                        <li className='li'>Cyber Rabbit Staking Platform and Mechanics Launch </li>
-                                        <li className='li'>Contests and Events for Cyber Rabbit’s furtherment of Advocacy </li>
-                                        <li className='li'>Future Exclusive Events for Cyber Rabbit Supporters and holders</li>
-                                    </ul>
-                                </div>   
-                            </SwiperSlide>
-                            
-                            <SwiperSlide className="mySwiperRoadmap-slide">
-                            <InProgress>In Progress</InProgress>
-
-                            <RoadmapLine src={roadmaplineRight}/>
-
-                            <PhaseH1>Phase 4</PhaseH1>
-
-                                <div className='container'>
-                                    <ul>
-                                        <li className='li'>2nd Generation Collection Launch</li>
-                                        <li className='li'>Cyber Rabbit: META Arena Metaverse Game for the Main Collection Launch </li>
-                                        <li className='li'>Land Purchase and Partnership with Sandbox to give way for 2nd Gen Metaverse Implication</li>
-                                        <li className='li'>Sandbox game for the 2nd Generation Launch</li>
-                                        <li className='li'>DAO Governance</li>
-                                    </ul>
-                                </div>   
-                            </SwiperSlide>
-                            
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase1}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase2}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase3}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase4}/>
+                        </SwiperSlide>
+                        
                         </Swiper>
-                   
+                    </SwiperContainer>
 
-                    </ColumnContent2>
+                    <SwiperContainer1366px>
+                        <Swiper
+                        effect={"coverflow"}
+                        spaceBetween={100}
+                        grabCursor={true}
+                        centeredSlides={true}
+                        slidesPerView={3}
+                        coverflowEffect={{
+                          rotate: 0,
+                          stretch: 0,
+                          depth: 40,
+                          modifier: 1,
+                          slideShadows: false,
+                        }}
+                        thumbs={{ swiper: thumbsSwiper }}
+                        modules={[FreeMode, Navigation, Thumbs]}
 
-             
+                        className="mySwiper-Roadmap"
+                        >
 
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase1}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase2}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase3}/>
+                        </SwiperSlide>
+                        
+                        <SwiperSlide className="mySwiper-Roadmap-Slide">
+                            <PhaseImg src={phase4}/>
+                        </SwiperSlide>
+                        
+                        </Swiper>
+                    </SwiperContainer1366px>
+                    
+                  </ColumnContent>
                 </RoadmapColumn>
             </RoadmapRow>
         </RoadmapContent>
