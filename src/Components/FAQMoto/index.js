@@ -66,8 +66,8 @@ const FAQMoto = () => {
                               
 
                                     
-                                    <h2>TVL</h2>
-                                    <h2>$1,000,000.00</h2>
+
+                            
                                 
                                 </div>
                                 <ImgBottomHide src={selected === i ? null : containerBottom} onClick={() => toggle(i)}/>
