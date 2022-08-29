@@ -63,11 +63,7 @@ const FAQMoto = () => {
                                 <div className='title' >
 
                                     <h2>{item.question}</h2>
-                              
-
-                                    
-
-                            
+                          
                                 
                                 </div>
                                 <ImgBottomHide src={selected === i ? null : containerBottom} onClick={() => toggle(i)}/>
