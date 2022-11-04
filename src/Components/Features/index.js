@@ -49,6 +49,7 @@ const Features = () => {
     Aos.init({});
   }, []);
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
   const card = {
     GenesisCollection,
     card2,
@@ -167,8 +168,17 @@ const Features = () => {
                   >
                     <ImgCard src={card5} />
                   </SwiperSlide>
-                  {/* <SwiperSlide 
-                                className="mySwiperFeatures-slide" onClick={() => setSelected(card.card6) || setTextGenesis("The Play and Earn combat game of Cyber Rabbit can be played by having a Main Collection Cyber Rabbit NFT.")}><ImgCard src={card6}/></SwiperSlide> */}
+                  <SwiperSlide
+                    className="mySwiperFeatures-slide"
+                    onClick={() =>
+                      setSelected(card.card6) ||
+                      setTextGenesis(
+                        "The Play and Earn combat game of Cyber Rabbit can be played by having a Main Collection Cyber Rabbit NFT."
+                      )
+                    }
+                  >
+                    <ImgCard src={card6} />
+                  </SwiperSlide>
                   <SwiperSlide
                     className="mySwiperFeatures-slide"
                     onClick={() =>
@@ -180,8 +190,17 @@ const Features = () => {
                   >
                     <ImgCard src={card7} />
                   </SwiperSlide>
-                  {/* <SwiperSlide 
-                                className="mySwiperFeatures-slide" onClick={() => setSelected(card.card8) || setTextGenesis("Finally, Cyber Rabbit will have its metaverse on Sandbox.")}><ImgCard src={card8}/></SwiperSlide> */}
+                  <SwiperSlide
+                    className="mySwiperFeatures-slide"
+                    onClick={() =>
+                      setSelected(card.card8) ||
+                      setTextGenesis(
+                        "Finally, Cyber Rabbit will have its metaverse on Sandbox."
+                      )
+                    }
+                  >
+                    <ImgCard src={card8} />
+                  </SwiperSlide>
                   <SwiperSlide
                     className="mySwiperFeatures-slide"
                     onClick={() =>
