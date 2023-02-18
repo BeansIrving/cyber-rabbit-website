@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/CR.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no"/>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no"
+    />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
       content="Cyber Rabbits is a Decentralized NFT Project whose aim is to capitalize on the earning aspect of the NFT Industry while bordering within the budding technology that is Metaverse."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/CR.png"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/CR.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
-   
     <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -32,7 +34,7 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <video id="video-id" /><source src="video.mp4" autoplay type="video/mp4" />
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -43,53 +45,5 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-    <script>
-      var myFP = fluidPlayer(
-          'video-id',	{
-    "layoutControls": {
-      "controlBar": {
-        "autoHideTimeout": 1,
-        "animated": true,
-        "autoHide": false
-      },
-      "htmlOnPauseBlock": {
-        "html": null,
-        "height": null,
-        "width": null
-      },
-      "autoPlay": true,
-      "mute": true,
-      "allowTheatre": false,
-      "playPauseAnimation": false,
-      "playbackRateEnabled": false,
-      "allowDownload": false,
-      "playButtonShowing": false,
-      "fillToContainer": true,
-      "posterImage": ""
-    },
-    "vastOptions": {
-      "adList": [
-        {
-          "roll": "preRoll",
-          "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=37ab355d2deb8967cd6e4e089617e46f",
-          "adText": ""
-        },
-        {
-          "roll": "midRoll",
-          "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=37ab355d2deb8967cd6e4e089617e46f",
-          "adText": ""
-        },
-        {
-          "roll": "postRoll",
-          "vastTag": "https://www.videosprofitnetwork.com/watch.xml?key=37ab355d2deb8967cd6e4e089617e46f",
-          "adText": ""
-        }
-      ],
-      "adCTAText": false,
-      "adCTATextPosition": ""
-    }
-  });
-  </script>
   </body>
 </html>
